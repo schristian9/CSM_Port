@@ -7,7 +7,7 @@ export default function KpiCollage() {
       label: "Gross Retention Rate (GRR)",
       desc: "Consistently maintaining primary contract value year-over-year, outperforming SaaS industry standards.",
       color: "bg-[#FFFDF9]",
-      textColor: "text-[#2B4365]",
+      textColor: "text-[#8C2F39]",
       span: "md:col-span-6 lg:col-span-7",
       rotate: "hover:rotate-1"
     },
@@ -15,7 +15,7 @@ export default function KpiCollage() {
       metric: "124%",
       label: "Net Revenue Retention (NRR)",
       desc: "Unlocking expansion revenue through proactive cross-selling, feature adoption, and executive relationship building.",
-      color: "bg-[#2B4365] text-white",
+      color: "bg-[#8C2F39] text-white",
       textColor: "text-[#BFA175]",
       span: "md:col-span-6 lg:col-span-5",
       rotate: "hover:-rotate-1"
@@ -25,7 +25,7 @@ export default function KpiCollage() {
       label: "Annual Gross Churn",
       desc: "Keeping churn minimal using early-warning product adoption scoring and health check-check frameworks.",
       color: "bg-[#FFFDF9]",
-      textColor: "text-[#2B4365]",
+      textColor: "text-[#8C2F39]",
       span: "md:col-span-6 lg:col-span-5",
       rotate: "hover:rotate-1"
     },
@@ -34,18 +34,18 @@ export default function KpiCollage() {
       label: "ARR Portfolio Managed",
       desc: "Directly overseeing enterprise accounts, guiding scaling operations, and managing executive steering committees.",
       color: "bg-[#FFFDF9] border-[#BFA175] border-t-8",
-      textColor: "text-[#2B4365]",
+      textColor: "text-[#8C2F39]",
       span: "md:col-span-6 lg:col-span-7",
       rotate: "hover:-rotate-1"
     }
   ];
 
   return (
-    <section id="metrics" className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 border-b-2 border-[#2B4365]">
+    <section id="metrics" className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 border-b-2 border-[#8C2F39]">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <div className="zine-badge mb-3">HARD METRICS</div>
-          <h3 className="text-3xl md:text-5xl font-display font-black text-[#2B4365] uppercase leading-none">
+          <h3 className="text-3xl md:text-5xl font-display font-black text-[#8C2F39] uppercase leading-none">
             Proven Business Impact
           </h3>
         </div>
@@ -64,7 +64,7 @@ export default function KpiCollage() {
             {/* Background design accents */}
             <div className="absolute top-0 right-0 w-24 h-24 grid-bg opacity-15 pointer-events-none"></div>
             
-            <div className="flex justify-between items-start border-b border-[#2B4365] pb-4 mb-4">
+            <div className="flex justify-between items-start border-b border-[#8C2F39] pb-4 mb-4">
               <span className="font-mono text-xs font-bold text-gray-500 uppercase">
                 [ KEY METRIC_0{idx + 1} ]
               </span>
@@ -83,7 +83,7 @@ export default function KpiCollage() {
               </p>
             </div>
             
-            <div className="flex justify-between items-center mt-6 pt-4 border-t border-[#2B4365]/20 text-[10px] font-mono opacity-60">
+            <div className="flex justify-between items-center mt-6 pt-4 border-t border-[#8C2F39]/20 text-[10px] font-mono opacity-60">
               <span>OUTCOME ACCELERATED</span>
               <span>VERIFIED METRIC</span>
             </div>

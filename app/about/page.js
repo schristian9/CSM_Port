@@ -89,7 +89,7 @@ export default function About() {
       <div className="noise-overlay" />
       <Masthead />
 
-      <main className="flex-1 w-full bg-[#F5F1E8] py-16 px-4 md:px-8">
+      <main className="flex-1 w-full bg-[#FFF6E7] py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           {/* Left Column: Personal Card & Details */}
@@ -97,9 +97,9 @@ export default function About() {
             <div className="zine-card bg-[#FFFDF9] p-8 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 grid-bg opacity-15"></div>
               
-              <div className="border-b border-[#2B4365] pb-6 mb-6">
+              <div className="border-b border-[#8C2F39] pb-6 mb-6">
                 <div className="zine-badge mb-3">PERSONAL DOSSIER</div>
-                <h2 className="text-3xl font-display font-black text-[#2B4365] uppercase leading-tight">
+                <h2 className="text-3xl font-display font-black text-[#8C2F39] uppercase leading-tight">
                   Sarlinson Christian
                 </h2>
                 <p className="text-sm font-mono text-[#BFA175] uppercase font-bold mt-1.5">
@@ -108,19 +108,19 @@ export default function About() {
               </div>
 
               {/* Contact Information */}
-              <div className="space-y-4 font-mono text-xs text-[#2B4365]">
-                <div className="flex justify-between py-2 border-b border-[#2B4365]/10">
+              <div className="space-y-4 font-mono text-xs text-[#8C2F39]">
+                <div className="flex justify-between py-2 border-b border-[#8C2F39]/10">
                   <span className="text-gray-500">LOCATION</span>
                   <span className="font-bold">LONDON, UK</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-[#2B4365]/10">
+                <div className="flex justify-between py-2 border-b border-[#8C2F39]/10">
                   <span className="text-gray-500">EMAIL</span>
                   <a href="mailto:sarlinson92@yahoo.com" className="font-bold hover:text-[#BFA175] underline">
                     sarlinson92@yahoo.com
                   </a>
                 </div>
 
-                <div className="flex justify-between py-2 border-b border-[#2B4365]/10">
+                <div className="flex justify-between py-2 border-b border-[#8C2F39]/10">
                   <span className="text-gray-500">LINKEDIN</span>
                   <a href="https://linkedin.com/in/sarlinson" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-[#BFA175] underline">
                     linkedin.com/in/sarlinson
@@ -137,18 +137,18 @@ export default function About() {
 
             {/* Quick Education Card */}
             <div className="zine-card bg-[#FFFDF9] p-8">
-              <h4 className="font-display font-black text-xl text-[#2B4365] uppercase border-b border-[#2B4365] pb-3 mb-4">
+              <h4 className="font-display font-black text-xl text-[#8C2F39] uppercase border-b border-[#8C2F39] pb-3 mb-4">
                 Education
               </h4>
               <div className="space-y-4">
                 <div>
-                  <h5 className="text-lg font-bold text-[#2B4365] leading-snug">
+                  <h5 className="text-lg font-bold text-[#8C2F39] leading-snug">
                     Bachelor of Business Administration (2026)
                   </h5>
                   <p className="text-sm text-gray-600 font-mono mt-1">DY Patil University</p>
                 </div>
-                <div className="border-t border-[#2B4365]/10 pt-4">
-                  <h5 className="text-lg font-bold text-[#2B4365] leading-snug">
+                <div className="border-t border-[#8C2F39]/10 pt-4">
+                  <h5 className="text-lg font-bold text-[#8C2F39] leading-snug">
                     General Nursing Midwifery (2017)
                   </h5>
                   <p className="text-sm text-gray-600 font-mono mt-1">GCS Medical College</p>
@@ -157,10 +157,10 @@ export default function About() {
             </div>
 
             {/* Editorial Quote Card */}
-            <div className="zine-card bg-[#2B4365] text-[#F5F1E8] p-8 relative overflow-hidden shadow-[3px_3px_0px_0px_rgba(191,161,117,1)] border border-[#BFA175]">
+            <div className="zine-card bg-[#8C2F39] text-[#FFF6E7] p-8 relative overflow-hidden shadow-[3px_3px_0px_0px_rgba(191,161,117,1)] border border-[#BFA175]">
               <div className="absolute top-0 right-0 w-20 h-20 grid-bg opacity-10"></div>
               <span className="font-mono text-[10px] text-[#BFA175] uppercase tracking-widest block mb-4">PERSISTENCE AUDIT</span>
-              <p className="text-xl font-display font-semibold italic text-[#F5F1E8] leading-relaxed">
+              <p className="text-xl font-display font-semibold italic text-[#FFF6E7] leading-relaxed">
                 "Keep feeding the fire, even when the smoke convinces you it's dying."
               </p>
             </div>
@@ -171,15 +171,15 @@ export default function About() {
             
             {/* Visual Trajectory section */}
             <div className="zine-card bg-[#FFFDF9] p-8 md:p-10">
-              <div className="border-b border-[#2B4365] pb-6 mb-8">
+              <div className="border-b border-[#8C2F39] pb-6 mb-8">
                 <div className="zine-badge mb-3">VISUAL TRAJECTORY</div>
-                <h3 className="text-2xl md:text-4xl font-display font-black text-[#2B4365] uppercase">
+                <h3 className="text-2xl md:text-4xl font-display font-black text-[#8C2F39] uppercase">
                   Clinical-to-Technical Growth
                 </h3>
                 <p className="text-sm font-mono text-[#BFA175] mt-1.5 uppercase font-semibold">
                   How nursing principles fuel onboarding velocity & AI adoption in healthcare SaaS.
                 </p>
-                <div className="border-l-4 border-[#2B4365] pl-4 mt-6">
+                <div className="border-l-4 border-[#8C2F39] pl-4 mt-6">
                   <p className="text-lg font-display font-semibold italic text-[#BFA175] leading-relaxed">
                     "You'll never know if you're lost until you start walking."
                   </p>
@@ -188,25 +188,25 @@ export default function About() {
 
               {/* Vertical growth timeline */}
               <div className="relative">
-                <div className="absolute left-6 top-2 bottom-2 w-0.5 bg-[#2B4365] border-dashed border-r"></div>
+                <div className="absolute left-6 top-2 bottom-2 w-0.5 bg-[#8C2F39] border-dashed border-r"></div>
 
                 <div className="space-y-10">
                   {trajectory.map((step, idx) => (
                     <div key={idx} className="flex gap-6 items-start relative z-10">
-                      <div className="w-12 h-12 rounded-full border-2 border-[#2B4365] bg-[#FFFDF9] flex flex-col items-center justify-center font-display font-black text-[10px] shrink-0 shadow-[2px_2px_0px_0px_rgba(27,28,30,1)]">
+                      <div className="w-12 h-12 rounded-full border-2 border-[#8C2F39] bg-[#FFFDF9] flex flex-col items-center justify-center font-display font-black text-[10px] shrink-0 shadow-[2px_2px_0px_0px_rgba(27,28,30,1)]">
                         {step.year.split(" - ").pop()}
                       </div>
                       
-                      <div className="flex-1 bg-[#F5F1E8] border border-[#2B4365] p-6 shadow-[3px_3px_0px_0px_rgba(27,28,30,1)]">
+                      <div className="flex-1 bg-[#FFF6E7] border border-[#8C2F39] p-6 shadow-[3px_3px_0px_0px_rgba(27,28,30,1)]">
                         <div className="flex flex-wrap justify-between items-baseline gap-2 mb-2">
-                          <h4 className="font-display font-black text-lg md:text-xl text-[#2B4365] uppercase leading-none">
+                          <h4 className="font-display font-black text-lg md:text-xl text-[#8C2F39] uppercase leading-none">
                             {step.role}
                           </h4>
                           <span className="font-mono text-xs text-[#BFA175] font-bold">@ {step.company}</span>
                         </div>
                         <p className="text-xs font-mono uppercase text-gray-500 font-bold mb-4">{step.highlight}</p>
                         
-                        <ul className="space-y-2 text-base text-[#2B4365] leading-relaxed">
+                        <ul className="space-y-2 text-base text-[#8C2F39] leading-relaxed">
                           {step.achievements.map((ach, i) => (
                             <li key={i} className="flex gap-3 items-start">
                               <span className="inline-block mt-2 w-1.5 h-1.5 bg-[#BFA175] shrink-0"></span>
@@ -223,29 +223,29 @@ export default function About() {
 
             {/* Strategic Projects section */}
             <div className="zine-card bg-[#FFFDF9] p-8 md:p-10">
-              <div className="border-b border-[#2B4365] pb-6 mb-8">
+              <div className="border-b border-[#8C2F39] pb-6 mb-8">
                 <div className="zine-badge mb-3">FEATURED PROJECTS</div>
-                <h3 className="text-2xl md:text-3xl font-display font-black text-[#2B4365] uppercase">
+                <h3 className="text-2xl md:text-3xl font-display font-black text-[#8C2F39] uppercase">
                   Healthcare AI Platform Implementation
                 </h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
-                <div className="md:col-span-7 bg-[#F5F1E8] border border-[#2B4365] p-6 shadow-[3px_3px_0px_0px_rgba(27,28,30,1)] flex flex-col justify-between">
+                <div className="md:col-span-7 bg-[#FFF6E7] border border-[#8C2F39] p-6 shadow-[3px_3px_0px_0px_rgba(27,28,30,1)] flex flex-col justify-between">
                   <div>
                     <div className="flex justify-between items-baseline mb-3">
-                      <h4 className="font-display font-black text-lg text-[#2B4365] uppercase">
+                      <h4 className="font-display font-black text-lg text-[#8C2F39] uppercase">
                         AI-Driven Health Platform — DecodeDx
                       </h4>
                       <span className="zine-badge bg-[#BFA175] text-white">-25% User Drop-Off</span>
                     </div>
-                    <p className="text-base text-[#2B4365] leading-relaxed">
+                    <p className="text-base text-[#8C2F39] leading-relaxed">
                       Translated complex clinical workflow insights gathered from hands-on healthcare operations directly into product redesign requirements for an early-stage AI health diagnostics platform. Successfully streamlined interface workflows and reduced user drop-off during onboarding cycles by 25%.
                     </p>
                   </div>
                 </div>
                 
-                <div className="md:col-span-5 relative border border-[#2B4365] shadow-[3px_3px_0px_0px_rgba(27,28,30,1)] overflow-hidden min-h-[200px]">
+                <div className="md:col-span-5 relative border border-[#8C2F39] shadow-[3px_3px_0px_0px_rgba(27,28,30,1)] overflow-hidden min-h-[200px]">
                   <Image
                     src="/clinical_tech.jpg"
                     alt="Clinical workflow interface and doctor's workspace mockup"
@@ -259,9 +259,9 @@ export default function About() {
 
             {/* Technical Skills Categorization */}
             <div className="zine-card bg-[#FFFDF9] p-8 md:p-10">
-              <div className="border-b border-[#2B4365] pb-6 mb-8">
+              <div className="border-b border-[#8C2F39] pb-6 mb-8">
                 <div className="zine-badge mb-3">SKILLS DIRECTORY</div>
-                <h3 className="text-2xl md:text-3xl font-display font-black text-[#2B4365] uppercase">
+                <h3 className="text-2xl md:text-3xl font-display font-black text-[#8C2F39] uppercase">
                   Technical Capability Board
                 </h3>
               </div>
@@ -273,33 +273,33 @@ export default function About() {
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.csAdoption.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-[#2B4365] bg-[#F5F1E8] font-mono text-xs text-[#2B4365] shadow-[1px_1px_0px_0px_rgba(27,28,30,1)]">
+                      <span key={i} className="px-3 py-1.5 border border-[#8C2F39] bg-[#FFF6E7] font-mono text-xs text-[#8C2F39] shadow-[1px_1px_0px_0px_rgba(27,28,30,1)]">
                         {s}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                <div className="border-t border-[#2B4365]/10 pt-6">
+                <div className="border-t border-[#8C2F39]/10 pt-6">
                   <h4 className="font-mono text-xs font-bold text-[#BFA175] uppercase tracking-wider mb-3">
                     Business & Commercial Strategy
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.businessCommercial.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-[#2B4365] bg-[#F5F1E8] font-mono text-xs text-[#2B4365] shadow-[1px_1px_0px_0px_rgba(27,28,30,1)]">
+                      <span key={i} className="px-3 py-1.5 border border-[#8C2F39] bg-[#FFF6E7] font-mono text-xs text-[#8C2F39] shadow-[1px_1px_0px_0px_rgba(27,28,30,1)]">
                         {s}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                <div className="border-t border-[#2B4365]/10 pt-6">
+                <div className="border-t border-[#8C2F39]/10 pt-6">
                   <h4 className="font-mono text-xs font-bold text-[#BFA175] uppercase tracking-wider mb-3">
                     Tools, Platforms & Frameworks
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.toolsPlatforms.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-[#2B4365] bg-[#F5F1E8] font-mono text-xs text-[#2B4365] shadow-[1px_1px_0px_0px_rgba(27,28,30,1)]">
+                      <span key={i} className="px-3 py-1.5 border border-[#8C2F39] bg-[#FFF6E7] font-mono text-xs text-[#8C2F39] shadow-[1px_1px_0px_0px_rgba(27,28,30,1)]">
                         {s}
                       </span>
                     ))}
@@ -313,7 +313,7 @@ export default function About() {
         </div>
       </main>
 
-      <footer className="w-full border-t-2 border-[#2B4365] bg-[#2B4365] text-[#F5F1E8] py-12 px-4 md:px-8">
+      <footer className="w-full border-t-2 border-[#8C2F39] bg-[#8C2F39] text-[#FFF6E7] py-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
             <h2 className="text-3xl font-display font-black tracking-tight uppercase leading-none text-white">

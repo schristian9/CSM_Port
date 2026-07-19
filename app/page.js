@@ -15,7 +15,7 @@ export default function Home() {
       <Masthead />
 
       {/* Main Content Layout */}
-      <main className="flex-1 w-full bg-[#F5F1E8]">
+      <main className="flex-1 w-full bg-[#FFF6E7]">
         {/* Hero Manifesto */}
         <Manifesto />
 
@@ -33,7 +33,7 @@ export default function Home() {
       </main>
 
       {/* Zine Footer */}
-      <footer className="w-full border-t-2 border-[#2B4365] bg-[#2B4365] text-[#F5F1E8] py-12 px-4 md:px-8">
+      <footer className="w-full border-t-2 border-[#8C2F39] bg-[#8C2F39] text-[#FFF6E7] py-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
             <h2 className="text-3xl font-display font-black tracking-tight uppercase leading-none text-white">

@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --color-cream: #F5F1E8; /* LUNARE Vanilla Bean background */
+  --color-cream: #FFF6E7; /* LUNARE Vanilla Bean background */
   --color-terracotta: #BFA175; /* Premium Gold/Bronze accent */
   --color-terracotta-dark: #A5895D;
-  --color-clay: #2B4365; /* LUNARE Prussian / Steel Blue */
-  --color-dark: #2B4365; /* LUNARE Prussian / Steel Blue */
+  --color-clay: #8C2F39; /* LUNARE Prussian / Steel Blue */
+  --color-dark: #8C2F39; /* LUNARE Prussian / Steel Blue */
   --color-card-bg: #FFFDF9;
   --color-border: #E5E0D5; /* Soft warm border lines */
   

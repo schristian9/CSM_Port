@@ -55,16 +55,16 @@ export default function LifecycleTimeline() {
   ];
 
   return (
-    <section id="timeline" className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 border-b-2 border-[#2B4365]">
+    <section id="timeline" className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 border-b-2 border-[#8C2F39]">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <div className="zine-badge mb-3">EVOLUTION TIMELINE</div>
-          <h3 className="text-3xl md:text-5xl font-display font-black text-[#2B4365] uppercase leading-none">
+          <h3 className="text-3xl md:text-5xl font-display font-black text-[#8C2F39] uppercase leading-none">
             Strategic Career Path
           </h3>
         </div>
         <div className="text-sm font-mono text-[#BFA175] max-w-xs md:text-right uppercase font-semibold">
-          <Link href="/about" className="underline hover:text-[#2B4365] block mb-1">Explore Visual Growth Page →</Link>
+          <Link href="/about" className="underline hover:text-[#8C2F39] block mb-1">Explore Visual Growth Page →</Link>
           <span className="text-gray-400">✦ Click on a phase to explore achievements and metrics.</span>
         </div>
       </div>
@@ -78,8 +78,8 @@ export default function LifecycleTimeline() {
               onClick={() => setActiveStep(idx)}
               className={`zine-card text-left p-6 flex flex-col justify-between transition-all ${
                 activeStep === idx
-                  ? "bg-[#2B4365] text-white -translate-x-1 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(200,92,64,1)]"
-                  : "bg-[#FFFDF9] text-[#2B4365] hover:bg-[#F5F2EB]"
+                  ? "bg-[#8C2F39] text-white -translate-x-1 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(200,92,64,1)]"
+                  : "bg-[#FFFDF9] text-[#8C2F39] hover:bg-[#F5F2EB]"
               }`}
             >
               <div className="flex justify-between items-center mb-2 font-mono text-xs">
@@ -103,12 +103,12 @@ export default function LifecycleTimeline() {
           {/* Subtle decoration */}
           <div className="absolute top-0 right-0 w-32 h-32 grid-bg opacity-15 pointer-events-none"></div>
 
-          <div className="flex flex-wrap justify-between items-start border-b border-[#2B4365] pb-6 mb-6 gap-4">
+          <div className="flex flex-wrap justify-between items-start border-b border-[#8C2F39] pb-6 mb-6 gap-4">
             <div>
               <span className="font-mono text-xs text-[#BFA175] uppercase font-bold tracking-widest">
                 {steps[activeStep].period}
               </span>
-              <h4 className="font-display font-black text-2xl md:text-3xl text-[#2B4365] uppercase mt-1">
+              <h4 className="font-display font-black text-2xl md:text-3xl text-[#8C2F39] uppercase mt-1">
                 {steps[activeStep].role}
               </h4>
               <p className="font-mono text-sm text-gray-500 mt-0.5">
@@ -127,7 +127,7 @@ export default function LifecycleTimeline() {
           </div>
 
           {/* Achievement List */}
-          <ul className="space-y-4 font-sans text-lg text-[#2B4365] leading-relaxed">
+          <ul className="space-y-4 font-sans text-lg text-[#8C2F39] leading-relaxed">
             {steps[activeStep].bulletPoints.map((bp, i) => (
               <li key={i} className="flex gap-4 items-start">
                 <span className="inline-block mt-2 w-2 h-2 bg-[#BFA175] shrink-0"></span>
@@ -137,7 +137,7 @@ export default function LifecycleTimeline() {
           </ul>
 
           {/* Card footer notes */}
-          <div className="border-t border-[#2B4365] mt-10 pt-6 flex justify-between items-center text-xs font-mono opacity-50">
+          <div className="border-t border-[#8C2F39] mt-10 pt-6 flex justify-between items-center text-xs font-mono opacity-50">
             <span>[ FOCUS ID: CSM_{activeStep + 1} ]</span>
             <span>VERIFIABLE REFERENCE AVAILABLE</span>
           </div>

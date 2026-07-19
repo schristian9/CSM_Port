@@ -69,7 +69,7 @@ export default function StrategyCopilot() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <div className="zine-badge mb-3">CUSTOM INTELLECT API</div>
-          <h3 className="text-3xl md:text-5xl font-display font-black text-[#2B4365] uppercase leading-none">
+          <h3 className="text-3xl md:text-5xl font-display font-black text-[#8C2F39] uppercase leading-none">
             CS Strategy Copilot
           </h3>
         </div>
@@ -80,12 +80,12 @@ export default function StrategyCopilot() {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
         {/* Left Side: Instructions & Suggestion Chips */}
-        <div className="lg:col-span-4 flex flex-col justify-between zine-card bg-[#F5F1E8] p-8">
+        <div className="lg:col-span-4 flex flex-col justify-between zine-card bg-[#FFF6E7] p-8">
           <div>
-            <h4 className="font-display font-black text-xl uppercase text-[#2B4365] mb-4">
+            <h4 className="font-display font-black text-xl uppercase text-[#8C2F39] mb-4">
               Ask Me Anything
             </h4>
-            <p className="text-xl text-[#2B4365] font-medium leading-relaxed mb-6 font-sans">
+            <p className="text-xl text-[#8C2F39] font-medium leading-relaxed mb-6 font-sans">
               Test my expertise in real-time. This chatbot is loaded with my core frameworks, retention philosophy, and career metrics to simulate a strategic interview.
             </p>
             <div className="space-y-3">
@@ -97,7 +97,7 @@ export default function StrategyCopilot() {
                   key={idx}
                   onClick={() => handleSend(preset)}
                   disabled={loading}
-                  className="w-full text-left p-3 border border-[#2B4365] bg-[#FFFDF9] hover:bg-[#F5F2EB] font-mono text-xs text-[#2B4365] transition-all flex justify-between items-center shadow-[1px_1px_0px_0px_rgba(27,28,30,1)] disabled:opacity-50"
+                  className="w-full text-left p-3 border border-[#8C2F39] bg-[#FFFDF9] hover:bg-[#F5F2EB] font-mono text-xs text-[#8C2F39] transition-all flex justify-between items-center shadow-[1px_1px_0px_0px_rgba(27,28,30,1)] disabled:opacity-50"
                 >
                   <span>{preset}</span>
                   <span className="text-[#BFA175]">➔</span>
@@ -106,7 +106,7 @@ export default function StrategyCopilot() {
             </div>
           </div>
 
-          <div className="border-t border-[#2B4365] mt-8 pt-4 font-mono text-[10px] text-gray-500 uppercase">
+          <div className="border-t border-[#8C2F39] mt-8 pt-4 font-mono text-[10px] text-gray-500 uppercase">
             [ ENGINE: GEMINI AI CLOUD AGENT ]
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function StrategyCopilot() {
         {/* Right Side: Chat Container */}
         <div className="lg:col-span-8 zine-card bg-[#FFFDF9] flex flex-col h-[500px]">
           {/* Top Info Bar */}
-          <div className="border-b-2 border-[#2B4365] p-4 flex justify-between items-center bg-[#F5F1E8]">
+          <div className="border-b-2 border-[#8C2F39] p-4 flex justify-between items-center bg-[#FFF6E7]">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
               <span className="font-mono text-xs font-bold uppercase tracking-wider">[ CO-PILOT ACTIVE ]</span>
@@ -123,7 +123,7 @@ export default function StrategyCopilot() {
           </div>
 
           {/* Messages Display */}
-          <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-6 space-y-6 bg-[#F5F1E8] grid-bg bg-opacity-20">
+          <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-6 space-y-6 bg-[#FFF6E7] grid-bg bg-opacity-20">
             {messages.map((msg, idx) => (
               <div
                 key={idx}
@@ -132,11 +132,11 @@ export default function StrategyCopilot() {
                 <div
                   className={`max-w-[85%] p-4 zine-border shadow-[2px_2px_0px_0px_rgba(27,28,30,1)] ${
                     msg.role === "user"
-                      ? "bg-[#BFA175] text-white border-[#2B4365]"
-                      : "bg-[#FFFDF9] text-[#2B4365]"
+                      ? "bg-[#BFA175] text-white border-[#8C2F39]"
+                      : "bg-[#FFFDF9] text-[#8C2F39]"
                   }`}
                 >
-                  <div className="flex justify-between items-center border-b border-[#2B4365]/20 pb-1.5 mb-2 text-[9px] font-mono tracking-widest uppercase opacity-75">
+                  <div className="flex justify-between items-center border-b border-[#8C2F39]/20 pb-1.5 mb-2 text-[9px] font-mono tracking-widest uppercase opacity-75">
                     <span>{msg.role === "user" ? "USER | RECRUITER" : "CO-PILOT | SARLINSON"}</span>
                   </div>
                   <p className="text-base font-sans leading-relaxed whitespace-pre-wrap">{msg.content}</p>
@@ -159,7 +159,7 @@ export default function StrategyCopilot() {
               e.preventDefault();
               handleSend();
             }}
-            className="border-t-2 border-[#2B4365] p-4 flex gap-4 bg-[#F5F1E8]"
+            className="border-t-2 border-[#8C2F39] p-4 flex gap-4 bg-[#FFF6E7]"
           >
             <input
               type="text"
@@ -167,7 +167,7 @@ export default function StrategyCopilot() {
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask a question (e.g. 'What is your NRR target?')..."
               disabled={loading}
-              className="flex-1 px-4 py-3 border-2 border-[#2B4365] bg-[#FFFDF9] font-mono text-sm focus:outline-none focus:ring-2 focus:ring-[#BFA175] disabled:opacity-50"
+              className="flex-1 px-4 py-3 border-2 border-[#8C2F39] bg-[#FFFDF9] font-mono text-sm focus:outline-none focus:ring-2 focus:ring-[#BFA175] disabled:opacity-50"
             />
             <button
               type="submit"
