@@ -1,4 +1,4 @@
-import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -8,11 +8,11 @@ const flora = localFont({
   display: "swap",
 });
 
-const cormorant = Cormorant_Garamond({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-cormorant",
+  variable: "--font-playfair",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${flora.variable} ${cormorant.variable} ${plusJakarta.variable} h-full antialiased`}
+      className={`${flora.variable} ${playfair.variable} ${plusJakarta.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-[#FFF6E7] text-[#8C2F39] font-sans selection:bg-[#8C2F39] selection:text-[#FFF6E7]">
         <script
