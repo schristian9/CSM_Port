@@ -55,16 +55,16 @@ export default function LifecycleTimeline() {
   ];
 
   return (
-    <section id="timeline" className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 border-b-2 border-[#1f1e19]">
+    <section id="timeline" className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 border-b border-slate-200">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
-          <div className="zine-badge mb-3">EVOLUTION TIMELINE</div>
-          <h3 className="text-3xl md:text-5xl font-display font-black text-[#1f1e19] uppercase leading-none">
+          <div className="pro-badge mb-3">EVOLUTION TIMELINE</div>
+          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-none">
             Strategic Career Path
           </h3>
         </div>
-        <div className="text-sm font-mono text-[#d6d0c2] max-w-xs md:text-right uppercase font-semibold">
-          <Link href="/about" className="underline hover:text-[#1f1e19] block mb-1">Explore Visual Growth Page →</Link>
+        <div className="text-sm font-sans text-blue-600 max-w-xs md:text-right uppercase font-semibold">
+          <Link href="/about" className="underline hover:text-slate-900 block mb-1">Explore Visual Growth Page →</Link>
           <span className="text-gray-400">✦ Click on a phase to explore achievements and metrics.</span>
         </div>
       </div>
@@ -76,22 +76,22 @@ export default function LifecycleTimeline() {
             <button
               key={idx}
               onClick={() => setActiveStep(idx)}
-              className={`zine-card text-left p-6 flex flex-col justify-between transition-all ${
+              className={`pro-card text-left p-6 flex flex-col justify-between transition-all ${
                 activeStep === idx
-                  ? "bg-[#1f1e19] text-white -translate-x-1 -translate-y-1 shadow-[6px_6px_0px_0px_rgba(200,92,64,1)]"
-                  : "bg-[#f6d6db] text-[#1f1e19] hover:bg-[#F5F2EB]"
+                  ? "bg-slate-900 text-white -translate-x-1 -translate-y-1 shadow-sm hover:shadow-md"
+                  : "bg-slate-50 text-slate-900 hover:bg-slate-50"
               }`}
             >
-              <div className="flex justify-between items-center mb-2 font-mono text-xs">
+              <div className="flex justify-between items-center mb-2 font-sans text-xs">
                 <span>PHASE 0{steps.length - idx}</span>
-                <span className={activeStep === idx ? "text-[#d6d0c2] font-bold" : "text-gray-500"}>
+                <span className={activeStep === idx ? "text-blue-600 font-bold" : "text-gray-500"}>
                   {step.period}
                 </span>
               </div>
-              <h4 className="font-display font-black text-lg md:text-xl uppercase tracking-tight leading-tight">
+              <h4 className="font-sans tracking-tight font-black text-lg md:text-xl uppercase tracking-tight leading-tight">
                 {step.role}
               </h4>
-              <p className={`text-xs mt-1 font-mono uppercase ${activeStep === idx ? "text-gray-300" : "text-gray-500"}`}>
+              <p className={`text-xs mt-1 font-sans uppercase ${activeStep === idx ? "text-gray-300" : "text-gray-500"}`}>
                 @ {step.company}
               </p>
             </button>
@@ -99,19 +99,19 @@ export default function LifecycleTimeline() {
         </div>
 
         {/* Right Side: Detailed Details Card */}
-        <div className="lg:col-span-8 zine-card bg-[#f6d6db] p-8 md:p-10 relative min-h-[400px]">
+        <div className="lg:col-span-8 pro-card bg-slate-50 p-8 md:p-10 relative min-h-[400px]">
           {/* Subtle decoration */}
-          <div className="absolute top-0 right-0 w-32 h-32 grid-bg opacity-15 pointer-events-none"></div>
+          
 
-          <div className="flex flex-wrap justify-between items-start border-b border-[#1f1e19] pb-6 mb-6 gap-4">
+          <div className="flex flex-wrap justify-between items-start border-b border-slate-200 pb-6 mb-6 gap-4">
             <div>
-              <span className="font-mono text-xs text-[#d6d0c2] uppercase font-bold tracking-widest">
+              <span className="font-sans text-xs text-blue-600 uppercase font-bold tracking-widest">
                 {steps[activeStep].period}
               </span>
-              <h4 className="font-display font-black text-2xl md:text-3xl text-[#1f1e19] uppercase mt-1">
+              <h4 className="font-sans tracking-tight font-black text-2xl md:text-3xl text-slate-900 uppercase mt-1">
                 {steps[activeStep].role}
               </h4>
-              <p className="font-mono text-sm text-gray-500 mt-0.5">
+              <p className="font-sans text-sm text-gray-500 mt-0.5">
                 {steps[activeStep].company} — {steps[activeStep].focus}
               </p>
             </div>
@@ -119,7 +119,7 @@ export default function LifecycleTimeline() {
             {/* Quick KPI Badges */}
             <div className="flex gap-2 flex-wrap">
               {steps[activeStep].metrics.map((metric, i) => (
-                <span key={i} className="zine-badge bg-[#d6d0c2] text-white">
+                <span key={i} className="pro-badge bg-slate-50 text-white">
                   {metric}
                 </span>
               ))}
@@ -127,17 +127,17 @@ export default function LifecycleTimeline() {
           </div>
 
           {/* Achievement List */}
-          <ul className="space-y-4 font-sans text-lg text-[#1f1e19] leading-relaxed">
+          <ul className="space-y-4 font-sans text-lg text-slate-900 leading-relaxed">
             {steps[activeStep].bulletPoints.map((bp, i) => (
               <li key={i} className="flex gap-4 items-start">
-                <span className="inline-block mt-2 w-2 h-2 bg-[#d6d0c2] shrink-0"></span>
+                <span className="inline-block mt-2 w-2 h-2 bg-slate-50 shrink-0"></span>
                 <span>{bp}</span>
               </li>
             ))}
           </ul>
 
           {/* Card footer notes */}
-          <div className="border-t border-[#1f1e19] mt-10 pt-6 flex justify-between items-center text-xs font-mono opacity-50">
+          <div className="border-t border-slate-200 mt-10 pt-6 flex justify-between items-center text-xs font-sans opacity-50">
             <span>[ FOCUS ID: CSM_{activeStep + 1} ]</span>
             <span>VERIFIABLE REFERENCE AVAILABLE</span>
           </div>

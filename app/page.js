@@ -7,7 +7,7 @@ import StrategyCopilot from "@/components/StrategyCopilot";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col selection:bg-[#d6d0c2] selection:text-white relative">
+    <div className="min-h-screen flex flex-col selection:bg-slate-50 selection:text-white relative">
       {/* Background Noise Overlay for Zine Texture */}
       <div className="noise-overlay" />
 
@@ -15,7 +15,7 @@ export default function Home() {
       <Masthead />
 
       {/* Main Content Layout */}
-      <main className="flex-1 w-full bg-[#FFFFFF]">
+      <main className="flex-1 w-full bg-white">
         {/* Hero Manifesto */}
         <Manifesto />
 
@@ -33,18 +33,18 @@ export default function Home() {
       </main>
 
       {/* Zine Footer */}
-      <footer className="w-full border-t-2 border-[#1f1e19] bg-[#1f1e19] text-[#FFFFFF] py-12 px-4 md:px-8">
+      <footer className="w-full border-t-2 border-slate-200 bg-slate-900 text-blue-600 py-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
-            <h2 className="text-3xl font-display font-black tracking-tight uppercase leading-none text-white">
+            <h2 className="text-3xl font-sans tracking-tight font-black tracking-tight uppercase leading-none text-white">
               SARLINSON CHRISTIAN
             </h2>
-            <p className="text-xs font-mono tracking-widest text-[#d6d0c2] mt-1.5 uppercase">
+            <p className="text-xs font-sans tracking-widest text-blue-600 mt-1.5 uppercase">
               Technical Success Manager & Onboarding Specialist
             </p>
           </div>
 
-          <div className="flex flex-col items-center md:items-end gap-2 text-xs font-mono text-gray-400">
+          <div className="flex flex-col items-center md:items-end gap-2 text-xs font-sans text-gray-400">
             <p>© {new Date().getFullYear()} SARLINSON CHRISTIAN. ALL RIGHTS RESERVED.</p>
             <p className="uppercase">DESIGN SYSTEM: EDITORIAL ZINE V1.0</p>
           </div>

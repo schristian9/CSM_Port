@@ -1,19 +1,5 @@
-import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
-import localFont from "next/font/local";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-
-const flora = localFont({
-  src: "../public/fonts/Flora.otf",
-  variable: "--font-flora",
-  display: "swap",
-});
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap",
-  weight: ["400", "500", "600", "700", "800", "900"],
-});
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -43,9 +29,9 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${flora.variable} ${playfair.variable} ${plusJakarta.variable} h-full antialiased`}
+      className={`${plusJakarta.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[#FFFFFF] text-[#1f1e19] font-sans selection:bg-[#1f1e19] selection:text-[#FFFFFF]">
+      <body className="min-h-full bg-[var(--color-bg)] text-[var(--color-text)] font-sans selection:bg-[var(--color-accent)] selection:text-white">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

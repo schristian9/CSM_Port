@@ -85,82 +85,82 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col selection:bg-[#d6d0c2] selection:text-white relative">
+    <div className="min-h-screen flex flex-col selection:bg-slate-50 selection:text-white relative">
       <div className="noise-overlay" />
       <Masthead />
 
-      <main className="flex-1 w-full bg-[#FFFFFF] py-16 px-4 md:px-8">
+      <main className="flex-1 w-full bg-white py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           {/* Left Column: Personal Card & Details */}
           <div className="lg:col-span-4 lg:sticky lg:top-36 space-y-6 self-start">
-            <div className="zine-card bg-[#f6d6db] p-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 grid-bg opacity-15"></div>
+            <div className="pro-card bg-slate-50 p-8 relative overflow-hidden">
               
-              <div className="border-b border-[#1f1e19] pb-6 mb-6">
-                <div className="zine-badge mb-3">PERSONAL DOSSIER</div>
-                <h2 className="text-3xl font-display font-black text-[#1f1e19] uppercase leading-tight">
+              
+              <div className="border-b border-slate-200 pb-6 mb-6">
+                <div className="pro-badge mb-3">PERSONAL DOSSIER</div>
+                <h2 className="text-3xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
                   Sarlinson Christian
                 </h2>
-                <p className="text-sm font-mono text-[#d6d0c2] uppercase font-bold mt-1.5">
+                <p className="text-sm font-sans text-blue-600 uppercase font-bold mt-1.5">
                   Technical CS & Onboarding Leader
                 </p>
               </div>
 
               {/* Contact Information */}
-              <div className="space-y-4 font-mono text-xs text-[#1f1e19]">
-                <div className="flex justify-between py-2 border-b border-[#1f1e19]/10">
+              <div className="space-y-4 font-sans text-xs text-slate-900">
+                <div className="flex justify-between py-2 border-b border-slate-200">
                   <span className="text-gray-500">LOCATION</span>
                   <span className="font-bold">LONDON, UK</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-[#1f1e19]/10">
+                <div className="flex justify-between py-2 border-b border-slate-200">
                   <span className="text-gray-500">EMAIL</span>
-                  <a href="mailto:sarlinson92@yahoo.com" className="font-bold hover:text-[#d6d0c2] underline">
+                  <a href="mailto:sarlinson92@yahoo.com" className="font-bold hover:text-blue-600 underline">
                     sarlinson92@yahoo.com
                   </a>
                 </div>
 
-                <div className="flex justify-between py-2 border-b border-[#1f1e19]/10">
+                <div className="flex justify-between py-2 border-b border-slate-200">
                   <span className="text-gray-500">LINKEDIN</span>
-                  <a href="https://linkedin.com/in/sarlinson" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-[#d6d0c2] underline">
+                  <a href="https://linkedin.com/in/sarlinson" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-blue-600 underline">
                     linkedin.com/in/sarlinson
                   </a>
                 </div>
               </div>
 
               <div className="mt-8">
-                <a href="mailto:sarlinson92@yahoo.com" className="zine-btn block text-center w-full py-3 text-xs tracking-wider uppercase">
+                <a href="mailto:sarlinson92@yahoo.com" className="pro-btn block text-center w-full py-3 text-xs tracking-wider uppercase">
                   Request Interview
                 </a>
               </div>
             </div>
 
             {/* Quick Education Card */}
-            <div className="zine-card bg-[#f6d6db] p-8">
-              <h4 className="font-display font-black text-xl text-[#1f1e19] uppercase border-b border-[#1f1e19] pb-3 mb-4">
+            <div className="pro-card bg-slate-50 p-8">
+              <h4 className="font-sans tracking-tight font-black text-xl text-slate-900 uppercase border-b border-slate-200 pb-3 mb-4">
                 Education
               </h4>
               <div className="space-y-4">
                 <div>
-                  <h5 className="text-lg font-bold text-[#1f1e19] leading-snug">
+                  <h5 className="text-lg font-bold text-slate-900 leading-snug">
                     Bachelor of Business Administration (2026)
                   </h5>
-                  <p className="text-sm text-gray-600 font-mono mt-1">DY Patil University</p>
+                  <p className="text-sm text-gray-600 font-sans mt-1">DY Patil University</p>
                 </div>
-                <div className="border-t border-[#1f1e19]/10 pt-4">
-                  <h5 className="text-lg font-bold text-[#1f1e19] leading-snug">
+                <div className="border-t border-slate-200 pt-4">
+                  <h5 className="text-lg font-bold text-slate-900 leading-snug">
                     General Nursing Midwifery (2017)
                   </h5>
-                  <p className="text-sm text-gray-600 font-mono mt-1">GCS Medical College</p>
+                  <p className="text-sm text-gray-600 font-sans mt-1">GCS Medical College</p>
                 </div>
               </div>
             </div>
 
             {/* Editorial Quote Card */}
-            <div className="zine-card bg-[#1f1e19] text-[#FFFFFF] p-8 relative overflow-hidden shadow-[3px_3px_0px_0px_rgba(191,161,117,1)] border border-[#d6d0c2]">
-              <div className="absolute top-0 right-0 w-20 h-20 grid-bg opacity-10"></div>
-              <span className="font-mono text-[10px] text-[#d6d0c2] uppercase tracking-widest block mb-4">PERSISTENCE AUDIT</span>
-              <p className="text-xl font-display font-semibold italic text-[#FFFFFF] leading-relaxed">
+            <div className="pro-card bg-slate-900 text-blue-600 p-8 relative overflow-hidden shadow-sm hover:shadow-md border border-slate-200">
+              
+              <span className="font-sans text-[10px] text-blue-600 uppercase tracking-widest block mb-4">PERSISTENCE AUDIT</span>
+              <p className="text-xl font-sans tracking-tight font-semibold italic text-blue-600 leading-relaxed">
                 "Keep feeding the fire, even when the smoke convinces you it's dying."
               </p>
             </div>
@@ -170,17 +170,17 @@ export default function About() {
           <div className="lg:col-span-8 space-y-12">
             
             {/* Visual Trajectory section */}
-            <div className="zine-card bg-[#f6d6db] p-8 md:p-10">
-              <div className="border-b border-[#1f1e19] pb-6 mb-8">
-                <div className="zine-badge mb-3">VISUAL TRAJECTORY</div>
-                <h3 className="text-2xl md:text-4xl font-display font-black text-[#1f1e19] uppercase">
+            <div className="pro-card bg-slate-50 p-8 md:p-10">
+              <div className="border-b border-slate-200 pb-6 mb-8">
+                <div className="pro-badge mb-3">VISUAL TRAJECTORY</div>
+                <h3 className="text-2xl md:text-4xl font-sans tracking-tight font-black text-slate-900 uppercase">
                   Clinical-to-Technical Growth
                 </h3>
-                <p className="text-sm font-mono text-[#d6d0c2] mt-1.5 uppercase font-semibold">
+                <p className="text-sm font-sans text-blue-600 mt-1.5 uppercase font-semibold">
                   How nursing principles fuel onboarding velocity & AI adoption in healthcare SaaS.
                 </p>
-                <div className="border-l-4 border-[#1f1e19] pl-4 mt-6">
-                  <p className="text-lg font-display font-semibold italic text-[#d6d0c2] leading-relaxed">
+                <div className="border-l-4 border-slate-200 pl-4 mt-6">
+                  <p className="text-lg font-sans tracking-tight font-semibold italic text-blue-600 leading-relaxed">
                     "You'll never know if you're lost until you start walking."
                   </p>
                 </div>
@@ -188,28 +188,28 @@ export default function About() {
 
               {/* Vertical growth timeline */}
               <div className="relative">
-                <div className="absolute left-6 top-2 bottom-2 w-0.5 bg-[#1f1e19] border-dashed border-r"></div>
+                <div className="absolute left-6 top-2 bottom-2 w-0.5 bg-slate-900 border-dashed border-r"></div>
 
                 <div className="space-y-10">
                   {trajectory.map((step, idx) => (
                     <div key={idx} className="flex gap-6 items-start relative z-10">
-                      <div className="w-12 h-12 rounded-full border-2 border-[#1f1e19] bg-[#f6d6db] flex flex-col items-center justify-center font-display font-black text-[10px] shrink-0 shadow-[2px_2px_0px_0px_rgba(27,28,30,1)]">
+                      <div className="w-12 h-12 rounded-full border border-slate-200 bg-slate-50 flex flex-col items-center justify-center font-sans tracking-tight font-black text-[10px] shrink-0 shadow-sm hover:shadow-md">
                         {step.year.split(" - ").pop()}
                       </div>
                       
-                      <div className="flex-1 bg-[#FFFFFF] border border-[#1f1e19] p-6 shadow-[3px_3px_0px_0px_rgba(27,28,30,1)]">
+                      <div className="flex-1 bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md">
                         <div className="flex flex-wrap justify-between items-baseline gap-2 mb-2">
-                          <h4 className="font-display font-black text-lg md:text-xl text-[#1f1e19] uppercase leading-none">
+                          <h4 className="font-sans tracking-tight font-black text-lg md:text-xl text-slate-900 uppercase leading-none">
                             {step.role}
                           </h4>
-                          <span className="font-mono text-xs text-[#d6d0c2] font-bold">@ {step.company}</span>
+                          <span className="font-sans text-xs text-blue-600 font-bold">@ {step.company}</span>
                         </div>
-                        <p className="text-xs font-mono uppercase text-gray-500 font-bold mb-4">{step.highlight}</p>
+                        <p className="text-xs font-sans uppercase text-gray-500 font-bold mb-4">{step.highlight}</p>
                         
-                        <ul className="space-y-2 text-base text-[#1f1e19] leading-relaxed">
+                        <ul className="space-y-2 text-base text-slate-900 leading-relaxed">
                           {step.achievements.map((ach, i) => (
                             <li key={i} className="flex gap-3 items-start">
-                              <span className="inline-block mt-2 w-1.5 h-1.5 bg-[#d6d0c2] shrink-0"></span>
+                              <span className="inline-block mt-2 w-1.5 h-1.5 bg-slate-50 shrink-0"></span>
                               <span className="opacity-90">{ach}</span>
                             </li>
                           ))}
@@ -222,30 +222,30 @@ export default function About() {
             </div>
 
             {/* Strategic Projects section */}
-            <div className="zine-card bg-[#f6d6db] p-8 md:p-10">
-              <div className="border-b border-[#1f1e19] pb-6 mb-8">
-                <div className="zine-badge mb-3">FEATURED PROJECTS</div>
-                <h3 className="text-2xl md:text-3xl font-display font-black text-[#1f1e19] uppercase">
+            <div className="pro-card bg-slate-50 p-8 md:p-10">
+              <div className="border-b border-slate-200 pb-6 mb-8">
+                <div className="pro-badge mb-3">FEATURED PROJECTS</div>
+                <h3 className="text-2xl md:text-3xl font-sans tracking-tight font-black text-slate-900 uppercase">
                   Healthcare AI Platform Implementation
                 </h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
-                <div className="md:col-span-7 bg-[#FFFFFF] border border-[#1f1e19] p-6 shadow-[3px_3px_0px_0px_rgba(27,28,30,1)] flex flex-col justify-between">
+                <div className="md:col-span-7 bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md flex flex-col justify-between">
                   <div>
                     <div className="flex justify-between items-baseline mb-3">
-                      <h4 className="font-display font-black text-lg text-[#1f1e19] uppercase">
+                      <h4 className="font-sans tracking-tight font-black text-lg text-slate-900 uppercase">
                         AI-Driven Health Platform — DecodeDx
                       </h4>
-                      <span className="zine-badge bg-[#d6d0c2] text-white">-25% User Drop-Off</span>
+                      <span className="pro-badge bg-slate-50 text-white">-25% User Drop-Off</span>
                     </div>
-                    <p className="text-base text-[#1f1e19] leading-relaxed">
+                    <p className="text-base text-slate-900 leading-relaxed">
                       Translated complex clinical workflow insights gathered from hands-on healthcare operations directly into product redesign requirements for an early-stage AI health diagnostics platform. Successfully streamlined interface workflows and reduced user drop-off during onboarding cycles by 25%.
                     </p>
                   </div>
                 </div>
                 
-                <div className="md:col-span-5 relative border border-[#1f1e19] shadow-[3px_3px_0px_0px_rgba(27,28,30,1)] overflow-hidden min-h-[200px]">
+                <div className="md:col-span-5 relative border border-slate-200 shadow-sm hover:shadow-md overflow-hidden min-h-[200px]">
                   <Image
                     src="/clinical_tech.jpg"
                     alt="Clinical workflow interface and doctor's workspace mockup"
@@ -258,48 +258,48 @@ export default function About() {
             </div>
 
             {/* Technical Skills Categorization */}
-            <div className="zine-card bg-[#f6d6db] p-8 md:p-10">
-              <div className="border-b border-[#1f1e19] pb-6 mb-8">
-                <div className="zine-badge mb-3">SKILLS DIRECTORY</div>
-                <h3 className="text-2xl md:text-3xl font-display font-black text-[#1f1e19] uppercase">
+            <div className="pro-card bg-slate-50 p-8 md:p-10">
+              <div className="border-b border-slate-200 pb-6 mb-8">
+                <div className="pro-badge mb-3">SKILLS DIRECTORY</div>
+                <h3 className="text-2xl md:text-3xl font-sans tracking-tight font-black text-slate-900 uppercase">
                   Technical Capability Board
                 </h3>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-mono text-xs font-bold text-[#d6d0c2] uppercase tracking-wider mb-3">
+                  <h4 className="font-sans text-xs font-bold text-blue-600 uppercase tracking-wider mb-3">
                     Customer Success & Adoption
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.csAdoption.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-[#1f1e19] bg-[#FFFFFF] font-mono text-xs text-[#1f1e19] shadow-[1px_1px_0px_0px_rgba(27,28,30,1)]">
+                      <span key={i} className="px-3 py-1.5 border border-slate-200 bg-white font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
                         {s}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                <div className="border-t border-[#1f1e19]/10 pt-6">
-                  <h4 className="font-mono text-xs font-bold text-[#d6d0c2] uppercase tracking-wider mb-3">
+                <div className="border-t border-slate-200 pt-6">
+                  <h4 className="font-sans text-xs font-bold text-blue-600 uppercase tracking-wider mb-3">
                     Business & Commercial Strategy
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.businessCommercial.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-[#1f1e19] bg-[#FFFFFF] font-mono text-xs text-[#1f1e19] shadow-[1px_1px_0px_0px_rgba(27,28,30,1)]">
+                      <span key={i} className="px-3 py-1.5 border border-slate-200 bg-white font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
                         {s}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                <div className="border-t border-[#1f1e19]/10 pt-6">
-                  <h4 className="font-mono text-xs font-bold text-[#d6d0c2] uppercase tracking-wider mb-3">
+                <div className="border-t border-slate-200 pt-6">
+                  <h4 className="font-sans text-xs font-bold text-blue-600 uppercase tracking-wider mb-3">
                     Tools, Platforms & Frameworks
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.toolsPlatforms.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-[#1f1e19] bg-[#FFFFFF] font-mono text-xs text-[#1f1e19] shadow-[1px_1px_0px_0px_rgba(27,28,30,1)]">
+                      <span key={i} className="px-3 py-1.5 border border-slate-200 bg-white font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
                         {s}
                       </span>
                     ))}
@@ -313,17 +313,17 @@ export default function About() {
         </div>
       </main>
 
-      <footer className="w-full border-t-2 border-[#1f1e19] bg-[#1f1e19] text-[#FFFFFF] py-12 px-4 md:px-8">
+      <footer className="w-full border-t-2 border-slate-200 bg-slate-900 text-blue-600 py-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
-            <h2 className="text-3xl font-display font-black tracking-tight uppercase leading-none text-white">
+            <h2 className="text-3xl font-sans tracking-tight font-black tracking-tight uppercase leading-none text-white">
               SARLINSON CHRISTIAN
             </h2>
-            <p className="text-xs font-mono tracking-widest text-[#d6d0c2] mt-1.5 uppercase">
+            <p className="text-xs font-sans tracking-widest text-blue-600 mt-1.5 uppercase">
               Technical Success Manager & Onboarding Specialist
             </p>
           </div>
-          <div className="text-xs font-mono text-gray-400">
+          <div className="text-xs font-sans text-gray-400">
             <Link href="/" className="hover:text-white underline mr-6">← BACK TO HOME</Link>
             <span>© {new Date().getFullYear()} SARLINSON CHRISTIAN</span>
           </div>

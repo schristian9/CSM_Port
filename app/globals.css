@@ -1,115 +1,93 @@
 @import "tailwindcss";
 
 :root {
-  --color-cream: #FFFFFF; /* LUNARE Vanilla Bean background */
-  --color-terracotta: #d6d0c2; /* Premium Gold/Bronze accent */
-  --color-terracotta-dark: #f6d6db;
-  --color-clay: #1f1e19; /* LUNARE Prussian / Steel Blue */
-  --color-dark: #1f1e19; /* LUNARE Prussian / Steel Blue */
-  --color-card-bg: #f6d6db;
-  --color-border: #d6d0c2; /* Soft warm border lines */
+  --color-bg: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-text: #0F172A; /* Slate 900 */
+  --color-text-muted: #64748B; /* Slate 500 */
+  --color-accent: #2563EB; /* Blue 600 */
+  --color-accent-hover: #1D4ED8; /* Blue 700 */
+  --color-border: #E2E8F0; /* Slate 200 */
   
-  --font-display: var(--font-playfair), var(--font-flora), serif;
-  --font-sans: var(--font-plus-jakarta), sans-serif;
-  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-plus-jakarta), system-ui, -apple-system, sans-serif;
 }
 
 body {
-  background-color: var(--color-cream);
-  color: var(--color-dark);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-family: var(--font-sans);
   position: relative;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Zine Noise Overlay */
-.noise-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  opacity: 0.045;
-  pointer-events: none;
-  z-index: 9999;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-}
-
-/* Custom Typography */
-.font-display {
-  font-family: var(--font-display);
-}
-
-.font-serif-italic {
-  font-family: var(--font-serif);
-  font-style: italic;
-}
-
-/* Zine Accents & Layout elements */
-.zine-border {
-  border: 2px solid var(--color-dark);
-}
-
-.zine-card {
-  border: 2px solid var(--color-dark);
-  box-shadow: 4px 4px 0px 0px var(--color-dark);
+/* Professional Accents & Layout elements */
+.pro-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease-in-out;
 }
 
-.zine-card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px 0px var(--color-dark);
+.pro-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+  border-color: #CBD5E1; /* Slate 300 */
 }
 
-.zine-badge {
+.pro-badge {
   display: inline-block;
-  background-color: var(--color-dark);
-  color: var(--color-cream);
-  font-family: monospace;
-  font-size: 0.75rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: 2px;
+  background-color: #F1F5F9; /* Slate 100 */
+  color: #475569; /* Slate 600 */
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px; /* Pill */
+  border: 1px solid var(--color-border);
 }
 
-.zine-btn {
-  background-color: var(--color-terracotta);
+.pro-badge-accent {
+  background-color: #EFF6FF; /* Blue 50 */
+  color: var(--color-accent);
+  border: 1px solid #BFDBFE; /* Blue 200 */
+}
+
+.pro-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-text);
   color: white;
-  border: 2px solid var(--color-dark);
-  box-shadow: 3px 3px 0px 0px var(--color-dark);
-  font-family: var(--font-display);
-  font-weight: 600;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  border-radius: 8px;
   transition: all 0.15s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
-.zine-btn:hover {
-  background-color: var(--color-terracotta-dark);
-  transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0px 0px var(--color-dark);
+.pro-btn:hover {
+  background-color: #334155; /* Slate 700 */
 }
 
-.zine-btn:active {
-  transform: translate(2px, 2px);
-  box-shadow: 0px 0px 0px 0px var(--color-dark);
+.pro-btn-accent {
+  background-color: var(--color-accent);
 }
 
-/* Custom Grid background decoration */
-.grid-bg {
-  background-size: 40px 40px;
-  background-image: 
-    linear-gradient(to right, var(--color-border) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--color-border) 1px, transparent 1px);
-  background-position: center;
+.pro-btn-accent:hover {
+  background-color: var(--color-accent-hover);
 }
 
-/* Typing Indicator Animation */
+/* Typing Indicator Animation (Refined) */
 .dot-flashing {
   position: relative;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: var(--color-dark);
-  color: var(--color-dark);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-text-muted);
   animation: dot-flashing 1s infinite linear alternate;
   animation-delay: .5s;
 }
@@ -122,32 +100,30 @@ body {
 }
 
 .dot-flashing::before {
-  left: -12px;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: var(--color-dark);
-  color: var(--color-dark);
+  left: -10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-text-muted);
   animation: dot-flashing 1s infinite alternate;
   animation-delay: 0s;
 }
 
 .dot-flashing::after {
-  left: 12px;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: var(--color-dark);
-  color: var(--color-dark);
+  left: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-text-muted);
   animation: dot-flashing 1s infinite alternate;
   animation-delay: 1s;
 }
 
 @keyframes dot-flashing {
   0% {
-    background-color: var(--color-dark);
+    background-color: var(--color-text-muted);
   }
   50%, 100% {
-    background-color: rgba(43, 67, 101, 0.2);
+    background-color: #E2E8F0;
   }
 }

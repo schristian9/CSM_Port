@@ -45,15 +45,15 @@ export default function Playbooks() {
   ];
 
   return (
-    <section id="playbooks" className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 border-b-2 border-[#1f1e19]">
+    <section id="playbooks" className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 border-b border-slate-200">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
-          <div className="zine-badge mb-3">CSM STRATEGY PLAYBOOKS</div>
-          <h3 className="text-3xl md:text-5xl font-display font-black text-[#1f1e19] uppercase leading-none">
+          <div className="pro-badge mb-3">CSM STRATEGY PLAYBOOKS</div>
+          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-none">
             Tactical Execution Playbooks
           </h3>
         </div>
-        <p className="text-sm font-mono text-[#d6d0c2] max-w-xs md:text-right uppercase">
+        <p className="text-sm font-sans text-blue-600 max-w-xs md:text-right uppercase">
           ✦ Click a playbook to see the exact tactical step-by-step resolution.
         </p>
       </div>
@@ -63,10 +63,10 @@ export default function Playbooks() {
           <button
             key={idx}
             onClick={() => setActivePlaybook(idx)}
-            className={`px-5 py-3 border-2 border-[#1f1e19] font-display font-bold uppercase text-xs tracking-wider transition-all ${
+            className={`px-5 py-3 border border-slate-200 font-sans tracking-tight font-bold uppercase text-xs tracking-wider transition-all ${
               activePlaybook === idx
-                ? "bg-[#d6d0c2] text-white shadow-[3px_3px_0px_0px_rgba(27,28,30,1)]"
-                : "bg-white text-[#1f1e19] hover:bg-[#F5F2EB] shadow-[1px_1px_0px_0px_rgba(27,28,30,1)]"
+                ? "bg-slate-50 text-white shadow-sm hover:shadow-md"
+                : "bg-white text-slate-900 hover:bg-slate-50 shadow-sm hover:shadow-md"
             }`}
           >
             {pb.title}
@@ -75,45 +75,45 @@ export default function Playbooks() {
       </div>
 
       {/* Playbook Framework Box */}
-      <div className="zine-card bg-[#f6d6db] p-8 relative overflow-hidden">
+      <div className="pro-card bg-slate-50 p-8 relative overflow-hidden">
         {/* Subtle grids */}
-        <div className="absolute top-0 right-0 w-32 h-32 grid-bg opacity-15 pointer-events-none"></div>
+        
 
-        <div className="border-b border-[#1f1e19] pb-6 mb-8">
+        <div className="border-b border-slate-200 pb-6 mb-8">
           <div className="flex justify-between items-center mb-2">
-            <span className="font-mono text-xs text-gray-500">[ SITUATION AUDIT ]</span>
-            <span className="zine-badge bg-[#1f1e19] text-white">{playbooks[activePlaybook].metric}</span>
+            <span className="font-sans text-xs text-gray-500">[ SITUATION AUDIT ]</span>
+            <span className="pro-badge bg-slate-900 text-white">{playbooks[activePlaybook].metric}</span>
           </div>
-          <h4 className="font-display font-black text-xl md:text-2xl text-[#1f1e19] uppercase">
+          <h4 className="font-sans tracking-tight font-black text-xl md:text-2xl text-slate-900 uppercase">
             Scenario: {playbooks[activePlaybook].title}
           </h4>
-          <p className="text-sm text-[#1f1e19] mt-2 font-mono">
-            <strong className="text-[#d6d0c2]">Problem Statement:</strong> <span className="text-[#d6d0c2] font-semibold">{playbooks[activePlaybook].problem}</span>
+          <p className="text-sm text-slate-900 mt-2 font-sans">
+            <strong className="text-blue-600">Problem Statement:</strong> <span className="text-blue-600 font-semibold">{playbooks[activePlaybook].problem}</span>
           </p>
         </div>
 
         {/* Process Flow Map */}
         <div className="relative mt-8">
           {/* Vertical line connector */}
-          <div className="absolute left-6 top-4 bottom-4 w-0.5 bg-[#1f1e19] border-dashed border-r"></div>
+          <div className="absolute left-6 top-4 bottom-4 w-0.5 bg-slate-900 border-dashed border-r"></div>
 
           <div className="space-y-8">
             {playbooks[activePlaybook].steps.map((step, idx) => (
               <div key={idx} className="flex gap-6 items-start relative z-10">
                 {/* Flow Step Number Circle */}
-                <div className={`w-12 h-12 rounded-full border-2 border-[#1f1e19] flex items-center justify-center font-display font-black text-lg shrink-0 ${
+                <div className={`w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center font-sans tracking-tight font-black text-lg shrink-0 ${
                   idx === playbooks[activePlaybook].steps.length - 1
-                    ? "bg-[#d6d0c2] text-white"
-                    : "bg-[#f6d6db] text-[#1f1e19]"
+                    ? "bg-slate-50 text-white"
+                    : "bg-slate-50 text-slate-900"
                 }`}>
                   0{idx + 1}
                 </div>
 
-                <div className="bg-[#FFFFFF] border border-[#1f1e19] p-4 flex-1 shadow-[2px_2px_0px_0px_rgba(27,28,30,1)]">
-                  <h5 className="font-mono text-xs font-bold uppercase tracking-wider text-[#d6d0c2]">
+                <div className="bg-white border border-slate-200 p-4 flex-1 shadow-sm hover:shadow-md">
+                  <h5 className="font-sans text-xs font-bold uppercase tracking-wider text-blue-600">
                     {step.name}
                   </h5>
-                  <p className="text-lg text-[#1f1e19] mt-1 leading-relaxed">
+                  <p className="text-lg text-slate-900 mt-1 leading-relaxed">
                     {step.desc}
                   </p>
                 </div>
@@ -122,7 +122,7 @@ export default function Playbooks() {
           </div>
         </div>
 
-        <div className="border-t border-[#1f1e19] mt-10 pt-6 flex justify-between items-center text-xs font-mono opacity-50">
+        <div className="border-t border-slate-200 mt-10 pt-6 flex justify-between items-center text-xs font-sans opacity-50">
           <span>[ PLAYBOOK ENGINE: SUCCESS_CORE_v1 ]</span>
           <span>REPLICABLE SAAS FRAMEWORK</span>
         </div>
