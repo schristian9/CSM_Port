@@ -71,16 +71,6 @@ export default function About() {
         "Optimized data preparation workflows and streamlined inter-departmental communication.",
         "Eliminated operational and administrative bottlenecks by 20% to support smoother client activities."
       ]
-    },
-    {
-      year: "2017",
-      role: "Clinical Nurse (General Nursing Midwifery)",
-      company: "GCS Medical College",
-      highlight: "Clinical Foundations of Patient Care",
-      achievements: [
-        "Acquired clinical workflow mastery and patient care methodologies.",
-        "Developed deep understanding of healthcare operations and clinical needs that now drive successful healthcare tech adoption."
-      ]
     }
   ];
 
