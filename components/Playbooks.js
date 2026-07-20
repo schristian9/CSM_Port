@@ -65,7 +65,7 @@ export default function Playbooks() {
             onClick={() => setActivePlaybook(idx)}
             className={`px-5 py-3 border border-slate-200 font-sans tracking-tight font-bold uppercase text-xs tracking-wider transition-all ${
               activePlaybook === idx
-                ? "bg-slate-50 text-white shadow-sm hover:shadow-md"
+                ? "bg-blue-600 text-white border-blue-600 shadow-md"
                 : "bg-white text-slate-900 hover:bg-slate-50 shadow-sm hover:shadow-md"
             }`}
           >
