@@ -18,9 +18,9 @@ export default function Masthead() {
   }, []);
 
   return (
-    <header className="w-full border-b-2 border-[#364C84] bg-[#FFFDF5] sticky top-0 z-50">
+    <header className="w-full border-b-2 border-[#1f1e19] bg-[#FFFFFF] sticky top-0 z-50">
       {/* Top Banner Ticker */}
-      <div className="w-full bg-[#FFFDF5] text-[#364C84] py-1.5 px-4 md:px-8 text-xs font-mono flex justify-end items-center border-b border-[#364C84]/10">
+      <div className="w-full bg-[#FFFFFF] text-[#1f1e19] py-1.5 px-4 md:px-8 text-xs font-mono flex justify-end items-center border-b border-[#1f1e19]/10">
         <div className="flex gap-4 items-center">
           <span>[ STATUS: ACTIVE ]</span>
           <span>[ TIME: {time || "11:20"} ]</span>
@@ -31,30 +31,30 @@ export default function Masthead() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div>
           <Link href="/" className="inline-block group">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-black tracking-tight text-[#364C84] uppercase leading-none">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-black tracking-tight text-[#1f1e19] uppercase leading-none">
               SARLINSON
             </h1>
-            <p className="text-sm font-mono tracking-widest text-[#95B1EE] mt-2 uppercase font-semibold">
+            <p className="text-sm font-mono tracking-widest text-[#d6d0c2] mt-2 uppercase font-semibold">
               Technical Success Manager & Onboarding Specialist
             </p>
           </Link>
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-mono border-t border-[#364C84]/10 md:border-t-0 pt-4 md:pt-0">
-          <Link href="/#manifesto" className="text-[#364C84] hover:text-[#95B1EE] transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#95B1EE] hover:after:w-full after:transition-all">
+        <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-mono border-t border-[#1f1e19]/10 md:border-t-0 pt-4 md:pt-0">
+          <Link href="/#manifesto" className="text-[#1f1e19] hover:text-[#d6d0c2] transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#d6d0c2] hover:after:w-full after:transition-all">
             01. MANIFESTO
           </Link>
-          <Link href="/#metrics" className="text-[#364C84] hover:text-[#95B1EE] transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#95B1EE] hover:after:w-full after:transition-all">
+          <Link href="/#metrics" className="text-[#1f1e19] hover:text-[#d6d0c2] transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#d6d0c2] hover:after:w-full after:transition-all">
             02. IMPACT
           </Link>
-          <Link href="/about" className="text-[#364C84] hover:text-[#95B1EE] transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#95B1EE] hover:after:w-full after:transition-all">
+          <Link href="/about" className="text-[#1f1e19] hover:text-[#d6d0c2] transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#d6d0c2] hover:after:w-full after:transition-all">
             03. ABOUT & EXPERIENCE
           </Link>
-          <Link href="/#playbooks" className="text-[#364C84] hover:text-[#95B1EE] transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#95B1EE] hover:after:w-full after:transition-all">
+          <Link href="/#playbooks" className="text-[#1f1e19] hover:text-[#d6d0c2] transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#d6d0c2] hover:after:w-full after:transition-all">
             04. PLAYBOOKS
           </Link>
-          <Link href="/#copilot" className="text-[#364C84] hover:text-[#95B1EE] transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#95B1EE] hover:after:w-full after:transition-all">
+          <Link href="/#copilot" className="text-[#1f1e19] hover:text-[#d6d0c2] transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#d6d0c2] hover:after:w-full after:transition-all">
             05. AI ADVISOR
           </Link>
         </nav>

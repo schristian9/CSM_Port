@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${flora.variable} ${playfair.variable} ${plusJakarta.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[#FFFDF5] text-[#364C84] font-sans selection:bg-[#364C84] selection:text-[#FFFDF5]">
+      <body className="min-h-full bg-[#FFFFFF] text-[#1f1e19] font-sans selection:bg-[#1f1e19] selection:text-[#FFFFFF]">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

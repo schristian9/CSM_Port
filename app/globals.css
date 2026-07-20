@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --color-cream: #FFFDF5; /* LUNARE Vanilla Bean background */
-  --color-terracotta: #95B1EE; /* Premium Gold/Bronze accent */
-  --color-terracotta-dark: #E7F1A8;
-  --color-clay: #364C84; /* LUNARE Prussian / Steel Blue */
-  --color-dark: #364C84; /* LUNARE Prussian / Steel Blue */
-  --color-card-bg: #E7F1A8;
-  --color-border: #95B1EE; /* Soft warm border lines */
+  --color-cream: #FFFFFF; /* LUNARE Vanilla Bean background */
+  --color-terracotta: #d6d0c2; /* Premium Gold/Bronze accent */
+  --color-terracotta-dark: #f6d6db;
+  --color-clay: #1f1e19; /* LUNARE Prussian / Steel Blue */
+  --color-dark: #1f1e19; /* LUNARE Prussian / Steel Blue */
+  --color-card-bg: #f6d6db;
+  --color-border: #d6d0c2; /* Soft warm border lines */
   
   --font-display: var(--font-playfair), var(--font-flora), serif;
   --font-sans: var(--font-plus-jakarta), sans-serif;
