@@ -101,9 +101,9 @@ export default function Playbooks() {
             {playbooks[activePlaybook].steps.map((step, idx) => (
               <div key={idx} className="flex gap-6 items-start relative z-10">
                 {/* Flow Step Number Circle */}
-                <div className={`w-12 h-12 rounded-full border flex items-center justify-center font-sans tracking-tight font-black text-lg shrink-0 relative z-10 bg-white ${
+                <div className={`w-12 h-12 rounded-full border flex items-center justify-center font-sans tracking-tight font-black text-lg shrink-0 relative z-10 ${
                   idx === playbooks[activePlaybook].steps.length - 1
-                    ? "bg-blue-600 text-white border-blue-600"
+                    ? "bg-blue-600 text-white border-blue-600 shadow-md"
                     : "bg-slate-50 text-slate-900 border-slate-200"
                 }`}>
                   0{idx + 1}
