@@ -128,13 +128,13 @@ export default function StrategyCopilot() {
                 className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className={`max-w-[85%] p-4 border border-slate-200 rounded-xl shadow-sm shadow-sm hover:shadow-md ${
+                  className={`max-w-[85%] p-4 border border-slate-200 rounded-xl shadow-sm hover:shadow-md ${
                     msg.role === "user"
-                      ? "bg-slate-50 text-white border-slate-200"
+                      ? "bg-blue-600 text-white border-blue-600"
                       : "bg-slate-50 text-slate-900"
                   }`}
                 >
-                  <div className="flex justify-between items-center border-b border-slate-200 pb-1.5 mb-2 text-[9px] font-sans tracking-widest uppercase opacity-75">
+                  <div className={`flex justify-between items-center border-b pb-1.5 mb-2 text-[9px] font-sans tracking-widest uppercase ${msg.role === "user" ? "border-blue-400 text-blue-200" : "border-slate-200 opacity-75"}`}>
                     <span>{msg.role === "user" ? "USER | RECRUITER" : "CO-PILOT | SARLINSON"}</span>
                   </div>
                   <p className="text-base font-sans leading-relaxed whitespace-pre-wrap">{msg.content}</p>
