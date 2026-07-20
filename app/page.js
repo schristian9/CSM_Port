@@ -7,7 +7,7 @@ import StrategyCopilot from "@/components/StrategyCopilot";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col selection:bg-[#BFA175] selection:text-white relative">
+    <div className="min-h-screen flex flex-col selection:bg-[#95B1EE] selection:text-white relative">
       {/* Background Noise Overlay for Zine Texture */}
       <div className="noise-overlay" />
 
@@ -15,7 +15,7 @@ export default function Home() {
       <Masthead />
 
       {/* Main Content Layout */}
-      <main className="flex-1 w-full bg-[#FFF6E7]">
+      <main className="flex-1 w-full bg-[#FFFDF5]">
         {/* Hero Manifesto */}
         <Manifesto />
 
@@ -33,13 +33,13 @@ export default function Home() {
       </main>
 
       {/* Zine Footer */}
-      <footer className="w-full border-t-2 border-[#8C2F39] bg-[#8C2F39] text-[#FFF6E7] py-12 px-4 md:px-8">
+      <footer className="w-full border-t-2 border-[#364C84] bg-[#364C84] text-[#FFFDF5] py-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
             <h2 className="text-3xl font-display font-black tracking-tight uppercase leading-none text-white">
               SARLINSON CHRISTIAN
             </h2>
-            <p className="text-xs font-mono tracking-widest text-[#BFA175] mt-1.5 uppercase">
+            <p className="text-xs font-mono tracking-widest text-[#95B1EE] mt-1.5 uppercase">
               Technical Success Manager & Onboarding Specialist
             </p>
           </div>
