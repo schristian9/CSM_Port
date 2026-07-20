@@ -78,8 +78,8 @@ export default function LifecycleTimeline() {
               onClick={() => setActiveStep(idx)}
               className={`pro-card text-left p-6 flex flex-col justify-between transition-all ${
                 activeStep === idx
-                  ? "bg-blue-600 text-white border-blue-600 shadow-md"
-                  : "bg-white text-slate-900 hover:bg-slate-50 border-slate-200"
+                  ? "!bg-blue-600 text-white !border-blue-600 shadow-md"
+                  : "text-slate-900 hover:!bg-slate-50"
               }`}
             >
               <div className="flex justify-between items-center mb-2 font-sans text-xs">
