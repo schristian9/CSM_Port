@@ -78,8 +78,8 @@ export default function LifecycleTimeline() {
               onClick={() => setActiveStep(idx)}
               className={`pro-card text-left p-6 flex flex-col justify-between transition-all ${
                 activeStep === idx
-                  ? "bg-slate-900 text-white -translate-x-1 -translate-y-1 shadow-sm hover:shadow-md"
-                  : "bg-slate-50 text-slate-900 hover:bg-slate-50"
+                  ? "bg-blue-600 text-white border-blue-600 shadow-md"
+                  : "bg-white text-slate-900 hover:bg-slate-50 border-slate-200"
               }`}
             >
               <div className="flex justify-between items-center mb-2 font-sans text-xs">
@@ -91,7 +91,7 @@ export default function LifecycleTimeline() {
               <h4 className="font-sans tracking-tight font-black text-lg md:text-xl uppercase tracking-tight leading-tight">
                 {step.role}
               </h4>
-              <p className={`text-xs mt-1 font-sans uppercase ${activeStep === idx ? "text-gray-300" : "text-gray-500"}`}>
+              <p className={`text-xs mt-1 font-sans uppercase ${activeStep === idx ? "text-blue-200" : "text-gray-500"}`}>
                 @ {step.company}
               </p>
             </button>
@@ -119,7 +119,7 @@ export default function LifecycleTimeline() {
             {/* Quick KPI Badges */}
             <div className="flex gap-2 flex-wrap">
               {steps[activeStep].metrics.map((metric, i) => (
-                <span key={i} className="pro-badge bg-slate-50 text-white">
+                <span key={i} className="pro-badge bg-blue-50 text-blue-600 border border-blue-200">
                   {metric}
                 </span>
               ))}
