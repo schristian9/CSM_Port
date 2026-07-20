@@ -96,6 +96,17 @@ export default function About() {
           <div className="lg:col-span-4 lg:sticky lg:top-36 space-y-6 self-start">
             <div className="pro-card bg-slate-50 p-8 relative overflow-hidden">
               
+              {/* Profile Picture */}
+              <div className="mb-6 relative w-full aspect-square rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                <Image
+                  src="/mypng.png"
+                  alt="Sarlinson Christian"
+                  fill
+                  className="object-cover"
+                  sizes="(max-w-7xl) 100vw, 33vw"
+                  priority
+                />
+              </div>
               
               <div className="border-b border-slate-200 pb-6 mb-6">
                 <div className="pro-badge mb-3">PERSONAL DOSSIER</div>
