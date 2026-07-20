@@ -10,7 +10,7 @@ export default function Manifesto() {
       <div className="lg:col-span-7 flex flex-col justify-center">
         
         <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-sans font-black text-slate-900 tracking-tight uppercase leading-[1.05] mb-6">
-          Nobody renews because you <span className="font-sans italic font-normal text-blue-600 lowercase">sold</span> well.<br />
+          Nobody renews because you <span className="italic text-blue-600">sold</span> well.<br />
           They renew because you <span className="underline decoration-blue-600 decoration-4 underline-offset-4">delivered</span><br />
           and that's the whole job.
         </h2>
@@ -36,12 +36,12 @@ export default function Manifesto() {
       </div>
 
       {/* Sleek Dashboard Mockup */}
-      <div className="lg:col-span-5 relative w-full h-[400px] md:h-[450px] flex items-center justify-center">
+      <div className="lg:col-span-5 relative w-full h-[400px] lg:h-[550px] flex items-center justify-center">
         {/* Decorative Background Blob for modern feel */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-100 rounded-full blur-3xl opacity-50 z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 lg:w-96 lg:h-96 bg-blue-100 rounded-full blur-3xl opacity-50 z-0"></div>
 
         {/* Floating SaaS Window */}
-        <div className="relative w-full h-full max-h-[380px] bg-white border border-slate-200 rounded-2xl shadow-xl flex flex-col overflow-hidden z-10 transition-transform duration-500 hover:shadow-2xl hover:-translate-y-2">
+        <div className="relative w-full h-full lg:max-h-[500px] bg-white border border-slate-200 rounded-2xl shadow-xl flex flex-col overflow-hidden z-10 transition-transform duration-500 hover:shadow-2xl hover:-translate-y-2">
           
           {/* macOS-style Window Header */}
           <div className="bg-slate-50 border-b border-slate-200 px-4 py-3 flex items-center gap-2">

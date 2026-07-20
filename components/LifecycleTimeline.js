@@ -136,11 +136,7 @@ export default function LifecycleTimeline() {
             ))}
           </ul>
 
-          {/* Card footer notes */}
-          <div className="border-t border-slate-200 mt-10 pt-6 flex justify-between items-center text-xs font-sans opacity-50">
-            <span>[ FOCUS ID: CSM_{activeStep + 1} ]</span>
-            <span>VERIFIABLE REFERENCE AVAILABLE</span>
-          </div>
+
         </div>
       </div>
     </section>

@@ -81,7 +81,7 @@ export default function Playbooks() {
 
         <div className="border-b border-slate-200 pb-6 mb-8">
           <div className="flex justify-between items-center mb-2">
-            <span className="font-sans text-xs text-gray-500">[ SITUATION AUDIT ]</span>
+            <span />
             <span className="pro-badge bg-slate-900 text-white">{playbooks[activePlaybook].metric}</span>
           </div>
           <h4 className="font-sans tracking-tight font-black text-xl md:text-2xl text-slate-900 uppercase">
@@ -120,11 +120,6 @@ export default function Playbooks() {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="border-t border-slate-200 mt-10 pt-6 flex justify-between items-center text-xs font-sans opacity-50">
-          <span>[ PLAYBOOK ENGINE: SUCCESS_CORE_v1 ]</span>
-          <span>REPLICABLE SAAS FRAMEWORK</span>
         </div>
       </div>
     </section>

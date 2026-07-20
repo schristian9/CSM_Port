@@ -106,9 +106,7 @@ export default function StrategyCopilot() {
             </div>
           </div>
 
-          <div className="border-t border-slate-200 mt-8 pt-4 font-sans text-[10px] text-gray-500 uppercase">
-            [ ENGINE: GEMINI AI CLOUD AGENT ]
-          </div>
+
         </div>
 
         {/* Right Side: Chat Container */}
