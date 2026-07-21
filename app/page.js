@@ -3,7 +3,6 @@ import Manifesto from "@/components/Manifesto";
 import KpiCollage from "@/components/KpiCollage";
 import LifecycleTimeline from "@/components/LifecycleTimeline";
 import Playbooks from "@/components/Playbooks";
-import StrategyCopilot from "@/components/StrategyCopilot";
 
 export default function Home() {
   return (
@@ -28,8 +27,7 @@ export default function Home() {
         {/* Interactive Strategic Playbooks */}
         <Playbooks />
 
-        {/* AI CS Strategy Copilot */}
-        <StrategyCopilot />
+
       </main>
 
       {/* Zine Footer */}

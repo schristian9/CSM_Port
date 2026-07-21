@@ -29,9 +29,7 @@ export default function Manifesto() {
           <Link href="/about" className="pro-btn px-6 py-3 text-sm tracking-wider uppercase">
             Explore Visual Career Growth
           </Link>
-          <Link href="/#copilot" className="pro-card hover:bg-slate-50 px-6 py-3 text-sm tracking-wider uppercase font-sans font-semibold flex items-center gap-2 text-slate-900">
-            Ask My AI Copilot <span className="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
-          </Link>
+
         </div>
       </div>
 
