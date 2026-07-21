@@ -54,9 +54,6 @@ export default function Masthead() {
           <Link href="/#playbooks" className="whitespace-nowrap hover:text-blue-600 transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 hover:after:w-full after:transition-all">
             04. PLAYBOOKS
           </Link>
-          <Link href="/#copilot" className="whitespace-nowrap hover:text-blue-600 transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 hover:after:w-full after:transition-all">
-            05. AI ADVISOR
-          </Link>
         </nav>
       </div>
     </header>
