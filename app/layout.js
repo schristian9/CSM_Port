@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${plusJakarta.variable} h-full antialiased`}
+      className={`${plusJakarta.variable} h-full antialiased scroll-smooth scroll-pt-32`}
     >
       <body className="min-h-full bg-[var(--color-bg)] text-[var(--color-text)] font-sans selection:bg-[var(--color-accent)] selection:text-white">
         <script

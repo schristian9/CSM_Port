@@ -12,11 +12,11 @@ export default function LifecycleTimeline() {
       role: "Senior Technical CSM",
       period: "2025 - 2026",
       focus: "End-to-End Onboarding & Process Optimization",
-      metrics: ["75+ Accounts", "98% Completion", "+46% Consistency"],
+      metrics: ["122% NRR", "+12% Adoption", "-25% Roadblocks"],
       bulletPoints: [
-        "Led end-to-end onboarding and implementation of 75+ customer accounts, achieving 98% onboarding completion, accelerating customer adoption, and delivering exceptional first experiences across healthcare technology platforms.",
-        "Created, iterated, validated, and optimized customer success processes through continuous testing and real-world feedback, improving rollout consistency by 46% while supporting fast-paced commercial growth initiatives.",
-        "Analysed product usage, adoption metrics, customer feedback, and AI feature engagement, producing monthly stakeholder reports that increased active platform utilization by 38%."
+        "Identified expansion and renewal risks across a key client account and defined mitigation strategies that reduced early-stage issues by 10% and increased product development efficiency by 15%.",
+        "Delivered targeted training and optimisation sessions for two B2B clients to boost product adoption, improving overall performance metrics by 12% and reducing operational roadblocks by 25%.",
+        "Led Net Revenue Retention (NRR) strategy for a $300K ARR segment, designing playbooks for risk and growth, and elevating NRR from 108% to 122% over four quarters."
       ]
     },
     {
@@ -24,12 +24,12 @@ export default function LifecycleTimeline() {
       role: "Senior Product Deployment Analyst",
       period: "2019 - 2025",
       focus: "Clinical Training & Onboarding Acceleration",
-      metrics: ["500+ Clinicians Trained", "+22% Adoption", "93% CSAT Score"],
+      metrics: ["+40% Upgrade Ease", "+15% Efficiency", "+12-point NPS"],
       bulletPoints: [
-        "Delivered engaging, hands-on product training for 500+ clinicians, practice managers, receptionists, and operational teams, increasing platform adoption by 22% while building trusted stakeholder relationships.",
-        "Collaborated with Executives, Key Account Managers, Sales, Product, and customer stakeholders to resolve onboarding challenges, reducing implementation timelines by 35% and improving customer satisfaction (CSAT) to 93%.",
-        "Built scalable onboarding playbooks, implementation frameworks, and standard operating procedures from scratch, decreasing onboarding effort by 40% while supporting rapid expansion.",
-        "Partnered cross-functionally to support expansion initiatives, implementation readiness, customer success strategy, post-sales engagement, and continuous process improvement, contributing to 30% year-over-year customer growth."
+        "Created project plans and scope documents for an upgrade automation initiative, coordinating delivery and training to ease system upgrades by 40%.",
+        "Streamlined the training process through proactive communication and tailored sessions, improving training efficiency by 15% and reducing confusion during go-live.",
+        "Designed Customer Success playbooks and account planning frameworks that reduced strategic account review preparation time by 38% across the department.",
+        "Championed Voice of Customer programs across a $2.0M ARR base, consolidating feedback into Product insights that drove three major releases and a 12-point NPS improvement."
       ]
     },
     {
@@ -130,7 +130,7 @@ export default function LifecycleTimeline() {
           <ul className="space-y-4 font-sans text-lg text-slate-900 leading-relaxed">
             {steps[activeStep].bulletPoints.map((bp, i) => (
               <li key={i} className="flex gap-4 items-start">
-                <span className="inline-block mt-2 w-2 h-2 bg-slate-50 shrink-0"></span>
+                <span className="inline-block mt-2 w-2 h-2 bg-blue-600 shrink-0"></span>
                 <span>{bp}</span>
               </li>
             ))}

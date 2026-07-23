@@ -1,8 +1,9 @@
 import Masthead from "@/components/Masthead";
 import Manifesto from "@/components/Manifesto";
 import KpiCollage from "@/components/KpiCollage";
-import LifecycleTimeline from "@/components/LifecycleTimeline";
-import Playbooks from "@/components/Playbooks";
+import ExecutiveAchievements from "@/components/ExecutiveAchievements";
+import EnterpriseValueImpact from "@/components/EnterpriseValueImpact";
+import PortfolioHub from "@/components/PortfolioHub";
 
 export default function Home() {
   return (
@@ -21,20 +22,21 @@ export default function Home() {
         {/* Metrics Collage */}
         <KpiCollage />
 
-        {/* Career Experience Lifecycle Timeline */}
-        <LifecycleTimeline />
+        {/* Selected Executive Achievements */}
+        <ExecutiveAchievements />
 
-        {/* Interactive Strategic Playbooks */}
-        <Playbooks />
+        {/* Commercial Execution & Value */}
+        <EnterpriseValueImpact />
 
-
+        {/* Strategic Portfolio Routing Hub */}
+        <PortfolioHub />
       </main>
 
       {/* Zine Footer */}
-      <footer className="w-full border-t-2 border-slate-200 bg-slate-900 text-blue-600 py-12 px-4 md:px-8">
+      <footer className="w-full border-t-2 border-slate-200 bg-white text-slate-500 py-12 px-4 md:px-8 mt-auto">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
-            <h2 className="text-3xl font-sans tracking-tight font-black tracking-tight uppercase leading-none text-white">
+            <h2 className="text-3xl font-sans tracking-tight font-black uppercase leading-none text-slate-900">
               SARLINSON CHRISTIAN
             </h2>
             <p className="text-xs font-sans tracking-widest text-blue-600 mt-1.5 uppercase">
@@ -43,8 +45,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center md:items-end gap-2 text-xs font-sans text-gray-400">
-            <p>© {new Date().getFullYear()} SARLINSON CHRISTIAN. ALL RIGHTS RESERVED.</p>
-            <p className="uppercase">DESIGN SYSTEM: EDITORIAL ZINE V1.0</p>
+            <span>© {new Date().getFullYear()} SARLINSON CHRISTIAN</span>
           </div>
         </div>
       </footer>

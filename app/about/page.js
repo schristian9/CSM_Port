@@ -35,9 +35,9 @@ export default function About() {
       company: "SeekThem",
       highlight: "Scaling Enterprise Health-Tech Accounts",
       achievements: [
-        "Led end-to-end onboarding and implementation of 75+ customer accounts, achieving a 98% onboarding completion rate.",
-        "Created, iterated, validated, and optimized customer success processes, improving rollout consistency by 46%.",
-        "Analysed product usage, adoption metrics, and AI feature engagement, producing reports that increased platform utilization by 38%."
+        "Identified expansion and renewal risks across a key client account and defined mitigation strategies that reduced early-stage issues by 10% and increased product development efficiency by 15%.",
+        "Delivered targeted training and optimisation sessions for two B2B clients to boost product adoption, improving overall performance metrics by 12% and reducing operational roadblocks by 25%.",
+        "Led Net Revenue Retention (NRR) strategy for a $300K ARR segment, designing playbooks for risk and growth, and elevating NRR from 108% to 122% over four quarters."
       ]
     },
     {
@@ -46,10 +46,10 @@ export default function About() {
       company: "Meditab Software",
       highlight: "Clinical Training & Onboarding Expansion",
       achievements: [
-        "Delivered engaging, hands-on product training for 500+ clinicians and practice managers, increasing adoption by 22%.",
-        "Collaborated cross-functionally to resolve onboarding challenges, reducing implementation timelines by 35% and raising CSAT to 93%.",
-        "Built onboarding playbooks and standard operating procedures from scratch, decreasing onboarding effort by 40%.",
-        "Contributed to a 30% year-over-year customer growth rate through post-sales engagement and strategic account reviews."
+        "Created project plans and scope documents for an upgrade automation initiative, coordinating delivery and training to ease system upgrades by 40%.",
+        "Streamlined the training process through proactive communication and tailored sessions, improving training efficiency by 15% and reducing confusion during go-live.",
+        "Designed Customer Success playbooks and account planning frameworks that reduced strategic account review preparation time by 38% across the department.",
+        "Championed Voice of Customer programs across a $2.0M ARR base, consolidating feedback into Product insights that drove three major releases and a 12-point NPS improvement."
       ]
     },
     {
@@ -79,8 +79,21 @@ export default function About() {
       <div className="noise-overlay" />
       <Masthead />
 
-      <main className="flex-1 w-full bg-white py-16 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <main className="flex-1 w-full bg-white pb-24">
+        {/* Missing Page Header */}
+        <section className="border-b border-slate-200">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
+            <div className="pro-badge mb-4">BACKGROUND</div>
+            <h1 className="text-4xl md:text-6xl font-sans tracking-tight font-black text-slate-900 leading-tight uppercase mb-6">
+              About & <span className="text-blue-600">Experience</span>
+            </h1>
+            <p className="text-xl md:text-2xl font-sans text-slate-600 leading-relaxed font-semibold max-w-3xl">
+              The career journey and deep technical evolution driving my customer success frameworks.
+            </p>
+          </div>
+        </section>
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 pt-16 px-4 md:px-8">
           
           {/* Left Column: Personal Card & Details */}
           <div className="lg:col-span-4 lg:sticky lg:top-36 space-y-6 self-start">
@@ -136,9 +149,8 @@ export default function About() {
               </div>
             </div>
 
-            {/* Quick Education Card */}
             <div className="pro-card bg-slate-50 p-8">
-              <h4 className="font-sans tracking-tight font-black text-xl text-slate-900 uppercase border-b border-slate-200 pb-3 mb-4">
+              <h4 className="text-2xl font-sans tracking-tight font-black text-slate-900 uppercase border-b border-slate-200 pb-3 mb-4">
                 Education
               </h4>
               <div className="space-y-4">
@@ -155,6 +167,29 @@ export default function About() {
                   <p className="text-sm text-gray-600 font-sans mt-1">GCS Medical College</p>
                 </div>
               </div>
+            </div>
+
+            {/* Resume Download Card */}
+            <div className="pro-card bg-slate-50 p-8">
+              <h4 className="text-2xl font-sans tracking-tight font-black text-slate-900 uppercase border-b border-slate-200 pb-3 mb-4">
+                Resume
+              </h4>
+              <p className="text-sm font-sans text-slate-600 mb-6 leading-relaxed">
+                Download a formal, printable PDF copy of my resume outlining my complete career trajectory and key achievements.
+              </p>
+              <a 
+                href="/sarlinson-christian-resume.pdf" 
+                download
+                target="_blank"
+                className="inline-flex w-full items-center justify-center gap-2 bg-slate-900 text-white px-6 py-3 text-xs font-bold tracking-widest uppercase transition-all hover:bg-blue-600 rounded-sm"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download PDF
+              </a>
             </div>
 
             {/* Editorial Quote Card */}
@@ -174,10 +209,10 @@ export default function About() {
             <div className="pro-card bg-slate-50 p-8 md:p-10">
               <div className="border-b border-slate-200 pb-6 mb-8">
                 <div className="pro-badge mb-3">VISUAL TRAJECTORY</div>
-                <h3 className="text-2xl md:text-4xl font-sans tracking-tight font-black text-slate-900 uppercase">
+                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
                   Clinical-to-Technical Growth
                 </h3>
-                <p className="text-sm font-sans text-blue-600 mt-1.5 uppercase font-semibold">
+                <p className="text-sm font-sans text-blue-600 mt-4 uppercase font-semibold">
                   How nursing principles fuel onboarding velocity & AI adoption in healthcare SaaS.
                 </p>
                 <div className="border-l-4 border-slate-200 pl-4 mt-6">
@@ -210,7 +245,7 @@ export default function About() {
                         <ul className="space-y-2 text-base text-slate-900 leading-relaxed">
                           {step.achievements.map((ach, i) => (
                             <li key={i} className="flex gap-3 items-start">
-                              <span className="inline-block mt-2 w-1.5 h-1.5 bg-slate-50 shrink-0"></span>
+                              <span className="inline-block mt-2 w-1.5 h-1.5 bg-blue-600 shrink-0"></span>
                               <span className="opacity-90">{ach}</span>
                             </li>
                           ))}
@@ -226,7 +261,7 @@ export default function About() {
             <div className="pro-card bg-slate-50 p-8 md:p-10">
               <div className="border-b border-slate-200 pb-6 mb-8">
                 <div className="pro-badge mb-3">FEATURED PROJECTS</div>
-                <h3 className="text-2xl md:text-3xl font-sans tracking-tight font-black text-slate-900 uppercase">
+                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
                   Healthcare AI Platform Implementation
                 </h3>
               </div>
@@ -262,7 +297,7 @@ export default function About() {
             <div className="pro-card bg-slate-50 p-8 md:p-10">
               <div className="border-b border-slate-200 pb-6 mb-8">
                 <div className="pro-badge mb-3">SKILLS DIRECTORY</div>
-                <h3 className="text-2xl md:text-3xl font-sans tracking-tight font-black text-slate-900 uppercase">
+                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
                   Technical Capability Board
                 </h3>
               </div>
@@ -314,18 +349,18 @@ export default function About() {
         </div>
       </main>
 
-      <footer className="w-full border-t-2 border-slate-200 bg-slate-900 text-blue-600 py-12 px-4 md:px-8">
+      <footer className="w-full border-t-2 border-slate-200 bg-white text-slate-500 py-12 px-4 md:px-8 mt-auto">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
-            <h2 className="text-3xl font-sans tracking-tight font-black tracking-tight uppercase leading-none text-white">
+            <h2 className="text-3xl font-sans tracking-tight font-black uppercase leading-none text-slate-900">
               SARLINSON CHRISTIAN
             </h2>
             <p className="text-xs font-sans tracking-widest text-blue-600 mt-1.5 uppercase">
               Technical Success Manager & Onboarding Specialist
             </p>
           </div>
-          <div className="text-xs font-sans text-gray-400">
-            <Link href="/" className="hover:text-white underline mr-6">← BACK TO HOME</Link>
+          <div className="flex flex-col items-center md:items-end gap-2 text-xs font-sans text-gray-400">
+            <Link href="/" className="hover:text-blue-600 underline uppercase">← Back to Portfolio</Link>
             <span>© {new Date().getFullYear()} SARLINSON CHRISTIAN</span>
           </div>
         </div>
