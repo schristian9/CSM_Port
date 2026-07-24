@@ -57,8 +57,8 @@ export default function Manifesto() {
           {/* Main Image Container */}
           <div className="relative flex-1 bg-slate-100 w-full">
             <Image
-              src="/cs_growth_chart.jpg"
-              alt="Customer Success executive performance metrics dashboard showing Net Revenue Retention of 124.2%"
+              src="/clean-dashboard.jpg"
+              alt="Clean 3x3 SaaS Executive Dashboard tracking core metrics like NRR, MRR, and Adoption"
               fill
               className="object-cover object-top"
               sizes="(max-w-7xl) 100vw, 50vw"
