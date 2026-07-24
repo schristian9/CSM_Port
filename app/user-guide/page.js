@@ -12,7 +12,7 @@ export default function UserGuide() {
       <div className="noise-overlay" />
       <Masthead />
 
-      <main className="flex-1 w-full pb-24">
+      <main className="flex-1 w-full bg-white pb-24">
         {/* Header Section */}
         <section className="max-w-4xl mx-auto px-4 md:px-8 py-16 md:py-24">
           <div className="pro-badge mb-4">OPERATING MANUAL</div>
@@ -24,8 +24,8 @@ export default function UserGuide() {
           </p>
         </section>
 
-        {/* 1. Communication Style & Core Values */}
-        <section className="border-t border-slate-200">
+        {/* 1. Core Operating Principles */}
+        <section className="">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
             <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 mb-12 uppercase leading-tight">
               1. Communication & Core Values
@@ -60,7 +60,7 @@ export default function UserGuide() {
         </section>
 
         {/* Section 2: Expectations */}
-        <section className="bg-slate-50 text-slate-900 border-t border-slate-200 relative overflow-hidden">
+        <section className="text-slate-900 relative overflow-hidden">
           <div className="noise-overlay opacity-50" />
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
             <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 mb-12 uppercase leading-tight">
@@ -112,7 +112,7 @@ export default function UserGuide() {
         </section>
 
         {/* 3. Handling High-Stress Escalations */}
-        <section className="border-t border-slate-200">
+        <section className="">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
             <div className="flex flex-col lg:flex-row gap-12 items-start">
               <div className="lg:w-1/3 sticky top-32">
@@ -160,7 +160,7 @@ export default function UserGuide() {
         </section>
 
         {/* Section 4: Leadership Philosophy */}
-        <section className="bg-slate-50 text-slate-900 border-t border-slate-200 relative overflow-hidden">
+        <section className="text-slate-900 relative overflow-hidden">
           <div className="noise-overlay opacity-50" />
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
             <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 mb-12 uppercase leading-tight">
@@ -221,7 +221,7 @@ export default function UserGuide() {
       </main>
 
       {/* Footer */}
-      <footer className="w-full border-t-2 border-slate-200 bg-white text-slate-500 py-12 px-4 md:px-8 mt-auto">
+      <footer className="w-full bg-white text-slate-500 py-12 px-4 md:px-8 mt-auto">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
             <h2 className="text-3xl font-sans tracking-tight font-black uppercase leading-none text-slate-900">

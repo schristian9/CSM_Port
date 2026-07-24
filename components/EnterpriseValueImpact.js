@@ -61,7 +61,7 @@ export default function EnterpriseValueImpact() {
   ];
 
   return (
-    <section className="bg-white border-b border-slate-200">
+    <section className="bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
         
         {/* Header */}

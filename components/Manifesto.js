@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Manifesto() {
   return (
-    <section id="manifesto" className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 border-b border-slate-200 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section id="manifesto" className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       {/* Manifesto Headline */}
       <div className="lg:col-span-7 flex flex-col justify-center">
         

@@ -33,7 +33,7 @@ export default function Home() {
       </main>
 
       {/* Zine Footer */}
-      <footer className="w-full border-t-2 border-slate-200 bg-white text-slate-500 py-12 px-4 md:px-8 mt-auto">
+      <footer className="w-full bg-white text-slate-500 py-12 px-4 md:px-8 mt-auto">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
             <h2 className="text-3xl font-sans tracking-tight font-black uppercase leading-none text-slate-900">

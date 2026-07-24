@@ -39,10 +39,10 @@ export default function PortfolioHub() {
   ];
 
   return (
-    <section id="portfolio-hub" className="border-b border-slate-200">
+    <section id="portfolio-hub" className="">
       
       {/* PART 1: Enterprise AI Expertise */}
-      <div className="bg-slate-50 border-b border-slate-200">
+      <div className="bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
           <div className="flex flex-col lg:flex-row gap-12 items-start mb-12">
             <div className="lg:w-1/2">

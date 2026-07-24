@@ -112,13 +112,13 @@ export default function ExecutiveAchievements() {
             </p>
 
             {/* Impact Box */}
-            <div className="bg-blue-50 border border-blue-100 rounded-xl p-5 mt-auto">
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 mt-auto">
               <div className="flex items-center gap-2 mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-blue-600 shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-slate-900 shrink-0">
                   <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
                   <polyline points="16 7 22 7 22 13"></polyline>
                 </svg>
-                <span className="font-sans text-xs tracking-widest font-bold uppercase text-blue-600">BUSINESS IMPACT</span>
+                <span className="font-sans text-xs tracking-widest font-bold uppercase text-slate-900">BUSINESS IMPACT</span>
               </div>
               <p className="text-sm font-sans text-slate-900 font-semibold leading-relaxed">
                 {item.impact}
