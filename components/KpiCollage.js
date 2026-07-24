@@ -56,10 +56,10 @@ export default function KpiCollage() {
     <section id="metrics" className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 border-b border-slate-200">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
-          <div className="pro-badge mb-3">EXECUTIVE DASHBOARD</div>
-          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-none">
+          <div className="pro-badge mb-3 bg-slate-900 text-white">EXECUTIVE DASHBOARD</div>
+          <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
             Proven Business Impact
-          </h3>
+          </h2>
         </div>
         <p className="text-sm font-sans text-blue-600 max-w-xs md:text-right uppercase font-bold">
           ✦ Measurable results in retention & expansion.

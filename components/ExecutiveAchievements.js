@@ -82,8 +82,8 @@ export default function ExecutiveAchievements() {
       {/* Section Header */}
       <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-8 mb-12">
         <div className="lg:w-1/2">
-          <div className="pro-badge mb-4">IMPACT</div>
-          <h2 className="text-4xl md:text-5xl font-sans tracking-tight font-black text-slate-900 leading-tight">
+          <div className="pro-badge mb-4 bg-slate-900 text-white">IMPACT</div>
+          <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
             Achievements
           </h2>
         </div>

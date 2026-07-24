@@ -44,7 +44,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col items-center md:items-end gap-2 text-xs font-sans text-gray-400">
+          <div className="flex flex-col items-center md:items-end gap-2 text-xs font-sans text-slate-400">
             <span>© {new Date().getFullYear()} SARLINSON CHRISTIAN</span>
           </div>
         </div>

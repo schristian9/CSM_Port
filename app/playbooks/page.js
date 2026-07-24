@@ -52,7 +52,7 @@ export default function PlaybooksPage() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col selection:bg-slate-50 selection:text-white relative bg-white">
+    <div className="min-h-screen flex flex-col selection:bg-slate-50 selection:text-white relative">
       <div className="noise-overlay" />
       <Masthead />
 
@@ -79,7 +79,7 @@ export default function PlaybooksPage() {
         <section className="border-t border-slate-200 bg-slate-50 text-slate-900 relative overflow-hidden">
           <div className="noise-overlay opacity-50" />
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
-            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 mb-6 uppercase leading-tight">
+            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 mb-12 uppercase leading-tight">
               The CSM Toolkit
             </h2>
             <p className="text-lg text-slate-600 font-sans leading-relaxed mb-12 max-w-2xl">
@@ -100,19 +100,32 @@ export default function PlaybooksPage() {
                   </p>
                   
                   {/* Download Button */}
-                  <a 
-                    href={artifact.fileUrl || "#"} 
-                    download={!!artifact.fileUrl}
-                    target={artifact.fileUrl ? "_blank" : undefined}
-                    className={`inline-flex items-center justify-center gap-2 px-6 py-3 text-xs font-bold tracking-widest uppercase transition-all mt-auto rounded-sm ${artifact.fileUrl ? 'bg-blue-600 text-white hover:bg-blue-500' : 'bg-slate-200 text-slate-400 cursor-not-allowed'}`}
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
-                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                      <polyline points="7 10 12 15 17 10"></polyline>
-                      <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                    {artifact.fileUrl ? "Download Artifact" : "Coming Soon"}
-                  </a>
+                  {artifact.fileUrl ? (
+                    <a 
+                      href={artifact.fileUrl} 
+                      download
+                      target="_blank"
+                      className="pro-btn inline-flex items-center justify-center gap-2 px-6 py-3 text-xs tracking-widest uppercase mt-auto w-full"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                      </svg>
+                      Download Artifact
+                    </a>
+                  ) : (
+                    <span 
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 text-xs font-bold tracking-widest uppercase mt-auto rounded-sm bg-slate-200 text-slate-400 cursor-not-allowed w-full"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                      </svg>
+                      Coming Soon
+                    </span>
+                  )}
                 </div>
               ))}
             </div>
@@ -132,7 +145,7 @@ export default function PlaybooksPage() {
               Technical Success Manager & Onboarding Specialist
             </p>
           </div>
-          <div className="flex flex-col items-center md:items-end gap-4 text-xs font-sans text-gray-400">
+          <div className="flex flex-col items-center md:items-end gap-4 text-xs font-sans text-slate-400">
             <Link href="/" className="hover:text-blue-600 underline uppercase">← Back to Portfolio</Link>
             <span>© {new Date().getFullYear()} SARLINSON CHRISTIAN</span>
           </div>

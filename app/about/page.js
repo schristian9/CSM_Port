@@ -97,7 +97,7 @@ export default function About() {
           
           {/* Left Column: Personal Card & Details */}
           <div className="lg:col-span-4 lg:sticky lg:top-36 space-y-6 self-start">
-            <div className="pro-card bg-slate-50 p-8 relative overflow-hidden">
+            <div className="pro-card p-8 relative overflow-hidden">
               
               {/* Profile Picture */}
               <div className="mb-6 relative w-full aspect-square rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
@@ -149,7 +149,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="pro-card bg-slate-50 p-8">
+            <div className="pro-card p-8">
               <h4 className="text-2xl font-sans tracking-tight font-black text-slate-900 uppercase border-b border-slate-200 pb-3 mb-4">
                 Education
               </h4>
@@ -170,7 +170,7 @@ export default function About() {
             </div>
 
             {/* Resume Download Card */}
-            <div className="pro-card bg-slate-50 p-8">
+            <div className="pro-card p-8">
               <h4 className="text-2xl font-sans tracking-tight font-black text-slate-900 uppercase border-b border-slate-200 pb-3 mb-4">
                 Resume
               </h4>
@@ -193,7 +193,7 @@ export default function About() {
             </div>
 
             {/* Editorial Quote Card */}
-            <div className="pro-card bg-slate-900 text-blue-600 p-8 relative overflow-hidden shadow-sm hover:shadow-md border border-slate-200">
+            <div className="pro-card p-8 relative overflow-hidden shadow-sm hover:shadow-md border border-slate-200">
               
               <span className="font-sans text-[10px] text-blue-600 uppercase tracking-widest block mb-4">PERSISTENCE AUDIT</span>
               <p className="text-xl font-sans tracking-tight font-semibold italic text-blue-600 leading-relaxed">
@@ -206,7 +206,7 @@ export default function About() {
           <div className="lg:col-span-8 space-y-12">
             
             {/* Visual Trajectory section */}
-            <div className="pro-card bg-slate-50 p-8 md:p-10">
+            <div className="pro-card p-8 md:p-10">
               <div className="border-b border-slate-200 pb-6 mb-8">
                 <div className="pro-badge mb-3">VISUAL TRAJECTORY</div>
                 <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
@@ -229,11 +229,11 @@ export default function About() {
                 <div className="space-y-10">
                   {trajectory.map((step, idx) => (
                     <div key={idx} className="flex gap-6 items-start relative z-10">
-                      <div className="w-12 h-12 rounded-full border border-slate-200 bg-slate-50 flex flex-col items-center justify-center font-sans tracking-tight font-black text-[10px] shrink-0 shadow-sm hover:shadow-md">
+                      <div className="w-12 h-12 rounded-full border border-slate-200 flex flex-col items-center justify-center font-sans tracking-tight font-black text-[10px] shrink-0 shadow-sm hover:shadow-md">
                         {step.year.split(" - ").pop()}
                       </div>
                       
-                      <div className="flex-1 bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md">
+                      <div className="flex-1 border border-slate-200 p-6 shadow-sm hover:shadow-md">
                         <div className="flex flex-wrap justify-between items-baseline gap-2 mb-2">
                           <h4 className="font-sans tracking-tight font-black text-lg md:text-xl text-slate-900 uppercase leading-none">
                             {step.role}
@@ -258,7 +258,7 @@ export default function About() {
             </div>
 
             {/* Strategic Projects section */}
-            <div className="pro-card bg-slate-50 p-8 md:p-10">
+            <div className="pro-card p-8 md:p-10">
               <div className="border-b border-slate-200 pb-6 mb-8">
                 <div className="pro-badge mb-3">FEATURED PROJECTS</div>
                 <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
@@ -267,13 +267,13 @@ export default function About() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
-                <div className="md:col-span-7 bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md flex flex-col justify-between">
+                <div className="md:col-span-7 border border-slate-200 p-6 shadow-sm hover:shadow-md flex flex-col justify-between">
                   <div>
                     <div className="flex justify-between items-baseline mb-3">
                       <h4 className="font-sans tracking-tight font-black text-lg text-slate-900 uppercase">
                         AI-Driven Health Platform — DecodeDx
                       </h4>
-                      <span className="pro-badge bg-slate-50 text-white">-25% User Drop-Off</span>
+                      <span className="pro-badge text-white">-25% User Drop-Off</span>
                     </div>
                     <p className="text-base text-slate-900 leading-relaxed">
                       Translated complex clinical workflow insights gathered from hands-on healthcare operations directly into product redesign requirements for an early-stage AI health diagnostics platform. Successfully streamlined interface workflows and reduced user drop-off during onboarding cycles by 25%.
@@ -294,7 +294,7 @@ export default function About() {
             </div>
 
             {/* Technical Skills Categorization */}
-            <div className="pro-card bg-slate-50 p-8 md:p-10">
+            <div className="pro-card p-8 md:p-10">
               <div className="border-b border-slate-200 pb-6 mb-8">
                 <div className="pro-badge mb-3">SKILLS DIRECTORY</div>
                 <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
@@ -309,7 +309,7 @@ export default function About() {
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.csAdoption.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-slate-200 bg-white font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
+                      <span key={i} className="px-3 py-1.5 border border-slate-200 font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
                         {s}
                       </span>
                     ))}
@@ -322,7 +322,7 @@ export default function About() {
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.businessCommercial.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-slate-200 bg-white font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
+                      <span key={i} className="px-3 py-1.5 border border-slate-200 font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
                         {s}
                       </span>
                     ))}
@@ -335,7 +335,7 @@ export default function About() {
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.toolsPlatforms.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-slate-200 bg-white font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
+                      <span key={i} className="px-3 py-1.5 border border-slate-200 font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
                         {s}
                       </span>
                     ))}
@@ -349,6 +349,7 @@ export default function About() {
         </div>
       </main>
 
+      {/* Footer */}
       <footer className="w-full border-t-2 border-slate-200 bg-white text-slate-500 py-12 px-4 md:px-8 mt-auto">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
@@ -359,7 +360,7 @@ export default function About() {
               Technical Success Manager & Onboarding Specialist
             </p>
           </div>
-          <div className="flex flex-col items-center md:items-end gap-2 text-xs font-sans text-gray-400">
+          <div className="flex flex-col items-center md:items-end gap-4 text-xs font-sans text-slate-400">
             <Link href="/" className="hover:text-blue-600 underline uppercase">← Back to Portfolio</Link>
             <span>© {new Date().getFullYear()} SARLINSON CHRISTIAN</span>
           </div>

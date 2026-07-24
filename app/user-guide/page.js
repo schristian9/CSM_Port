@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function UserGuide() {
   return (
-    <div className="min-h-screen flex flex-col selection:bg-slate-50 selection:text-white relative bg-white">
+    <div className="min-h-screen flex flex-col selection:bg-slate-50 selection:text-white relative">
       <div className="noise-overlay" />
       <Masthead />
 
@@ -59,7 +59,7 @@ export default function UserGuide() {
           </div>
         </section>
 
-        {/* 2. Expectations */}
+        {/* Section 2: Expectations */}
         <section className="bg-slate-50 text-slate-900 border-t border-slate-200 relative overflow-hidden">
           <div className="noise-overlay opacity-50" />
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
@@ -116,8 +116,8 @@ export default function UserGuide() {
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
             <div className="flex flex-col lg:flex-row gap-12 items-start">
               <div className="lg:w-1/3 sticky top-32">
-                <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 mb-4 uppercase leading-tight">
-                  3. Crisis & Escalation Management
+                <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 mb-12 uppercase leading-tight">
+                  Section 3: Communication & Collaboration
                 </h2>
                 <p className="text-lg text-slate-600 font-sans leading-relaxed">
                   When a critical account is at risk, emotion must be replaced with process. Here is how I methodically de-escalate and resolve high-stress situations.
@@ -125,8 +125,8 @@ export default function UserGuide() {
               </div>
               
               <div className="lg:w-2/3 flex flex-col gap-6">
-                <div className="pro-card bg-white p-8 border border-slate-200 flex gap-6 items-start">
-                  <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center shrink-0 border border-slate-200">
+                <div className="pro-card p-8 border border-slate-200 flex gap-6 items-start">
+                  <div className="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center shrink-0">
                     <span className="font-sans font-black text-slate-900">1</span>
                   </div>
                   <div>
@@ -135,8 +135,8 @@ export default function UserGuide() {
                   </div>
                 </div>
 
-                <div className="pro-card bg-white p-8 border border-slate-200 flex gap-6 items-start">
-                  <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center shrink-0 border border-slate-200">
+                <div className="pro-card p-8 border border-slate-200 flex gap-6 items-start">
+                  <div className="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center shrink-0">
                     <span className="font-sans font-black text-slate-900">2</span>
                   </div>
                   <div>
@@ -145,8 +145,8 @@ export default function UserGuide() {
                   </div>
                 </div>
 
-                <div className="pro-card bg-white p-8 border border-slate-200 flex gap-6 items-start">
-                  <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center shrink-0 border border-slate-200">
+                <div className="pro-card p-8 border border-slate-200 flex gap-6 items-start">
+                  <div className="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center shrink-0">
                     <span className="font-sans font-black text-slate-900">3</span>
                   </div>
                   <div>
@@ -159,7 +159,7 @@ export default function UserGuide() {
           </div>
         </section>
 
-        {/* 4. Leadership Philosophy */}
+        {/* Section 4: Leadership Philosophy */}
         <section className="bg-slate-50 text-slate-900 border-t border-slate-200 relative overflow-hidden">
           <div className="noise-overlay opacity-50" />
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
@@ -231,7 +231,7 @@ export default function UserGuide() {
               Technical Success Manager & Onboarding Specialist
             </p>
           </div>
-          <div className="flex flex-col items-center md:items-end gap-4 text-xs font-sans text-gray-400">
+          <div className="flex flex-col items-center md:items-end gap-4 text-xs font-sans text-slate-400">
             <Link href="/" className="hover:text-blue-600 underline uppercase">← Back to Portfolio</Link>
             <span>© {new Date().getFullYear()} SARLINSON CHRISTIAN</span>
           </div>

@@ -18,7 +18,7 @@ export default function CaseStudies() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col selection:bg-slate-50 selection:text-white relative bg-slate-50">
+    <div className="min-h-screen flex flex-col selection:bg-slate-50 selection:text-white relative">
       <div className="noise-overlay" />
       <Masthead />
 
@@ -445,7 +445,7 @@ export default function CaseStudies() {
               Technical Success Manager & Onboarding Specialist
             </p>
           </div>
-          <div className="flex flex-col items-center md:items-end gap-4 text-xs font-sans text-gray-400">
+          <div className="flex flex-col items-center md:items-end gap-4 text-xs font-sans text-slate-400">
             <Link href="/" className="hover:text-blue-600 underline uppercase">← Back to Portfolio</Link>
             <span>© {new Date().getFullYear()} SARLINSON CHRISTIAN</span>
           </div>

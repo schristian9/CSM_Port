@@ -74,7 +74,7 @@ export default function PortfolioHub() {
 
       {/* PART 2: The Routing Hub */}
       <div className="bg-white relative overflow-hidden">
-        <div className="noise-overlay opacity-30" />
+        <div className="noise-overlay opacity-50" />
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
           
           <div className="mb-12 text-center max-w-3xl mx-auto">
@@ -100,7 +100,7 @@ export default function PortfolioHub() {
               <p className="text-sm font-sans text-slate-600 leading-relaxed flex-grow mb-8">
                 See how I drove 40% Daily Active AI Usage and expanded global ARR through targeted rollout strategies.
               </p>
-              <Link href="/case-studies" className="inline-flex items-center justify-center gap-2 bg-slate-900 text-white px-6 py-3 text-xs font-bold tracking-widest uppercase transition-all hover:bg-blue-600 mt-auto rounded-sm w-full">
+              <Link href="/case-studies" className="pro-btn gap-2 px-6 py-3 text-xs tracking-widest uppercase mt-auto w-full">
                 View Impact Archive →
               </Link>
             </div>
@@ -118,7 +118,7 @@ export default function PortfolioHub() {
               <p className="text-sm font-sans text-slate-600 leading-relaxed flex-grow mb-8">
                 Download my actual day-to-day frameworks for recovering At-Risk Accounts and structuring Executive QBRs.
               </p>
-              <Link href="/playbooks" className="inline-flex items-center justify-center gap-2 bg-slate-900 text-white px-6 py-3 text-xs font-bold tracking-widest uppercase transition-all hover:bg-blue-600 mt-auto rounded-sm w-full">
+              <Link href="/playbooks" className="pro-btn gap-2 px-6 py-3 text-xs tracking-widest uppercase mt-auto w-full">
                 Access Playbooks →
               </Link>
             </div>
@@ -135,7 +135,7 @@ export default function PortfolioHub() {
               <p className="text-sm font-sans text-slate-600 leading-relaxed flex-grow mb-8">
                 Read my transparent guide outlining cross-functional expectations, escalation management, and core values.
               </p>
-              <Link href="/user-guide" className="inline-flex items-center justify-center gap-2 bg-slate-900 text-white px-6 py-3 text-xs font-bold tracking-widest uppercase transition-all hover:bg-blue-600 mt-auto rounded-sm w-full">
+              <Link href="/user-guide" className="pro-btn gap-2 px-6 py-3 text-xs tracking-widest uppercase mt-auto w-full">
                 Read User Guide →
               </Link>
             </div>
