@@ -74,7 +74,7 @@ export default function PortfolioHub() {
 
       {/* PART 2: The Routing Hub */}
       <div className="bg-white relative overflow-hidden">
-        <div className="noise-overlay opacity-50" />
+        <div className="noise-overlay noise-overlay-strong" />
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
           
           <div className="mb-12 text-center max-w-3xl mx-auto">

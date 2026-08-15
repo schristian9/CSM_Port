@@ -10,7 +10,16 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local build/deploy artifacts:
+    ".vercel/**",
+    ".wrangler/**",
   ]),
+  {
+    rules: {
+      // Content-heavy marketing copy relies on raw quotes/apostrophes in JSX.
+      "react/no-unescaped-entities": "off",
+    },
+  },
 ]);
 
 export default eslintConfig;

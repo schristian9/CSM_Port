@@ -1,5 +1,5 @@
 import Masthead from "@/components/Masthead";
-import Link from "next/link";
+import SiteFooter from "@/components/SiteFooter";
 import Image from "next/image";
 
 export const metadata = {
@@ -8,6 +8,29 @@ export const metadata = {
 };
 
 export default function About() {
+  const coreSkills = [
+    {
+      title: "Customer Success",
+      skills: ["Relationships", "Health", "Adoption", "QBRs", "Executive Management"]
+    },
+    {
+      title: "Commercial",
+      skills: ["Retention", "Expansion", "Churn Prevention", "ROI"]
+    },
+    {
+      title: "Technical",
+      skills: ["APIs", "Integrations", "Platform Configuration", "Technical Troubleshooting"]
+    },
+    {
+      title: "Data",
+      skills: ["Reports", "Analysis", "Customer Insights", "Recommendations", "SQL"]
+    },
+    {
+      title: "AI",
+      skills: ["Prompt Engineering", "Automation", "n8n", "Workflow Design", "Process Optimisation"]
+    }
+  ];
+
   const skills = {
     csAdoption: [
       "Customer Success", "Customer Onboarding", "Post-Sales Operations", 
@@ -75,7 +98,7 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col selection:bg-slate-50 selection:text-white relative">
+    <div className="min-h-screen flex flex-col relative">
       <div className="noise-overlay" />
       <Masthead />
 
@@ -129,8 +152,8 @@ export default function About() {
                 </div>
                 <div className="flex justify-between py-2 border-b border-slate-200">
                   <span className="text-gray-500">EMAIL</span>
-                  <a href="mailto:sarlinson92@yahoo.com" className="font-bold hover:text-blue-600 underline">
-                    sarlinson92@yahoo.com
+                  <a href="mailto:hello@sarlinson.com" className="font-bold hover:text-blue-600 underline">
+                    hello@sarlinson.com
                   </a>
                 </div>
 
@@ -143,7 +166,7 @@ export default function About() {
               </div>
 
               <div className="mt-8">
-                <a href="mailto:sarlinson92@yahoo.com" className="pro-btn block text-center w-full py-3 text-xs tracking-wider uppercase">
+                <a href="mailto:hello@sarlinson.com" className="pro-btn block text-center w-full py-3 text-xs tracking-wider uppercase">
                   Request Interview
                 </a>
               </div>
@@ -224,8 +247,6 @@ export default function About() {
 
               {/* Vertical growth timeline */}
               <div className="relative">
-                <div className="absolute left-6 top-2 bottom-2 w-0.5 bg-slate-900 border-dashed border-r"></div>
-
                 <div className="space-y-10">
                   {trajectory.map((step, idx) => (
                     <div key={idx} className="flex gap-6 items-start relative z-10">
@@ -347,25 +368,39 @@ export default function About() {
           </div>
 
         </div>
+
+        {/* Core Skills Section */}
+        <section className="max-w-7xl mx-auto px-4 md:px-8 pt-16 md:pt-24">
+          <div className="border-b border-slate-200 pb-6 mb-12">
+            <div className="pro-badge mb-3">CORE CAPABILITIES</div>
+            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
+              The Five Pillars
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            {coreSkills.map((pillar, idx) => (
+              <div key={idx} className="pro-card p-8 hover:border-blue-500 flex flex-col h-full">
+                <div className="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center shrink-0 mb-6 bg-slate-50">
+                  <span className="font-sans font-black text-slate-900">{idx + 1}</span>
+                </div>
+                <h3 className="text-lg font-sans font-black text-slate-900 mb-4 uppercase leading-snug">
+                  {pillar.title}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {pillar.skills.map((s, i) => (
+                    <span key={i} className="px-3 py-1.5 border border-slate-200 font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
       </main>
 
-      {/* Footer */}
-      <footer className="w-full bg-white text-slate-500 py-12 px-4 md:px-8 mt-auto">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div>
-            <h2 className="text-3xl font-sans tracking-tight font-black uppercase leading-none text-slate-900">
-              SARLINSON CHRISTIAN
-            </h2>
-            <p className="text-xs font-sans tracking-widest text-blue-600 mt-1.5 uppercase">
-              Technical Success Manager & Onboarding Specialist
-            </p>
-          </div>
-          <div className="flex flex-col items-center md:items-end gap-4 text-xs font-sans text-slate-400">
-            <Link href="/" className="hover:text-blue-600 underline uppercase">← Back to Portfolio</Link>
-            <span>© {new Date().getFullYear()} SARLINSON CHRISTIAN</span>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter backToPortfolio />
     </div>
   );
 }

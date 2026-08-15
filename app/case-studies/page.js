@@ -1,7 +1,7 @@
 "use client";
 
 import Masthead from "@/components/Masthead";
-import Link from "next/link";
+import SiteFooter from "@/components/SiteFooter";
 import { useState } from "react";
 
 export default function CaseStudies() {
@@ -18,7 +18,7 @@ export default function CaseStudies() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col selection:bg-slate-50 selection:text-white relative">
+    <div className="min-h-screen flex flex-col relative">
       <div className="noise-overlay" />
       <Masthead />
 
@@ -67,7 +67,7 @@ export default function CaseStudies() {
             {/* Content Area */}
             <div className="min-h-[250px]">
               {activeTab.healthcare === 'before' ? (
-                <div className="animate-in fade-in slide-in-from-bottom-2 duration-300">
+                <div className="animate-in-fade-up">
                   <h3 className="text-xl font-sans font-black text-slate-900 mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
                     The Legacy Challenge
@@ -88,7 +88,7 @@ export default function CaseStudies() {
                   </ul>
                 </div>
               ) : (
-                <div className="animate-in fade-in slide-in-from-bottom-2 duration-300">
+                <div className="animate-in-fade-up">
                   <h3 className="text-xl font-sans font-black text-slate-900 mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                     The Strategic Intervention
@@ -166,7 +166,7 @@ export default function CaseStudies() {
             {/* Content Area */}
             <div className="min-h-[250px]">
               {activeTab.turnaround === 'before' ? (
-                <div className="animate-in fade-in slide-in-from-bottom-2 duration-300">
+                <div className="animate-in-fade-up">
                   <h3 className="text-xl font-sans font-black text-slate-900 mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
                     The Legacy Challenge
@@ -187,7 +187,7 @@ export default function CaseStudies() {
                   </ul>
                 </div>
               ) : (
-                <div className="animate-in fade-in slide-in-from-bottom-2 duration-300">
+                <div className="animate-in-fade-up">
                   <h3 className="text-xl font-sans font-black text-slate-900 mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                     The Strategic Intervention
@@ -265,7 +265,7 @@ export default function CaseStudies() {
             {/* Content Area */}
             <div className="min-h-[250px]">
               {activeTab.expansion === 'before' ? (
-                <div className="animate-in fade-in slide-in-from-bottom-2 duration-300">
+                <div className="animate-in-fade-up">
                   <h3 className="text-xl font-sans font-black text-slate-900 mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
                     The Legacy Challenge
@@ -286,7 +286,7 @@ export default function CaseStudies() {
                   </ul>
                 </div>
               ) : (
-                <div className="animate-in fade-in slide-in-from-bottom-2 duration-300">
+                <div className="animate-in-fade-up">
                   <h3 className="text-xl font-sans font-black text-slate-900 mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                     The Strategic Intervention
@@ -364,7 +364,7 @@ export default function CaseStudies() {
             {/* Content Area */}
             <div className="min-h-[250px]">
               {activeTab.aiAdoption === 'before' ? (
-                <div className="animate-in fade-in slide-in-from-bottom-2 duration-300">
+                <div className="animate-in-fade-up">
                   <h3 className="text-xl font-sans font-black text-slate-900 mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
                     The Legacy Challenge
@@ -385,7 +385,7 @@ export default function CaseStudies() {
                   </ul>
                 </div>
               ) : (
-                <div className="animate-in fade-in slide-in-from-bottom-2 duration-300">
+                <div className="animate-in-fade-up">
                   <h3 className="text-xl font-sans font-black text-slate-900 mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                     The Strategic Intervention
@@ -434,23 +434,7 @@ export default function CaseStudies() {
 
       </main>
 
-      {/* Footer */}
-      <footer className="w-full bg-white text-slate-500 py-12 px-4 md:px-8 mt-auto">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div>
-            <h2 className="text-3xl font-sans tracking-tight font-black uppercase leading-none text-slate-900">
-              SARLINSON CHRISTIAN
-            </h2>
-            <p className="text-xs font-sans tracking-widest text-blue-600 mt-1.5 uppercase">
-              Technical Success Manager & Onboarding Specialist
-            </p>
-          </div>
-          <div className="flex flex-col items-center md:items-end gap-4 text-xs font-sans text-slate-400">
-            <Link href="/" className="hover:text-blue-600 underline uppercase">← Back to Portfolio</Link>
-            <span>© {new Date().getFullYear()} SARLINSON CHRISTIAN</span>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter backToPortfolio />
     </div>
   );
 }

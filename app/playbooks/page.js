@@ -1,7 +1,7 @@
 "use client";
 
 import Masthead from "@/components/Masthead";
-import Link from "next/link";
+import SiteFooter from "@/components/SiteFooter";
 import PlaybooksComponent from "@/components/Playbooks";
 
 export default function PlaybooksPage() {
@@ -52,7 +52,7 @@ export default function PlaybooksPage() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col selection:bg-slate-50 selection:text-white relative">
+    <div className="min-h-screen flex flex-col relative">
       <div className="noise-overlay" />
       <Masthead />
 
@@ -77,7 +77,7 @@ export default function PlaybooksPage() {
 
         {/* The CSM Toolkit - Downloadable Artifacts */}
         <section className="text-slate-900 relative overflow-hidden">
-          <div className="noise-overlay opacity-50" />
+          <div className="noise-overlay noise-overlay-strong" />
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
             <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 mb-12 uppercase leading-tight">
               The CSM Toolkit
@@ -134,23 +134,7 @@ export default function PlaybooksPage() {
 
       </main>
 
-      {/* Footer */}
-      <footer className="w-full bg-white text-slate-500 py-12 px-4 md:px-8 mt-auto">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div>
-            <h2 className="text-3xl font-sans tracking-tight font-black uppercase leading-none text-slate-900">
-              SARLINSON CHRISTIAN
-            </h2>
-            <p className="text-xs font-sans tracking-widest text-blue-600 mt-1.5 uppercase">
-              Technical Success Manager & Onboarding Specialist
-            </p>
-          </div>
-          <div className="flex flex-col items-center md:items-end gap-4 text-xs font-sans text-slate-400">
-            <Link href="/" className="hover:text-blue-600 underline uppercase">← Back to Portfolio</Link>
-            <span>© {new Date().getFullYear()} SARLINSON CHRISTIAN</span>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter backToPortfolio />
     </div>
   );
 }

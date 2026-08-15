@@ -1,19 +1,34 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Masthead() {
   return (
     <header className="w-full bg-white/95 backdrop-blur-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-3 lg:py-4 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <div className="shrink-0">
-          <Link href="/" className="inline-block group">
-            <h1 className="text-2xl lg:text-3xl font-sans tracking-tight font-black text-slate-900 uppercase leading-none">
-              SARLINSON CHRISTIAN
-            </h1>
-            <p className="text-[10px] lg:text-xs font-sans tracking-widest text-blue-600 mt-1 uppercase font-bold">
-              Technical Success Manager & Onboarding Specialist
-            </p>
+          <Link href="/" className="inline-flex items-center gap-4 group">
+            {/* Logo Image */}
+            <div className="relative w-10 h-10 md:w-12 md:h-12 shrink-0">
+              <Image 
+                src="/logo.png" 
+                alt="Sarlinson Christian Logo" 
+                fill
+                sizes="3rem"
+                className="object-contain"
+                priority
+              />
+            </div>
+            {/* Text Logo */}
+            <div>
+              <span className="block text-2xl lg:text-3xl font-sans tracking-tight font-black text-slate-900 uppercase leading-none group-hover:text-blue-600 transition-colors">
+                SARLINSON CHRISTIAN
+              </span>
+              <span className="block text-[10px] lg:text-xs font-sans tracking-widest text-blue-600 mt-1 uppercase font-bold">
+                Technical Success Manager & Onboarding Specialist
+              </span>
+            </div>
           </Link>
         </div>
 

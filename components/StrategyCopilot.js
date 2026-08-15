@@ -121,7 +121,7 @@ export default function StrategyCopilot() {
           </div>
 
           {/* Messages Display */}
-          <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-6 space-y-6 bg-white grid-bg bg-opacity-20">
+          <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-6 space-y-6 bg-white grid-bg">
             {messages.map((msg, idx) => (
               <div
                 key={idx}
@@ -144,7 +144,7 @@ export default function StrategyCopilot() {
 
             {loading && (
               <div className="flex justify-start">
-                <div className="bg-slate-50 p-4 border border-slate-200 rounded-xl shadow-sm shadow-sm hover:shadow-md min-w-[120px] flex items-center justify-center py-6">
+                <div className="bg-slate-50 p-4 border border-slate-200 rounded-xl shadow-sm hover:shadow-md min-w-[120px] flex items-center justify-center py-6">
                   <div className="dot-flashing"></div>
                 </div>
               </div>

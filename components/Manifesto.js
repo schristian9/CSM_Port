@@ -9,11 +9,11 @@ export default function Manifesto() {
       {/* Manifesto Headline */}
       <div className="lg:col-span-7 flex flex-col justify-center">
         
-        <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-sans font-black text-slate-900 tracking-tight uppercase leading-[1.05] mb-6">
+        <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-sans font-black text-slate-900 tracking-tight uppercase leading-[1.05] mb-6">
           Nobody renews because you <span className="italic text-blue-600">sold</span> well.<br />
           They renew because you <span className="underline decoration-blue-600 decoration-4 underline-offset-4">delivered</span><br />
           and that's the whole job.
-        </h2>
+        </h1>
         
         <div className="border-l-4 border-slate-200 pl-6 mb-6">
           <p className="text-xl md:text-2xl font-sans tracking-tight font-semibold text-blue-600 leading-tight italic">
@@ -61,7 +61,7 @@ export default function Manifesto() {
               alt="Clean 3x3 SaaS Executive Dashboard tracking core metrics like NRR, MRR, and Adoption"
               fill
               className="object-cover object-top"
-              sizes="(max-w-7xl) 100vw, 50vw"
+              sizes="(min-width: 1024px) 42vw, 100vw"
             />
             {/* Subtle inner shadow overlay */}
             <div className="absolute inset-0 shadow-[inset_0_2px_10px_rgba(0,0,0,0.02)] pointer-events-none"></div>
