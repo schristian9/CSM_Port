@@ -9,20 +9,20 @@ export default function Manifesto() {
       {/* Manifesto Headline */}
       <div className="lg:col-span-7 flex flex-col justify-center">
         
-        <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-sans font-black text-slate-900 tracking-tight uppercase leading-[1.05] mb-6">
-          Nobody renews because you <span className="italic text-blue-600">sold</span> well.<br />
+        <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-sans font-black text-[var(--color-text-h1)] tracking-tight uppercase leading-[1.05] mb-6">
+          Nobody renews because you <span className="italic text-[var(--color-accent)]">sold</span> well.<br />
           They renew because you <span className="underline decoration-blue-600 decoration-4 underline-offset-4">delivered</span><br />
           and that's the whole job.
         </h1>
         
-        <div className="border-l-4 border-slate-200 pl-6 mb-6">
-          <p className="text-xl md:text-2xl font-sans tracking-tight font-semibold text-blue-600 leading-tight italic">
+        <div className="border-l-4 border-[var(--color-border)] pl-6 mb-6">
+          <p className="text-xl md:text-2xl font-sans tracking-tight font-semibold text-[var(--color-accent)] leading-tight italic">
             "Adoption, Retention, Expansion, Advocacy are outcomes, not goals. Chase the customer's actual desired result and the rest follows."
           </p>
         </div>
 
-        <p className="text-lg text-slate-900 leading-relaxed max-w-2xl">
-          I am <span className="text-blue-600 font-semibold">Sarlinson Christian</span>, a <span className="text-blue-600 font-semibold">Technical Customer Success & Onboarding Manager</span> specializing in AI platform implementations, customer adoption, and healthcare technology rollouts. By building structured onboarding frameworks and optimizing workflows, I drive implementation consistency and measurable business growth.
+        <p className="text-lg text-[var(--color-text)] leading-relaxed max-w-2xl">
+          I am <span className="text-[var(--color-accent)] font-semibold">Sarlinson Christian</span>, a <span className="text-[var(--color-accent)] font-semibold">Technical Customer Success & Onboarding Manager</span> specializing in AI platform implementations, customer adoption, and healthcare technology rollouts. By building structured onboarding frameworks and optimizing workflows, I drive implementation consistency and measurable business growth.
         </p>
 
         <div className="flex flex-wrap gap-4 mt-8">
@@ -39,10 +39,10 @@ export default function Manifesto() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 lg:w-96 lg:h-96 bg-blue-100 rounded-full blur-3xl opacity-50 z-0"></div>
 
         {/* Floating SaaS Window */}
-        <div className="relative w-full h-full lg:max-h-[500px] bg-white border border-slate-200 rounded-2xl shadow-xl flex flex-col overflow-hidden z-10 transition-transform duration-500 hover:shadow-2xl hover:-translate-y-2">
+        <div className="relative w-full h-full lg:max-h-[500px] bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl shadow-xl flex flex-col overflow-hidden z-10 transition-transform duration-500 hover:shadow-2xl hover:-translate-y-2">
           
           {/* macOS-style Window Header */}
-          <div className="bg-slate-50 border-b border-slate-200 px-4 py-3 flex items-center gap-2">
+          <div className="bg-slate-50 border-b border-[var(--color-border)] px-4 py-3 flex items-center gap-2">
             <div className="flex gap-1.5">
               <div className="w-3 h-3 rounded-full bg-slate-200"></div>
               <div className="w-3 h-3 rounded-full bg-slate-200"></div>
@@ -68,14 +68,14 @@ export default function Manifesto() {
           </div>
           
           {/* Clean Footer */}
-          <div className="bg-white border-t border-slate-100 px-5 py-4 flex justify-between items-center">
+          <div className="bg-[var(--color-surface)] border-t border-slate-100 px-5 py-4 flex justify-between items-center">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded bg-blue-50 text-blue-600 flex items-center justify-center">
+              <div className="w-8 h-8 rounded bg-[var(--color-accent-pale)] text-[var(--color-accent)] flex items-center justify-center">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
               </div>
               <div>
-                <p className="text-sm font-semibold text-slate-900">Revenue Metrics</p>
-                <p className="text-[11px] text-slate-500 font-medium">Live NRR Tracking</p>
+                <p className="text-sm font-semibold text-[var(--color-text)]">Revenue Metrics</p>
+                <p className="text-[11px] text-[var(--color-text-muted)] font-medium">Live NRR Tracking</p>
               </div>
             </div>
             <div className="text-right">

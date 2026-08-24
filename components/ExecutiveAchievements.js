@@ -83,12 +83,12 @@ export default function ExecutiveAchievements() {
       <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-8 mb-12">
         <div className="lg:w-1/2">
           <div className="pro-badge mb-4 bg-slate-900 text-white">IMPACT</div>
-          <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
+          <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
             Achievements
           </h2>
         </div>
         <div className="lg:w-1/2 lg:pt-8">
-          <p className="text-xl md:text-2xl text-slate-600 font-sans max-w-xl leading-relaxed">
+          <p className="text-xl md:text-2xl text-[var(--color-text-muted)] font-sans max-w-xl leading-relaxed">
             Delivering measurable value across time-to-value, renewal retention, revenue expansion, usage analytics, and customer innovation.
           </p>
         </div>
@@ -97,30 +97,30 @@ export default function ExecutiveAchievements() {
       {/* Grid of Cards */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {achievements.map((item, idx) => (
-          <div key={idx} className="pro-card bg-white p-8 flex flex-col h-full hover:shadow-lg transition-all border border-slate-200">
+          <div key={idx} className="pro-card bg-[var(--color-surface)] p-8 flex flex-col h-full hover:shadow-lg transition-all border border-[var(--color-border)]">
             {/* Icon */}
-            <div className="w-14 h-14 rounded-full bg-slate-50 text-slate-900 flex items-center justify-center mb-6 shrink-0 border border-slate-200">
+            <div className="w-14 h-14 rounded-full bg-slate-50 text-[var(--color-text)] flex items-center justify-center mb-6 shrink-0 border border-[var(--color-border)]">
               {item.icon}
             </div>
 
             {/* Title & Description */}
-            <h3 className="text-2xl font-sans font-black text-slate-900 tracking-tight mb-3">
+            <h3 className="text-2xl font-sans font-black text-[var(--color-text-h1)] tracking-tight mb-3">
               {item.title}
             </h3>
-            <p className="text-base font-sans text-slate-600 leading-relaxed mb-6 flex-grow">
+            <p className="text-base font-sans text-[var(--color-text-muted)] leading-relaxed mb-6 flex-grow">
               {item.description}
             </p>
 
             {/* Impact Box */}
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 mt-auto">
+            <div className="bg-slate-50 border border-[var(--color-border)] rounded-xl p-5 mt-auto">
               <div className="flex items-center gap-2 mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-slate-900 shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-[var(--color-text)] shrink-0">
                   <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
                   <polyline points="16 7 22 7 22 13"></polyline>
                 </svg>
-                <span className="font-sans text-xs tracking-widest font-bold uppercase text-slate-900">BUSINESS IMPACT</span>
+                <span className="font-sans text-xs tracking-widest font-bold uppercase text-[var(--color-text)]">BUSINESS IMPACT</span>
               </div>
-              <p className="text-sm font-sans text-slate-900 font-semibold leading-relaxed">
+              <p className="text-sm font-sans text-[var(--color-text)] font-semibold leading-relaxed">
                 {item.impact}
               </p>
             </div>

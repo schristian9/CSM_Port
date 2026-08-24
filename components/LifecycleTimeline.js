@@ -59,12 +59,12 @@ export default function LifecycleTimeline() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <div className="pro-badge mb-3">EVOLUTION TIMELINE</div>
-          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-none">
+          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-none">
             Strategic Career Path
           </h3>
         </div>
-        <div className="text-sm font-sans text-blue-600 max-w-xs md:text-right uppercase font-semibold">
-          <Link href="/about" className="underline hover:text-slate-900 block mb-1">Explore Visual Growth Page →</Link>
+        <div className="text-sm font-sans text-[var(--color-accent)] max-w-xs md:text-right uppercase font-semibold">
+          <Link href="/about" className="underline hover:text-[var(--color-text)] block mb-1">Explore Visual Growth Page →</Link>
           <span className="text-gray-400">✦ Click on a phase to explore achievements and metrics.</span>
         </div>
       </div>
@@ -78,20 +78,20 @@ export default function LifecycleTimeline() {
               onClick={() => setActiveStep(idx)}
               className={`pro-card text-left p-6 flex flex-col justify-between transition-all ${
                 activeStep === idx
-                  ? "!bg-blue-600 text-white !border-blue-600 shadow-md"
-                  : "text-slate-900 hover:!bg-slate-50"
+                  ? "!bg-[var(--color-accent)] text-white !border-blue-600 shadow-md"
+                  : "text-[var(--color-text)] hover:!bg-slate-50"
               }`}
             >
               <div className="flex justify-between items-center mb-2 font-sans text-xs">
                 <span>PHASE 0{steps.length - idx}</span>
-                <span className={activeStep === idx ? "text-blue-600 font-bold" : "text-gray-500"}>
+                <span className={activeStep === idx ? "text-[var(--color-accent)] font-bold" : "text-[var(--color-text-muted)]"}>
                   {step.period}
                 </span>
               </div>
               <h4 className="font-sans tracking-tight font-black text-lg md:text-xl uppercase tracking-tight leading-tight">
                 {step.role}
               </h4>
-              <p className={`text-xs mt-1 font-sans uppercase ${activeStep === idx ? "text-blue-200" : "text-gray-500"}`}>
+              <p className={`text-xs mt-1 font-sans uppercase ${activeStep === idx ? "text-blue-200" : "text-[var(--color-text-muted)]"}`}>
                 @ {step.company}
               </p>
             </button>
@@ -103,15 +103,15 @@ export default function LifecycleTimeline() {
           {/* Subtle decoration */}
           
 
-          <div className="flex flex-wrap justify-between items-start border-b border-slate-200 pb-6 mb-6 gap-4">
+          <div className="flex flex-wrap justify-between items-start border-b border-[var(--color-border)] pb-6 mb-6 gap-4">
             <div>
-              <span className="font-sans text-xs text-blue-600 uppercase font-bold tracking-widest">
+              <span className="font-sans text-xs text-[var(--color-accent)] uppercase font-bold tracking-widest">
                 {steps[activeStep].period}
               </span>
-              <h4 className="font-sans tracking-tight font-black text-2xl md:text-3xl text-slate-900 uppercase mt-1">
+              <h4 className="font-sans tracking-tight font-black text-2xl md:text-3xl text-[var(--color-text-h1)] uppercase mt-1">
                 {steps[activeStep].role}
               </h4>
-              <p className="font-sans text-sm text-gray-500 mt-0.5">
+              <p className="font-sans text-sm text-[var(--color-text-muted)] mt-0.5">
                 {steps[activeStep].company} — {steps[activeStep].focus}
               </p>
             </div>
@@ -119,7 +119,7 @@ export default function LifecycleTimeline() {
             {/* Quick KPI Badges */}
             <div className="flex gap-2 flex-wrap">
               {steps[activeStep].metrics.map((metric, i) => (
-                <span key={i} className="pro-badge bg-blue-50 text-blue-600 border border-blue-200">
+                <span key={i} className="pro-badge bg-[var(--color-accent-pale)] text-[var(--color-accent)] border border-[var(--color-accent-soft)]">
                   {metric}
                 </span>
               ))}
@@ -127,10 +127,10 @@ export default function LifecycleTimeline() {
           </div>
 
           {/* Achievement List */}
-          <ul className="space-y-4 font-sans text-lg text-slate-900 leading-relaxed">
+          <ul className="space-y-4 font-sans text-lg text-[var(--color-text)] leading-relaxed">
             {steps[activeStep].bulletPoints.map((bp, i) => (
               <li key={i} className="flex gap-4 items-start">
-                <span className="inline-block mt-2 w-2 h-2 bg-blue-600 shrink-0"></span>
+                <span className="inline-block mt-2 w-2 h-2 bg-[var(--color-accent)] shrink-0"></span>
                 <span>{bp}</span>
               </li>
             ))}

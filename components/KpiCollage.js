@@ -11,7 +11,7 @@ export default function KpiCollage() {
       bottomLeft: "OUTCOME ACCELERATED",
       bottomRight: "VERIFIED METRIC",
       icon: (
-        <svg className="w-10 h-10 md:w-12 md:h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+        <svg className="w-10 h-10 md:w-12 md:h-12 text-[var(--color-accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
       )
     },
     {
@@ -23,7 +23,7 @@ export default function KpiCollage() {
       bottomLeft: "REVENUE MULTIPLIER",
       bottomRight: "AUDITED METRIC",
       icon: (
-        <svg className="w-10 h-10 md:w-12 md:h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+        <svg className="w-10 h-10 md:w-12 md:h-12 text-[var(--color-accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
       )
     },
     {
@@ -35,7 +35,7 @@ export default function KpiCollage() {
       bottomLeft: "CHURN REDUCED",
       bottomRight: "Q1-Q4 VALIDATED",
       icon: (
-        <svg className="w-10 h-10 md:w-12 md:h-12 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path></svg>
+        <svg className="w-10 h-10 md:w-12 md:h-12 text-[var(--color-text)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path></svg>
       )
     },
     {
@@ -47,7 +47,7 @@ export default function KpiCollage() {
       bottomLeft: "PORTFOLIO GROWTH",
       bottomRight: "EXECUTIVE VERIFIED",
       icon: (
-        <svg className="w-10 h-10 md:w-12 md:h-12 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        <svg className="w-10 h-10 md:w-12 md:h-12 text-[var(--color-text)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
       )
     }
   ];
@@ -57,11 +57,11 @@ export default function KpiCollage() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <div className="pro-badge mb-3 bg-slate-900 text-white">EXECUTIVE DASHBOARD</div>
-          <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
+          <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
             Proven Business Impact
           </h2>
         </div>
-        <p className="text-sm font-sans text-blue-600 max-w-xs md:text-right uppercase font-bold">
+        <p className="text-sm font-sans text-[var(--color-accent)] max-w-xs md:text-right uppercase font-bold">
           ✦ Measurable results in retention & expansion.
         </p>
       </div>
@@ -71,10 +71,10 @@ export default function KpiCollage() {
         {kpis.map((kpi, idx) => (
           <div
             key={idx}
-            className="pro-card bg-white border border-slate-200 p-8 flex flex-col justify-between h-full hover:border-blue-500 hover:shadow-lg transition-all group relative overflow-hidden"
+            className="pro-card bg-[var(--color-surface)] border border-[var(--color-border)] p-8 flex flex-col justify-between h-full hover:border-blue-500 hover:shadow-lg transition-all group relative overflow-hidden"
           >            
-            <div className="flex justify-between items-start border-b border-slate-200 pb-4 mb-6 relative z-10">
-              <span className="font-sans text-[10px] font-bold text-blue-600 uppercase tracking-widest">
+            <div className="flex justify-between items-start border-b border-[var(--color-border)] pb-4 mb-6 relative z-10">
+              <span className="font-sans text-[10px] font-bold text-[var(--color-accent)] uppercase tracking-widest">
                 {kpi.tag}
               </span>
               <span className="text-[10px] font-sans uppercase font-bold text-slate-400 tracking-wider">
@@ -84,17 +84,17 @@ export default function KpiCollage() {
 
             <div className="relative z-10 flex-grow flex flex-col justify-center">
               <div className="flex items-center justify-between mb-4">
-                <div className="text-6xl lg:text-7xl font-sans tracking-tighter font-black text-slate-900 leading-none group-hover:text-blue-600 transition-colors">
+                <div className="text-6xl lg:text-7xl font-sans tracking-tighter font-black text-[var(--color-text)] leading-none group-hover:text-[var(--color-accent)] transition-colors">
                   {kpi.metric}
                 </div>
                 <div className="opacity-80 group-hover:opacity-100 transition-opacity">
                   {kpi.icon}
                 </div>
               </div>
-              <h4 className="font-sans text-lg font-black text-slate-900 uppercase tracking-tight mb-3">
+              <h4 className="font-sans text-lg font-black text-[var(--color-text-h1)] uppercase tracking-tight mb-3">
                 {kpi.label}
               </h4>
-              <p className="text-sm text-slate-600 leading-relaxed font-sans max-w-md">
+              <p className="text-sm text-[var(--color-text-muted)] leading-relaxed font-sans max-w-md">
                 {kpi.desc}
               </p>
             </div>

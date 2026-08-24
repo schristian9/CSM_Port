@@ -102,15 +102,15 @@ export default function About() {
       <div className="noise-overlay" />
       <Masthead />
 
-      <main className="flex-1 w-full bg-white pb-24">
+      <main className="flex-1 w-full pb-24">
         {/* Missing Page Header */}
         <section className="">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
             <div className="pro-badge mb-4">BACKGROUND</div>
-            <h1 className="text-4xl md:text-6xl font-sans tracking-tight font-black text-slate-900 leading-tight uppercase mb-6">
-              About & <span className="text-blue-600">Experience</span>
+            <h1 className="text-4xl md:text-6xl font-sans tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-6">
+              About & <span className="text-[var(--color-accent)]">Experience</span>
             </h1>
-            <p className="text-xl md:text-2xl font-sans text-slate-600 leading-relaxed font-semibold max-w-3xl">
+            <p className="text-xl md:text-2xl font-sans text-[var(--color-text-muted)] leading-relaxed font-semibold max-w-3xl">
               The career journey and deep technical evolution driving my customer success frameworks.
             </p>
           </div>
@@ -123,7 +123,7 @@ export default function About() {
             <div className="pro-card p-8 relative overflow-hidden">
               
               {/* Profile Picture */}
-              <div className="mb-6 relative w-full aspect-square rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <div className="mb-6 relative w-full aspect-square rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-sm">
                 <Image
                   src="/mypng.png"
                   alt="Sarlinson Christian"
@@ -134,32 +134,32 @@ export default function About() {
                 />
               </div>
               
-              <div className="border-b border-slate-200 pb-6 mb-6">
+              <div className="border-b border-[var(--color-border)] pb-6 mb-6">
                 <div className="pro-badge mb-3">PERSONAL DOSSIER</div>
-                <h2 className="text-3xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
+                <h2 className="text-3xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
                   Sarlinson Christian
                 </h2>
-                <p className="text-sm font-sans text-blue-600 uppercase font-bold mt-1.5">
+                <p className="text-sm font-sans text-[var(--color-accent)] uppercase font-bold mt-1.5">
                   Technical CS & Onboarding Leader
                 </p>
               </div>
 
               {/* Contact Information */}
-              <div className="space-y-4 font-sans text-xs text-slate-900">
-                <div className="flex justify-between py-2 border-b border-slate-200">
-                  <span className="text-gray-500">LOCATION</span>
+              <div className="space-y-4 font-sans text-xs text-[var(--color-text)]">
+                <div className="flex justify-between py-2 border-b border-[var(--color-border)]">
+                  <span className="text-[var(--color-text-muted)]">LOCATION</span>
                   <span className="font-bold">LONDON, UK</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-slate-200">
-                  <span className="text-gray-500">EMAIL</span>
-                  <a href="mailto:hello@sarlinson.com" className="font-bold hover:text-blue-600 underline">
+                <div className="flex justify-between py-2 border-b border-[var(--color-border)]">
+                  <span className="text-[var(--color-text-muted)]">EMAIL</span>
+                  <a href="mailto:hello@sarlinson.com" className="font-bold hover:text-[var(--color-accent)] underline">
                     hello@sarlinson.com
                   </a>
                 </div>
 
-                <div className="flex justify-between py-2 border-b border-slate-200">
-                  <span className="text-gray-500">LINKEDIN</span>
-                  <a href="https://linkedin.com/in/sarlinson" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-blue-600 underline">
+                <div className="flex justify-between py-2 border-b border-[var(--color-border)]">
+                  <span className="text-[var(--color-text-muted)]">LINKEDIN</span>
+                  <a href="https://linkedin.com/in/sarlinson" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-[var(--color-accent)] underline">
                     linkedin.com/in/sarlinson
                   </a>
                 </div>
@@ -173,38 +173,38 @@ export default function About() {
             </div>
 
             <div className="pro-card p-8">
-              <h4 className="text-2xl font-sans tracking-tight font-black text-slate-900 uppercase border-b border-slate-200 pb-3 mb-4">
+              <h4 className="text-2xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase border-b border-[var(--color-border)] pb-3 mb-4">
                 Education
               </h4>
               <div className="space-y-4">
                 <div>
-                  <h5 className="text-lg font-bold text-slate-900 leading-snug">
+                  <h5 className="text-lg font-bold text-[var(--color-text)] leading-snug">
                     Bachelor of Business Administration (2026)
                   </h5>
-                  <p className="text-sm text-gray-600 font-sans mt-1">DY Patil University</p>
+                  <p className="text-sm text-[var(--color-text-muted)] font-sans mt-1">DY Patil University</p>
                 </div>
-                <div className="border-t border-slate-200 pt-4">
-                  <h5 className="text-lg font-bold text-slate-900 leading-snug">
+                <div className="border-t border-[var(--color-border)] pt-4">
+                  <h5 className="text-lg font-bold text-[var(--color-text)] leading-snug">
                     General Nursing Midwifery (2017)
                   </h5>
-                  <p className="text-sm text-gray-600 font-sans mt-1">GCS Medical College</p>
+                  <p className="text-sm text-[var(--color-text-muted)] font-sans mt-1">GCS Medical College</p>
                 </div>
               </div>
             </div>
 
             {/* Resume Download Card */}
             <div className="pro-card p-8">
-              <h4 className="text-2xl font-sans tracking-tight font-black text-slate-900 uppercase border-b border-slate-200 pb-3 mb-4">
+              <h4 className="text-2xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase border-b border-[var(--color-border)] pb-3 mb-4">
                 Resume
               </h4>
-              <p className="text-sm font-sans text-slate-600 mb-6 leading-relaxed">
+              <p className="text-sm font-sans text-[var(--color-text-muted)] mb-6 leading-relaxed">
                 Download a formal, printable PDF copy of my resume outlining my complete career trajectory and key achievements.
               </p>
               <a 
                 href="/sarlinson-christian-resume.pdf" 
                 download
                 target="_blank"
-                className="inline-flex w-full items-center justify-center gap-2 bg-slate-900 text-white px-6 py-3 text-xs font-bold tracking-widest uppercase transition-all hover:bg-blue-600 rounded-sm"
+                className="inline-flex w-full items-center justify-center gap-2 bg-slate-900 text-white px-6 py-3 text-xs font-bold tracking-widest uppercase transition-all hover:bg-[var(--color-accent)] rounded-sm"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -216,10 +216,10 @@ export default function About() {
             </div>
 
             {/* Editorial Quote Card */}
-            <div className="pro-card p-8 relative overflow-hidden shadow-sm hover:shadow-md border border-slate-200">
+            <div className="pro-card p-8 relative overflow-hidden shadow-sm hover:shadow-md border border-[var(--color-border)]">
               
-              <span className="font-sans text-[10px] text-blue-600 uppercase tracking-widest block mb-4">PERSISTENCE AUDIT</span>
-              <p className="text-xl font-sans tracking-tight font-semibold italic text-blue-600 leading-relaxed">
+              <span className="font-sans text-[10px] text-[var(--color-accent)] uppercase tracking-widest block mb-4">PERSISTENCE AUDIT</span>
+              <p className="text-xl font-sans tracking-tight font-semibold italic text-[var(--color-accent)] leading-relaxed">
                 "Keep feeding the fire, even when the smoke convinces you it's dying."
               </p>
             </div>
@@ -230,16 +230,16 @@ export default function About() {
             
             {/* Visual Trajectory section */}
             <div className="pro-card p-8 md:p-10">
-              <div className="border-b border-slate-200 pb-6 mb-8">
+              <div className="border-b border-[var(--color-border)] pb-6 mb-8">
                 <div className="pro-badge mb-3">VISUAL TRAJECTORY</div>
-                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
+                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
                   Clinical-to-Technical Growth
                 </h3>
-                <p className="text-sm font-sans text-blue-600 mt-4 uppercase font-semibold">
+                <p className="text-sm font-sans text-[var(--color-accent)] mt-4 uppercase font-semibold">
                   How nursing principles fuel onboarding velocity & AI adoption in healthcare SaaS.
                 </p>
-                <div className="border-l-4 border-slate-200 pl-4 mt-6">
-                  <p className="text-lg font-sans tracking-tight font-semibold italic text-blue-600 leading-relaxed">
+                <div className="border-l-4 border-[var(--color-border)] pl-4 mt-6">
+                  <p className="text-lg font-sans tracking-tight font-semibold italic text-[var(--color-accent)] leading-relaxed">
                     "You'll never know if you're lost until you start walking."
                   </p>
                 </div>
@@ -250,23 +250,23 @@ export default function About() {
                 <div className="space-y-10">
                   {trajectory.map((step, idx) => (
                     <div key={idx} className="flex gap-6 items-start relative z-10">
-                      <div className="w-12 h-12 rounded-full border border-slate-200 flex flex-col items-center justify-center font-sans tracking-tight font-black text-[10px] shrink-0 shadow-sm hover:shadow-md">
+                      <div className="w-12 h-12 rounded-full border border-[var(--color-border)] flex flex-col items-center justify-center font-sans tracking-tight font-black text-[10px] shrink-0 shadow-sm hover:shadow-md">
                         {step.year.split(" - ").pop()}
                       </div>
                       
-                      <div className="flex-1 border border-slate-200 p-6 shadow-sm hover:shadow-md">
+                      <div className="flex-1 border border-[var(--color-border)] p-6 shadow-sm hover:shadow-md">
                         <div className="flex flex-wrap justify-between items-baseline gap-2 mb-2">
-                          <h4 className="font-sans tracking-tight font-black text-lg md:text-xl text-slate-900 uppercase leading-none">
+                          <h4 className="font-sans tracking-tight font-black text-lg md:text-xl text-[var(--color-text-h1)] uppercase leading-none">
                             {step.role}
                           </h4>
-                          <span className="font-sans text-xs text-blue-600 font-bold">@ {step.company}</span>
+                          <span className="font-sans text-xs text-[var(--color-accent)] font-bold">@ {step.company}</span>
                         </div>
-                        <p className="text-xs font-sans uppercase text-gray-500 font-bold mb-4">{step.highlight}</p>
+                        <p className="text-xs font-sans uppercase text-[var(--color-text-muted)] font-bold mb-4">{step.highlight}</p>
                         
-                        <ul className="space-y-2 text-base text-slate-900 leading-relaxed">
+                        <ul className="space-y-2 text-base text-[var(--color-text)] leading-relaxed">
                           {step.achievements.map((ach, i) => (
                             <li key={i} className="flex gap-3 items-start">
-                              <span className="inline-block mt-2 w-1.5 h-1.5 bg-blue-600 shrink-0"></span>
+                              <span className="inline-block mt-2 w-1.5 h-1.5 bg-[var(--color-accent)] shrink-0"></span>
                               <span className="opacity-90">{ach}</span>
                             </li>
                           ))}
@@ -280,29 +280,29 @@ export default function About() {
 
             {/* Strategic Projects section */}
             <div className="pro-card p-8 md:p-10">
-              <div className="border-b border-slate-200 pb-6 mb-8">
+              <div className="border-b border-[var(--color-border)] pb-6 mb-8">
                 <div className="pro-badge mb-3">FEATURED PROJECTS</div>
-                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
+                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
                   Healthcare AI Platform Implementation
                 </h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
-                <div className="md:col-span-7 border border-slate-200 p-6 shadow-sm hover:shadow-md flex flex-col justify-between">
+                <div className="md:col-span-7 border border-[var(--color-border)] p-6 shadow-sm hover:shadow-md flex flex-col justify-between">
                   <div>
                     <div className="flex justify-between items-baseline mb-3">
-                      <h4 className="font-sans tracking-tight font-black text-lg text-slate-900 uppercase">
+                      <h4 className="font-sans tracking-tight font-black text-lg text-[var(--color-text-h1)] uppercase">
                         AI-Driven Health Platform — DecodeDx
                       </h4>
                       <span className="pro-badge text-white">-25% User Drop-Off</span>
                     </div>
-                    <p className="text-base text-slate-900 leading-relaxed">
+                    <p className="text-base text-[var(--color-text)] leading-relaxed">
                       Translated complex clinical workflow insights gathered from hands-on healthcare operations directly into product redesign requirements for an early-stage AI health diagnostics platform. Successfully streamlined interface workflows and reduced user drop-off during onboarding cycles by 25%.
                     </p>
                   </div>
                 </div>
                 
-                <div className="md:col-span-5 relative border border-slate-200 shadow-sm hover:shadow-md overflow-hidden min-h-[200px]">
+                <div className="md:col-span-5 relative border border-[var(--color-border)] shadow-sm hover:shadow-md overflow-hidden min-h-[200px]">
                   <Image
                     src="/clinical_tech.jpg"
                     alt="Clinical workflow interface and doctor's workspace mockup"
@@ -316,47 +316,47 @@ export default function About() {
 
             {/* Technical Skills Categorization */}
             <div className="pro-card p-8 md:p-10">
-              <div className="border-b border-slate-200 pb-6 mb-8">
+              <div className="border-b border-[var(--color-border)] pb-6 mb-8">
                 <div className="pro-badge mb-3">SKILLS DIRECTORY</div>
-                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
+                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
                   Technical Capability Board
                 </h3>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-sans text-xs font-bold text-blue-600 uppercase tracking-wider mb-3">
+                  <h4 className="font-sans text-xs font-bold text-[var(--color-accent)] uppercase tracking-wider mb-3">
                     Customer Success & Adoption
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.csAdoption.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-slate-200 font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
+                      <span key={i} className="px-3 py-1.5 border border-[var(--color-border)] font-sans text-xs text-[var(--color-text)] shadow-sm hover:shadow-md">
                         {s}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                <div className="border-t border-slate-200 pt-6">
-                  <h4 className="font-sans text-xs font-bold text-blue-600 uppercase tracking-wider mb-3">
+                <div className="border-t border-[var(--color-border)] pt-6">
+                  <h4 className="font-sans text-xs font-bold text-[var(--color-accent)] uppercase tracking-wider mb-3">
                     Business & Commercial Strategy
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.businessCommercial.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-slate-200 font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
+                      <span key={i} className="px-3 py-1.5 border border-[var(--color-border)] font-sans text-xs text-[var(--color-text)] shadow-sm hover:shadow-md">
                         {s}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                <div className="border-t border-slate-200 pt-6">
-                  <h4 className="font-sans text-xs font-bold text-blue-600 uppercase tracking-wider mb-3">
+                <div className="border-t border-[var(--color-border)] pt-6">
+                  <h4 className="font-sans text-xs font-bold text-[var(--color-accent)] uppercase tracking-wider mb-3">
                     Tools, Platforms & Frameworks
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {skills.toolsPlatforms.map((s, i) => (
-                      <span key={i} className="px-3 py-1.5 border border-slate-200 font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
+                      <span key={i} className="px-3 py-1.5 border border-[var(--color-border)] font-sans text-xs text-[var(--color-text)] shadow-sm hover:shadow-md">
                         {s}
                       </span>
                     ))}
@@ -371,9 +371,9 @@ export default function About() {
 
         {/* Core Skills Section */}
         <section className="max-w-7xl mx-auto px-4 md:px-8 pt-16 md:pt-24">
-          <div className="border-b border-slate-200 pb-6 mb-12">
+          <div className="border-b border-[var(--color-border)] pb-6 mb-12">
             <div className="pro-badge mb-3">CORE CAPABILITIES</div>
-            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-tight">
+            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
               The Five Pillars
             </h2>
           </div>
@@ -381,15 +381,15 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {coreSkills.map((pillar, idx) => (
               <div key={idx} className="pro-card p-8 hover:border-blue-500 flex flex-col h-full">
-                <div className="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center shrink-0 mb-6 bg-slate-50">
-                  <span className="font-sans font-black text-slate-900">{idx + 1}</span>
+                <div className="w-12 h-12 rounded-full border border-[var(--color-border)] flex items-center justify-center shrink-0 mb-6 bg-slate-50">
+                  <span className="font-sans font-black text-[var(--color-text)]">{idx + 1}</span>
                 </div>
-                <h3 className="text-lg font-sans font-black text-slate-900 mb-4 uppercase leading-snug">
+                <h3 className="text-lg font-sans font-black text-[var(--color-text-h1)] mb-4 uppercase leading-snug">
                   {pillar.title}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {pillar.skills.map((s, i) => (
-                    <span key={i} className="px-3 py-1.5 border border-slate-200 font-sans text-xs text-slate-900 shadow-sm hover:shadow-md">
+                    <span key={i} className="px-3 py-1.5 border border-[var(--color-border)] font-sans text-xs text-[var(--color-text)] shadow-sm hover:shadow-md">
                       {s}
                     </span>
                   ))}

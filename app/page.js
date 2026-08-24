@@ -16,7 +16,7 @@ export default function Home() {
       <Masthead />
 
       {/* Main Content Layout */}
-      <main className="flex-1 w-full bg-white">
+      <main className="flex-1 w-full">
         {/* Hero Manifesto */}
         <Manifesto />
 

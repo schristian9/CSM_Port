@@ -69,27 +69,27 @@ export default function StrategyCopilot() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <div className="pro-badge mb-3">CUSTOM INTELLECT API</div>
-          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-none">
+          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-none">
             CS Strategy Copilot
           </h3>
         </div>
-        <p className="text-sm font-sans text-blue-600 max-w-xs md:text-right uppercase">
+        <p className="text-sm font-sans text-[var(--color-accent)] max-w-xs md:text-right uppercase">
           ✦ Talk to my AI deputy to audit my strategic knowledge base.
         </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
         {/* Left Side: Instructions & Suggestion Chips */}
-        <div className="lg:col-span-4 flex flex-col justify-between pro-card bg-white p-8">
+        <div className="lg:col-span-4 flex flex-col justify-between pro-card bg-[var(--color-surface)] p-8">
           <div>
-            <h4 className="font-sans tracking-tight font-black text-xl uppercase text-slate-900 mb-4">
+            <h4 className="font-sans tracking-tight font-black text-xl uppercase text-[var(--color-text-h1)] mb-4">
               Ask Me Anything
             </h4>
-            <p className="text-xl text-slate-900 font-medium leading-relaxed mb-6 font-sans">
+            <p className="text-xl text-[var(--color-text)] font-medium leading-relaxed mb-6 font-sans">
               Test my expertise in real-time. This chatbot is loaded with my core frameworks, retention philosophy, and career metrics to simulate a strategic interview.
             </p>
             <div className="space-y-3">
-              <span className="font-sans text-xs text-blue-600 font-bold block uppercase tracking-wide">
+              <span className="font-sans text-xs text-[var(--color-accent)] font-bold block uppercase tracking-wide">
                 Quick Prompts
               </span>
               {presets.map((preset, idx) => (
@@ -97,10 +97,10 @@ export default function StrategyCopilot() {
                   key={idx}
                   onClick={() => handleSend(preset)}
                   disabled={loading}
-                  className="w-full text-left p-3 border border-slate-200 bg-slate-50 hover:bg-slate-50 font-sans text-xs text-slate-900 transition-all flex justify-between items-center shadow-sm hover:shadow-md disabled:opacity-50"
+                  className="w-full text-left p-3 border border-[var(--color-border)] bg-slate-50 hover:bg-slate-50 font-sans text-xs text-[var(--color-text)] transition-all flex justify-between items-center shadow-sm hover:shadow-md disabled:opacity-50"
                 >
                   <span>{preset}</span>
-                  <span className="text-blue-600">➔</span>
+                  <span className="text-[var(--color-accent)]">➔</span>
                 </button>
               ))}
             </div>
@@ -112,7 +112,7 @@ export default function StrategyCopilot() {
         {/* Right Side: Chat Container */}
         <div className="lg:col-span-8 pro-card bg-slate-50 flex flex-col h-[500px]">
           {/* Top Info Bar */}
-          <div className="border-b border-slate-200 p-4 flex justify-between items-center bg-white">
+          <div className="border-b border-[var(--color-border)] p-4 flex justify-between items-center bg-[var(--color-surface)]">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
               <span className="font-sans text-xs font-bold uppercase tracking-wider">[ CO-PILOT ACTIVE ]</span>
@@ -121,20 +121,20 @@ export default function StrategyCopilot() {
           </div>
 
           {/* Messages Display */}
-          <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-6 space-y-6 bg-white grid-bg">
+          <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-6 space-y-6 bg-[var(--color-surface)] grid-bg">
             {messages.map((msg, idx) => (
               <div
                 key={idx}
                 className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className={`max-w-[85%] p-4 border border-slate-200 rounded-xl shadow-sm hover:shadow-md ${
+                  className={`max-w-[85%] p-4 border border-[var(--color-border)] rounded-xl shadow-sm hover:shadow-md ${
                     msg.role === "user"
-                      ? "bg-blue-600 text-white border-blue-600"
-                      : "bg-slate-50 text-slate-900"
+                      ? "bg-[var(--color-accent)] text-white border-blue-600"
+                      : "bg-slate-50 text-[var(--color-text)]"
                   }`}
                 >
-                  <div className={`flex justify-between items-center border-b pb-1.5 mb-2 text-[9px] font-sans tracking-widest uppercase ${msg.role === "user" ? "border-blue-400 text-blue-200" : "border-slate-200 opacity-75"}`}>
+                  <div className={`flex justify-between items-center border-b pb-1.5 mb-2 text-[9px] font-sans tracking-widest uppercase ${msg.role === "user" ? "border-blue-400 text-blue-200" : "border-[var(--color-border)] opacity-75"}`}>
                     <span>{msg.role === "user" ? "USER | RECRUITER" : "CO-PILOT | SARLINSON"}</span>
                   </div>
                   <p className="text-base font-sans leading-relaxed whitespace-pre-wrap">{msg.content}</p>
@@ -144,7 +144,7 @@ export default function StrategyCopilot() {
 
             {loading && (
               <div className="flex justify-start">
-                <div className="bg-slate-50 p-4 border border-slate-200 rounded-xl shadow-sm hover:shadow-md min-w-[120px] flex items-center justify-center py-6">
+                <div className="bg-slate-50 p-4 border border-[var(--color-border)] rounded-xl shadow-sm hover:shadow-md min-w-[120px] flex items-center justify-center py-6">
                   <div className="dot-flashing"></div>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function StrategyCopilot() {
               e.preventDefault();
               handleSend();
             }}
-            className="border-t-2 border-slate-200 p-4 flex gap-4 bg-white"
+            className="border-t-2 border-[var(--color-border)] p-4 flex gap-4 bg-[var(--color-surface)]"
           >
             <input
               type="text"
@@ -165,7 +165,7 @@ export default function StrategyCopilot() {
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask a question (e.g. 'What is your NRR target?')..."
               disabled={loading}
-              className="flex-1 px-4 py-3 border border-slate-200 bg-slate-50 font-sans text-sm focus:outline-none focus:ring-2 focus:ring-[#d6d0c2] disabled:opacity-50"
+              className="flex-1 px-4 py-3 border border-[var(--color-border)] bg-slate-50 font-sans text-sm focus:outline-none focus:ring-2 focus:ring-[#d6d0c2] disabled:opacity-50"
             />
             <button
               type="submit"

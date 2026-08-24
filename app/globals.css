@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #F8FAFC;
+  --color-bg: #F8F7F2;
   --color-surface: #FFFFFF;
-  --color-text: #0F172A; /* Slate 900 */
-  --color-text-muted: #64748B; /* Slate 500 */
-  --color-accent: #2563EB; /* Blue 600 */
-  --color-accent-hover: #1D4ED8; /* Blue 700 */
-  --color-border: #E2E8F0; /* Slate 200 */
+  --color-text-h1: #171717; /* Near-black (Rank 1) */
+  --color-text: #30312E; /* Soft charcoal (Rank 2) */
+  --color-text-muted: #5F625D; /* Muted grey-green (Rank 3) */
+  --color-text-meta: #7B7D76; /* Soft grey (Rank 4) */
+  --color-accent: #6F7F73; /* Deep sage (Rank 5) */
+  --color-accent-hover: #5A6A5E;
+  --color-border: #E8EDE5;
   
   --font-sans: var(--font-plus-jakarta), system-ui, -apple-system, sans-serif;
 }
@@ -33,13 +35,13 @@ body {
 .pro-card:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transform: translateY(-2px);
-  border-color: #CBD5E1; /* Slate 300 */
+  border-color: #C7D1C1; /* Soft Sage */
 }
 
 .pro-badge {
   display: inline-block;
-  background-color: #F1F5F9; /* Slate 100 */
-  color: #475569; /* Slate 600 */
+  background-color: #E8EDE5; /* Pale Sage */
+  color: var(--color-text-muted);
   font-family: var(--font-sans);
   font-size: 0.65rem;
   font-weight: 700;
@@ -51,9 +53,9 @@ body {
 }
 
 .pro-badge-accent {
-  background-color: #EFF6FF; /* Blue 50 */
+  background-color: var(--color-surface);
   color: var(--color-accent);
-  border: 1px solid #BFDBFE; /* Blue 200 */
+  border: 1px solid #C7D1C1; /* Soft Sage */
 }
 
 .pro-btn {
@@ -70,7 +72,7 @@ body {
 }
 
 .pro-btn:hover {
-  background-color: #334155; /* Slate 700 */
+  background-color: var(--color-text-muted);
 }
 
 .pro-btn-accent {

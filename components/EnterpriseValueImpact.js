@@ -61,16 +61,16 @@ export default function EnterpriseValueImpact() {
   ];
 
   return (
-    <section className="bg-white">
+    <section className="bg-[var(--color-bg)] py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
         
         {/* Header */}
         <div className="mb-16">
           <div className="pro-badge mb-4">COMMERCIAL EXECUTION</div>
-          <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 leading-tight uppercase mb-6 max-w-3xl">
-            Accelerating <span className="text-blue-600">Enterprise Value</span>
+          <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-6 max-w-3xl">
+            Accelerating <span className="text-[var(--color-accent)]">Enterprise Value</span>
           </h2>
-          <p className="text-xl font-sans text-slate-600 leading-relaxed font-semibold max-w-3xl">
+          <p className="text-xl font-sans text-[var(--color-text-muted)] leading-relaxed font-semibold max-w-3xl">
             Translating complex AI implementations into measurable revenue growth, adoption velocity, and net retention.
           </p>
         </div>
@@ -80,24 +80,24 @@ export default function EnterpriseValueImpact() {
           
           {/* Top Row: 3 Narrow Cards */}
           {valuesTop.map((item, idx) => (
-            <div key={idx} className="md:col-span-2 pro-card bg-slate-50 p-8 flex flex-col border border-slate-200 hover:border-blue-500 transition-colors group">
-              <div className="w-12 h-12 rounded-xl bg-white border border-slate-200 text-slate-900 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-colors">
+            <div key={idx} className="md:col-span-2 pro-card bg-slate-50 p-8 flex flex-col border border-[var(--color-border)] hover:border-blue-500 transition-colors group">
+              <div className="w-12 h-12 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text)] flex items-center justify-center mb-6 group-hover:bg-[var(--color-accent)] group-hover:text-white group-hover:border-blue-600 transition-colors">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-sans font-black text-slate-900 mb-3">{item.title}</h3>
-              <p className="text-sm font-sans text-slate-600 leading-relaxed">{item.desc}</p>
+              <h3 className="text-xl font-sans font-black text-[var(--color-text-h1)] mb-3">{item.title}</h3>
+              <p className="text-sm font-sans text-[var(--color-text-muted)] leading-relaxed">{item.desc}</p>
             </div>
           ))}
 
           {/* Bottom Row: 2 Wide Cards */}
           {valuesBottom.map((item, idx) => (
-            <div key={idx} className="md:col-span-3 pro-card bg-slate-50 p-8 flex flex-col md:flex-row gap-8 items-start border border-slate-200 hover:border-blue-500 transition-colors group">
-              <div className="w-14 h-14 rounded-xl bg-white border border-slate-200 text-slate-900 flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-colors">
+            <div key={idx} className="md:col-span-3 pro-card bg-slate-50 p-8 flex flex-col md:flex-row gap-8 items-start border border-[var(--color-border)] hover:border-blue-500 transition-colors group">
+              <div className="w-14 h-14 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text)] flex items-center justify-center shrink-0 group-hover:bg-[var(--color-accent)] group-hover:text-white group-hover:border-blue-600 transition-colors">
                 {item.icon}
               </div>
               <div>
-                <h3 className="text-2xl font-sans font-black text-slate-900 tracking-tight mb-3">{item.title}</h3>
-                <p className="text-base font-sans text-slate-600 leading-relaxed">{item.desc}</p>
+                <h3 className="text-2xl font-sans font-black text-[var(--color-text-h1)] tracking-tight mb-3">{item.title}</h3>
+                <p className="text-base font-sans text-[var(--color-text-muted)] leading-relaxed">{item.desc}</p>
               </div>
             </div>
           ))}

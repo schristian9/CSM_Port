@@ -49,11 +49,11 @@ export default function Playbooks() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <div className="pro-badge mb-3">CSM STRATEGY PLAYBOOKS</div>
-          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 uppercase leading-none">
+          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-none">
             Tactical Execution Playbooks
           </h3>
         </div>
-        <p className="text-sm font-sans text-blue-600 max-w-xs md:text-right uppercase">
+        <p className="text-sm font-sans text-[var(--color-accent)] max-w-xs md:text-right uppercase">
           ✦ Click a playbook to see the exact tactical step-by-step resolution.
         </p>
       </div>
@@ -63,10 +63,10 @@ export default function Playbooks() {
           <button
             key={idx}
             onClick={() => setActivePlaybook(idx)}
-            className={`px-5 py-3 border border-slate-200 font-sans tracking-tight font-bold uppercase text-xs tracking-wider transition-all ${
+            className={`px-5 py-3 border border-[var(--color-border)] font-sans tracking-tight font-bold uppercase text-xs tracking-wider transition-all ${
               activePlaybook === idx
-                ? "bg-blue-600 text-white border-blue-600 shadow-md"
-                : "bg-white text-slate-900 hover:bg-slate-50 shadow-sm hover:shadow-md"
+                ? "bg-[var(--color-accent)] text-white border-blue-600 shadow-md"
+                : "bg-[var(--color-surface)] text-[var(--color-text)] hover:bg-slate-50 shadow-sm hover:shadow-md"
             }`}
           >
             {pb.title}
@@ -79,16 +79,16 @@ export default function Playbooks() {
         {/* Subtle grids */}
         
 
-        <div className="border-b border-slate-200 pb-6 mb-8">
+        <div className="border-b border-[var(--color-border)] pb-6 mb-8">
           <div className="flex justify-between items-center mb-2">
             <span />
             <span className="pro-badge bg-slate-900 text-white">{playbooks[activePlaybook].metric}</span>
           </div>
-          <h4 className="font-sans tracking-tight font-black text-xl md:text-2xl text-slate-900 uppercase">
+          <h4 className="font-sans tracking-tight font-black text-xl md:text-2xl text-[var(--color-text-h1)] uppercase">
             Scenario: {playbooks[activePlaybook].title}
           </h4>
-          <p className="text-sm text-slate-900 mt-2 font-sans">
-            <strong className="text-blue-600">Problem Statement:</strong> <span className="text-blue-600 font-semibold">{playbooks[activePlaybook].problem}</span>
+          <p className="text-sm text-[var(--color-text)] mt-2 font-sans">
+            <strong className="text-[var(--color-accent)]">Problem Statement:</strong> <span className="text-[var(--color-accent)] font-semibold">{playbooks[activePlaybook].problem}</span>
           </p>
         </div>
 
@@ -101,15 +101,15 @@ export default function Playbooks() {
             {playbooks[activePlaybook].steps.map((step, idx) => (
               <div key={idx} className="flex gap-6 items-start relative z-10">
                 {/* Flow Step Number Circle */}
-                <div className="w-12 h-12 rounded-full border border-slate-200 bg-white flex items-center justify-center font-sans tracking-tight font-black text-lg text-slate-900 shrink-0 relative z-10">
+                <div className="w-12 h-12 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] flex items-center justify-center font-sans tracking-tight font-black text-lg text-[var(--color-text)] shrink-0 relative z-10">
                   0{idx + 1}
                 </div>
 
-                <div className="bg-white border border-slate-200 p-4 flex-1 shadow-sm hover:shadow-md">
-                  <h5 className="font-sans text-xs font-bold uppercase tracking-wider text-blue-600">
+                <div className="bg-[var(--color-surface)] border border-[var(--color-border)] p-4 flex-1 shadow-sm hover:shadow-md">
+                  <h5 className="font-sans text-xs font-bold uppercase tracking-wider text-[var(--color-accent)]">
                     {step.name}
                   </h5>
-                  <p className="text-lg text-slate-900 mt-1 leading-relaxed">
+                  <p className="text-lg text-[var(--color-text)] mt-1 leading-relaxed">
                     {step.desc}
                   </p>
                 </div>

@@ -47,7 +47,8 @@ export default function PlaybooksPage() {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
         </svg>
-      )
+      ),
+      fileUrl: "/playbooks/account-health-scorecard.pdf"
     }
   ];
 
@@ -56,15 +57,15 @@ export default function PlaybooksPage() {
       <div className="noise-overlay" />
       <Masthead />
 
-      <main className="flex-1 w-full bg-white pb-24">
+      <main className="flex-1 w-full pb-24">
         {/* Header Section */}
         <section className="">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
             <div className="pro-badge mb-4">RESOURCES & METHODOLOGY</div>
-            <h1 className="text-4xl md:text-6xl font-sans tracking-tight font-black text-slate-900 leading-tight uppercase mb-6">
-              Strategic <span className="text-blue-600">Playbooks</span>
+            <h1 className="text-4xl md:text-6xl font-sans tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-6">
+              Strategic <span className="text-[var(--color-accent)]">Playbooks</span>
             </h1>
-            <p className="text-xl md:text-2xl font-sans text-slate-600 leading-relaxed font-semibold max-w-3xl">
+            <p className="text-xl md:text-2xl font-sans text-[var(--color-text-muted)] leading-relaxed font-semibold max-w-3xl">
               A comprehensive library of the actual frameworks, presentation decks, and operating models I use to drive predictable customer success.
             </p>
           </div>
@@ -76,26 +77,26 @@ export default function PlaybooksPage() {
         </div>
 
         {/* The CSM Toolkit - Downloadable Artifacts */}
-        <section className="text-slate-900 relative overflow-hidden">
+        <section className="text-[var(--color-text)] relative overflow-hidden">
           <div className="noise-overlay noise-overlay-strong" />
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
-            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-slate-900 mb-12 uppercase leading-tight">
+            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] mb-12 uppercase leading-tight">
               The CSM Toolkit
             </h2>
-            <p className="text-lg text-slate-600 font-sans leading-relaxed mb-12 max-w-2xl">
+            <p className="text-lg text-[var(--color-text-muted)] font-sans leading-relaxed mb-12 max-w-2xl">
               Download sanitized versions of my most impactful day-to-day artifacts. These templates represent my core methodology for engaging executives and accelerating value.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {artifacts.map((artifact, idx) => (
-                <div key={idx} className="pro-card bg-white border border-slate-200 p-8 flex flex-col h-full hover:border-blue-500 transition-all group">
-                  <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 flex items-center justify-center mb-6">
+                <div key={idx} className="pro-card bg-[var(--color-surface)] border border-[var(--color-border)] p-8 flex flex-col h-full hover:border-blue-500 transition-all group">
+                  <div className="w-12 h-12 rounded-xl bg-slate-50 border border-[var(--color-border)] text-[var(--color-text)] flex items-center justify-center mb-6">
                     {artifact.icon}
                   </div>
-                  <h3 className="text-xl font-sans font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl font-sans font-bold text-[var(--color-text-h1)] mb-3">
                     {artifact.title}
                   </h3>
-                  <p className="text-sm font-sans text-slate-600 leading-relaxed flex-grow mb-8">
+                  <p className="text-sm font-sans text-[var(--color-text-muted)] leading-relaxed flex-grow mb-8">
                     {artifact.description}
                   </p>
                   
