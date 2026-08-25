@@ -235,9 +235,7 @@ export default function About() {
                 <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
                   Clinical-to-Technical Growth
                 </h3>
-                <p className="text-sm font-sans text-[var(--color-accent)] mt-4 uppercase font-semibold">
-                  How nursing principles fuel onboarding velocity & AI adoption in healthcare SaaS.
-                </p>
+
                 <div className="border-l-4 border-[var(--color-border)] pl-4 mt-6">
                   <p className="text-lg font-sans tracking-tight font-semibold italic text-[var(--color-accent)] leading-relaxed">
                     "You'll never know if you're lost until you start walking."
