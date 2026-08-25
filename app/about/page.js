@@ -76,23 +76,13 @@ export default function About() {
       ]
     },
     {
-      year: "2019",
+      year: "2018",
       role: "Interface Analyst",
       company: "Meditab Software",
       highlight: "AI Product Adoption & Utilization",
       achievements: [
         "Championed customer adoption of innovative AI tooling by demonstrating workflow improvements and patient care benefits.",
         "Increased AI feature utilization by 55% while successfully reducing user support requests by 31%."
-      ]
-    },
-    {
-      year: "2018",
-      role: "Virtual Administrative Assistant",
-      company: "DrCatalyst",
-      highlight: "Workflow Optimization & Operational Support",
-      achievements: [
-        "Optimized data preparation workflows and streamlined inter-departmental communication.",
-        "Eliminated operational and administrative bottlenecks by 20% to support smoother client activities."
       ]
     }
   ];
