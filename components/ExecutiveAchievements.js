@@ -94,10 +94,15 @@ export default function ExecutiveAchievements() {
         </div>
       </div>
 
-      {/* Grid of Cards */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      {/* Asymmetric Editorial Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {achievements.map((item, idx) => (
-          <div key={idx} className="pro-card bg-[var(--color-surface)] p-8 flex flex-col h-full hover:shadow-lg transition-all border border-[var(--color-border)]">
+          <div 
+            key={idx} 
+            className={`pro-card bg-[var(--color-surface)] p-8 flex flex-col h-full transition-all border border-[var(--color-border)] ${
+              idx === 0 || idx === 3 || idx === 4 ? 'lg:col-span-2' : 'lg:col-span-1'
+            }`}
+          >
             {/* Icon */}
             <div className="w-14 h-14 rounded-full bg-slate-50 text-[var(--color-text)] flex items-center justify-center mb-6 shrink-0 border border-[var(--color-border)]">
               {item.icon}
@@ -111,8 +116,8 @@ export default function ExecutiveAchievements() {
               {item.description}
             </p>
 
-            {/* Impact Box */}
-            <div className="bg-slate-50 border border-[var(--color-border)] rounded-xl p-5 mt-auto">
+            {/* Impact Box - Sharp corners, no shadow */}
+            <div className="bg-[var(--color-bg)] border-t border-[var(--color-border)] p-5 mt-auto -mx-8 -mb-8">
               <div className="flex items-center gap-2 mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-[var(--color-text)] shrink-0">
                   <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>

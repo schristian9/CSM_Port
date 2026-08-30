@@ -74,9 +74,9 @@ h1, h2, h3, h4 {
   color: white;
   font-family: var(--font-sans);
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: 0px;
   transition: all 0.15s ease;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: none;
 }
 
 .pro-btn:hover {

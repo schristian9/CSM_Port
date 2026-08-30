@@ -91,7 +91,7 @@ export default function PortfolioHub() {
         <div className="noise-overlay noise-overlay-strong" />
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
           
-          <div className="mb-12 text-center max-w-3xl mx-auto">
+          <div className="mb-12 max-w-3xl">
             <h2 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-4">
               Explore The <span className="text-[var(--color-accent)]">Frameworks</span>
             </h2>
@@ -103,7 +103,7 @@ export default function PortfolioHub() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             {/* Card 1: Case Studies */}
-            <div className="pro-card bg-slate-50 p-8 flex flex-col border border-[var(--color-border)] hover:border-blue-500 transition-colors group">
+            <div className="pro-card bg-slate-50 p-8 flex flex-col border border-[var(--color-border)] hover:border-[var(--color-accent)] transition-colors group">
               <div className="w-14 h-14 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text)] flex items-center justify-center mb-6 group-hover:bg-[var(--color-accent)] group-hover:text-white transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
                   <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
@@ -120,7 +120,7 @@ export default function PortfolioHub() {
             </div>
 
             {/* Card 2: Playbooks */}
-            <div className="pro-card bg-slate-50 p-8 flex flex-col border border-[var(--color-border)] hover:border-blue-500 transition-colors group">
+            <div className="pro-card bg-slate-50 p-8 flex flex-col border border-[var(--color-border)] hover:border-[var(--color-accent)] transition-colors group">
               <div className="w-14 h-14 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text)] flex items-center justify-center mb-6 group-hover:bg-[var(--color-accent)] group-hover:text-white transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -138,7 +138,7 @@ export default function PortfolioHub() {
             </div>
 
             {/* Card 3: User Guide */}
-            <div className="pro-card bg-slate-50 p-8 flex flex-col border border-[var(--color-border)] hover:border-blue-500 transition-colors group">
+            <div className="pro-card bg-slate-50 p-8 flex flex-col border border-[var(--color-border)] hover:border-[var(--color-accent)] transition-colors group">
               <div className="w-14 h-14 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text)] flex items-center justify-center mb-6 group-hover:bg-[var(--color-accent)] group-hover:text-white transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
                   <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
