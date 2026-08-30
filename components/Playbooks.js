@@ -49,7 +49,7 @@ export default function Playbooks() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <div className="pro-badge mb-3">CSM STRATEGY PLAYBOOKS</div>
-          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-none">
+          <h3 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-none">
             Tactical Execution Playbooks
           </h3>
         </div>
@@ -84,7 +84,7 @@ export default function Playbooks() {
             <span />
             <span className="pro-badge bg-slate-900 text-white">{playbooks[activePlaybook].metric}</span>
           </div>
-          <h4 className="font-sans tracking-tight font-black text-xl md:text-2xl text-[var(--color-text-h1)] uppercase">
+          <h4 className="font-display tracking-tight font-black text-xl md:text-2xl text-[var(--color-text-h1)] uppercase">
             Scenario: {playbooks[activePlaybook].title}
           </h4>
           <p className="text-sm text-[var(--color-text)] mt-2 font-sans">

@@ -97,7 +97,7 @@ export default function About() {
         <section className="">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
             <div className="pro-badge mb-4">BACKGROUND</div>
-            <h1 className="text-4xl md:text-6xl font-sans tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-6">
+            <h1 className="text-4xl md:text-6xl font-display tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-6">
               About & <span className="text-[var(--color-accent)]">Experience</span>
             </h1>
             <p className="text-xl md:text-2xl font-sans text-[var(--color-text-muted)] leading-relaxed font-semibold max-w-3xl">
@@ -126,7 +126,7 @@ export default function About() {
               
               <div className="border-b border-[var(--color-border)] pb-6 mb-6">
                 <div className="pro-badge mb-3">PERSONAL DOSSIER</div>
-                <h2 className="text-3xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
+                <h2 className="text-3xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
                   Sarlinson Christian
                 </h2>
                 <p className="text-sm font-sans text-[var(--color-accent)] uppercase font-bold mt-1.5">
@@ -163,7 +163,7 @@ export default function About() {
             </div>
 
             <div className="pro-card p-8">
-              <h4 className="text-2xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase border-b border-[var(--color-border)] pb-3 mb-4">
+              <h4 className="text-2xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase border-b border-[var(--color-border)] pb-3 mb-4">
                 Education
               </h4>
               <div className="space-y-4">
@@ -184,7 +184,7 @@ export default function About() {
 
             {/* Resume Download Card */}
             <div className="pro-card p-8">
-              <h4 className="text-2xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase border-b border-[var(--color-border)] pb-3 mb-4">
+              <h4 className="text-2xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase border-b border-[var(--color-border)] pb-3 mb-4">
                 Resume
               </h4>
               <p className="text-sm font-sans text-[var(--color-text-muted)] mb-6 leading-relaxed">
@@ -222,7 +222,7 @@ export default function About() {
             <div className="pro-card p-8 md:p-10">
               <div className="border-b border-[var(--color-border)] pb-6 mb-8">
                 <div className="pro-badge mb-3">VISUAL TRAJECTORY</div>
-                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
+                <h3 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
                   Clinical-to-Technical Growth
                 </h3>
 
@@ -244,7 +244,7 @@ export default function About() {
                       
                       <div className="flex-1 border border-[var(--color-border)] p-6 shadow-sm hover:shadow-md">
                         <div className="flex flex-wrap justify-between items-baseline gap-2 mb-2">
-                          <h4 className="font-sans tracking-tight font-black text-lg md:text-xl text-[var(--color-text-h1)] uppercase leading-none">
+                          <h4 className="font-display tracking-tight font-black text-lg md:text-xl text-[var(--color-text-h1)] uppercase leading-none">
                             {step.role}
                           </h4>
                           <span className="font-sans text-xs text-[var(--color-accent)] font-bold">@ {step.company}</span>
@@ -270,7 +270,7 @@ export default function About() {
             <div className="pro-card p-8 md:p-10">
               <div className="border-b border-[var(--color-border)] pb-6 mb-8">
                 <div className="pro-badge mb-3">FEATURED PROJECTS</div>
-                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
+                <h3 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
                   Healthcare AI Platform Implementation
                 </h3>
               </div>
@@ -279,7 +279,7 @@ export default function About() {
                 <div className="md:col-span-7 border border-[var(--color-border)] p-6 shadow-sm hover:shadow-md flex flex-col justify-between">
                   <div>
                     <div className="flex justify-between items-baseline mb-3">
-                      <h4 className="font-sans tracking-tight font-black text-lg text-[var(--color-text-h1)] uppercase">
+                      <h4 className="font-display tracking-tight font-black text-lg text-[var(--color-text-h1)] uppercase">
                         AI-Driven Health Platform — DecodeDx
                       </h4>
                       <span className="pro-badge text-white">-25% User Drop-Off</span>
@@ -306,14 +306,14 @@ export default function About() {
             <div className="pro-card p-8 md:p-10">
               <div className="border-b border-[var(--color-border)] pb-6 mb-8">
                 <div className="pro-badge mb-3">SKILLS DIRECTORY</div>
-                <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
+                <h3 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
                   Technical Capability Board
                 </h3>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-sans text-xs font-bold text-[var(--color-accent)] uppercase tracking-wider mb-3">
+                  <h4 className="font-display text-xs font-bold text-[var(--color-accent)] uppercase tracking-wider mb-3">
                     Customer Success & Adoption
                   </h4>
                   <div className="flex flex-wrap gap-2">
@@ -326,7 +326,7 @@ export default function About() {
                 </div>
 
                 <div className="border-t border-[var(--color-border)] pt-6">
-                  <h4 className="font-sans text-xs font-bold text-[var(--color-accent)] uppercase tracking-wider mb-3">
+                  <h4 className="font-display text-xs font-bold text-[var(--color-accent)] uppercase tracking-wider mb-3">
                     Business & Commercial Strategy
                   </h4>
                   <div className="flex flex-wrap gap-2">
@@ -339,7 +339,7 @@ export default function About() {
                 </div>
 
                 <div className="border-t border-[var(--color-border)] pt-6">
-                  <h4 className="font-sans text-xs font-bold text-[var(--color-accent)] uppercase tracking-wider mb-3">
+                  <h4 className="font-display text-xs font-bold text-[var(--color-accent)] uppercase tracking-wider mb-3">
                     Tools, Platforms & Frameworks
                   </h4>
                   <div className="flex flex-wrap gap-2">
@@ -361,7 +361,7 @@ export default function About() {
         <section className="max-w-7xl mx-auto px-4 md:px-8 pt-16 md:pt-24">
           <div className="border-b border-[var(--color-border)] pb-6 mb-12">
             <div className="pro-badge mb-3">CORE CAPABILITIES</div>
-            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
+            <h2 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
               The Five Pillars
             </h2>
           </div>
@@ -372,7 +372,7 @@ export default function About() {
                 <div className="w-12 h-12 rounded-full border border-[var(--color-border)] flex items-center justify-center shrink-0 mb-6 bg-slate-50">
                   <span className="font-sans font-black text-[var(--color-text)]">{idx + 1}</span>
                 </div>
-                <h3 className="text-lg font-sans font-black text-[var(--color-text-h1)] mb-4 uppercase leading-snug">
+                <h3 className="text-lg font-display font-black text-[var(--color-text-h1)] mb-4 uppercase leading-snug">
                   {pillar.title}
                 </h3>
                 <div className="flex flex-wrap gap-2">

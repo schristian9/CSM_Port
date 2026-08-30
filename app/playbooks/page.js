@@ -62,7 +62,7 @@ export default function PlaybooksPage() {
         <section className="">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
             <div className="pro-badge mb-4">RESOURCES & METHODOLOGY</div>
-            <h1 className="text-4xl md:text-6xl font-sans tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-6">
+            <h1 className="text-4xl md:text-6xl font-display tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-6">
               Strategic <span className="text-[var(--color-accent)]">Playbooks</span>
             </h1>
             <p className="text-xl md:text-2xl font-sans text-[var(--color-text-muted)] leading-relaxed font-semibold max-w-3xl">
@@ -80,7 +80,7 @@ export default function PlaybooksPage() {
         <section className="text-[var(--color-text)] relative overflow-hidden">
           <div className="noise-overlay noise-overlay-strong" />
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
-            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] mb-12 uppercase leading-tight">
+            <h2 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] mb-12 uppercase leading-tight">
               The CSM Toolkit
             </h2>
             <p className="text-lg text-[var(--color-text-muted)] font-sans leading-relaxed mb-12 max-w-2xl">
@@ -93,7 +93,7 @@ export default function PlaybooksPage() {
                   <div className="w-12 h-12 rounded-xl bg-slate-50 border border-[var(--color-border)] text-[var(--color-text)] flex items-center justify-center mb-6">
                     {artifact.icon}
                   </div>
-                  <h3 className="text-xl font-sans font-bold text-[var(--color-text-h1)] mb-3">
+                  <h3 className="text-xl font-display font-bold text-[var(--color-text-h1)] mb-3">
                     {artifact.title}
                   </h3>
                   <p className="text-sm font-sans text-[var(--color-text-muted)] leading-relaxed flex-grow mb-8">

@@ -9,7 +9,7 @@ export default function Manifesto() {
       {/* Manifesto Headline */}
       <div className="lg:col-span-7 flex flex-col justify-center">
         
-        <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-sans font-black text-[var(--color-text-h1)] tracking-tight uppercase leading-[1.05] mb-6">
+        <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-black text-[var(--color-text-h1)] tracking-tight uppercase leading-[1.05] mb-6">
           Nobody renews because you <span className="italic text-[var(--color-accent)]">sold</span> well.<br />
           They renew because you <span className="underline decoration-blue-600 decoration-4 underline-offset-4">delivered</span><br />
           and that's the whole job.

@@ -67,7 +67,7 @@ export default function EnterpriseValueImpact() {
         {/* Header */}
         <div className="mb-16">
           <div className="pro-badge mb-4">COMMERCIAL EXECUTION</div>
-          <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-6 max-w-3xl">
+          <h2 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-6 max-w-3xl">
             Accelerating <span className="text-[var(--color-accent)]">Enterprise Value</span>
           </h2>
           <p className="text-xl font-sans text-[var(--color-text-muted)] leading-relaxed font-semibold max-w-3xl">
@@ -84,7 +84,7 @@ export default function EnterpriseValueImpact() {
               <div className="w-12 h-12 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text)] flex items-center justify-center mb-6 group-hover:bg-[var(--color-accent)] group-hover:text-white group-hover:border-blue-600 transition-colors">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-sans font-black text-[var(--color-text-h1)] mb-3">{item.title}</h3>
+              <h3 className="text-xl font-display font-black text-[var(--color-text-h1)] mb-3">{item.title}</h3>
               <p className="text-sm font-sans text-[var(--color-text-muted)] leading-relaxed">{item.desc}</p>
             </div>
           ))}
@@ -96,7 +96,7 @@ export default function EnterpriseValueImpact() {
                 {item.icon}
               </div>
               <div>
-                <h3 className="text-2xl font-sans font-black text-[var(--color-text-h1)] tracking-tight mb-3">{item.title}</h3>
+                <h3 className="text-2xl font-display font-black text-[var(--color-text-h1)] tracking-tight mb-3">{item.title}</h3>
                 <p className="text-base font-sans text-[var(--color-text-muted)] leading-relaxed">{item.desc}</p>
               </div>
             </div>

@@ -27,7 +27,7 @@ export default function CaseStudies() {
         <section className="bg-[var(--color-bg)]">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
             <div className="pro-badge mb-4">IMPACT ARCHIVE</div>
-            <h1 className="text-4xl md:text-6xl font-sans tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-6">
+            <h1 className="text-4xl md:text-6xl font-display tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-6">
               Case <span className="text-[var(--color-accent)]">Studies</span>
             </h1>
             <p className="text-xl md:text-2xl font-sans text-[var(--color-text-muted)] leading-relaxed font-semibold max-w-3xl">
@@ -39,7 +39,7 @@ export default function CaseStudies() {
         {/* Case Study 1: Healthcare */}
         <section className="max-w-5xl mx-auto px-4 md:px-8 py-16 md:py-24">
           <div className="mb-8">
-            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
+            <h2 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
               01. Enterprise Healthcare Automation
             </h2>
             <p className="text-[var(--color-text-muted)] font-sans mt-2 uppercase tracking-widest text-xs font-bold">
@@ -68,7 +68,7 @@ export default function CaseStudies() {
             <div className="min-h-[250px]">
               {activeTab.healthcare === 'before' ? (
                 <div className="animate-in-fade-up">
-                  <h3 className="text-xl font-sans font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-display font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
                     The Legacy Challenge
                   </h3>
@@ -89,7 +89,7 @@ export default function CaseStudies() {
                 </div>
               ) : (
                 <div className="animate-in-fade-up">
-                  <h3 className="text-xl font-sans font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-display font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                     The Strategic Intervention
                   </h3>
@@ -138,7 +138,7 @@ export default function CaseStudies() {
         {/* Case Study 2: Turnaround */}
         <section className="max-w-5xl mx-auto px-4 md:px-8 pb-16 md:pb-24">
           <div className="mb-8">
-            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
+            <h2 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
               02. At-Risk Account Turnaround
             </h2>
             <p className="text-[var(--color-text-muted)] font-sans mt-2 uppercase tracking-widest text-xs font-bold">
@@ -167,7 +167,7 @@ export default function CaseStudies() {
             <div className="min-h-[250px]">
               {activeTab.turnaround === 'before' ? (
                 <div className="animate-in-fade-up">
-                  <h3 className="text-xl font-sans font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-display font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
                     The Legacy Challenge
                   </h3>
@@ -188,7 +188,7 @@ export default function CaseStudies() {
                 </div>
               ) : (
                 <div className="animate-in-fade-up">
-                  <h3 className="text-xl font-sans font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-display font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                     The Strategic Intervention
                   </h3>
@@ -237,7 +237,7 @@ export default function CaseStudies() {
         {/* Case Study 3: Global Expansion */}
         <section className="max-w-5xl mx-auto px-4 md:px-8 pb-16 md:pb-24">
           <div className="mb-8">
-            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
+            <h2 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
               03. Global Market Expansion
             </h2>
             <p className="text-[var(--color-text-muted)] font-sans mt-2 uppercase tracking-widest text-xs font-bold">
@@ -266,7 +266,7 @@ export default function CaseStudies() {
             <div className="min-h-[250px]">
               {activeTab.expansion === 'before' ? (
                 <div className="animate-in-fade-up">
-                  <h3 className="text-xl font-sans font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-display font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
                     The Legacy Challenge
                   </h3>
@@ -287,7 +287,7 @@ export default function CaseStudies() {
                 </div>
               ) : (
                 <div className="animate-in-fade-up">
-                  <h3 className="text-xl font-sans font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-display font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                     The Strategic Intervention
                   </h3>
@@ -336,7 +336,7 @@ export default function CaseStudies() {
         {/* Case Study 4: AI Platform Adoption */}
         <section className="max-w-5xl mx-auto px-4 md:px-8 pb-16 md:pb-24">
           <div className="mb-8">
-            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
+            <h2 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
               04. AI-Focused Innovation & Adoption
             </h2>
             <p className="text-[var(--color-text-muted)] font-sans mt-2 uppercase tracking-widest text-xs font-bold">
@@ -365,7 +365,7 @@ export default function CaseStudies() {
             <div className="min-h-[250px]">
               {activeTab.aiAdoption === 'before' ? (
                 <div className="animate-in-fade-up">
-                  <h3 className="text-xl font-sans font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-display font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
                     The Legacy Challenge
                   </h3>
@@ -386,7 +386,7 @@ export default function CaseStudies() {
                 </div>
               ) : (
                 <div className="animate-in-fade-up">
-                  <h3 className="text-xl font-sans font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
+                  <h3 className="text-xl font-display font-black text-[var(--color-text-h1)] mb-4 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                     The Strategic Intervention
                   </h3>

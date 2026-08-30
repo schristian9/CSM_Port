@@ -69,7 +69,7 @@ export default function StrategyCopilot() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <div className="pro-badge mb-3">CUSTOM INTELLECT API</div>
-          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-none">
+          <h3 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-none">
             CS Strategy Copilot
           </h3>
         </div>
@@ -82,7 +82,7 @@ export default function StrategyCopilot() {
         {/* Left Side: Instructions & Suggestion Chips */}
         <div className="lg:col-span-4 flex flex-col justify-between pro-card bg-[var(--color-surface)] p-8">
           <div>
-            <h4 className="font-sans tracking-tight font-black text-xl uppercase text-[var(--color-text-h1)] mb-4">
+            <h4 className="font-display tracking-tight font-black text-xl uppercase text-[var(--color-text-h1)] mb-4">
               Ask Me Anything
             </h4>
             <p className="text-xl text-[var(--color-text)] font-medium leading-relaxed mb-6 font-sans">

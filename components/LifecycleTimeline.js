@@ -59,7 +59,7 @@ export default function LifecycleTimeline() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <div className="pro-badge mb-3">EVOLUTION TIMELINE</div>
-          <h3 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-none">
+          <h3 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-none">
             Strategic Career Path
           </h3>
         </div>
@@ -88,7 +88,7 @@ export default function LifecycleTimeline() {
                   {step.period}
                 </span>
               </div>
-              <h4 className="font-sans tracking-tight font-black text-lg md:text-xl uppercase tracking-tight leading-tight">
+              <h4 className="font-display tracking-tight font-black text-lg md:text-xl uppercase tracking-tight leading-tight">
                 {step.role}
               </h4>
               <p className={`text-xs mt-1 font-sans uppercase ${activeStep === idx ? "text-blue-200" : "text-[var(--color-text-muted)]"}`}>
@@ -108,7 +108,7 @@ export default function LifecycleTimeline() {
               <span className="font-sans text-xs text-[var(--color-accent)] uppercase font-bold tracking-widest">
                 {steps[activeStep].period}
               </span>
-              <h4 className="font-sans tracking-tight font-black text-2xl md:text-3xl text-[var(--color-text-h1)] uppercase mt-1">
+              <h4 className="font-display tracking-tight font-black text-2xl md:text-3xl text-[var(--color-text-h1)] uppercase mt-1">
                 {steps[activeStep].role}
               </h4>
               <p className="font-sans text-sm text-[var(--color-text-muted)] mt-0.5">

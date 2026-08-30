@@ -12,6 +12,7 @@
   --color-border: #E8EDE5;
   
   --font-sans: var(--font-plus-jakarta), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-lora), ui-serif, Georgia, serif;
 }
 
 body {
@@ -23,19 +24,26 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
 /* Professional Accents & Layout elements */
 .pro-card {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 12px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0px; /* Sharp corners */
+  box-shadow: none; /* No floating shadows */
   transition: all 0.2s ease-in-out;
 }
 
 .pro-card:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  transform: translateY(-2px);
-  border-color: #C7D1C1; /* Soft Sage */
+  background-color: var(--color-bg);
+  border-color: var(--color-text-muted); /* Darker border shift instead of shadow */
 }
 
 .pro-badge {

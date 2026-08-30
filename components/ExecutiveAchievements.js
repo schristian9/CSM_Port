@@ -83,7 +83,7 @@ export default function ExecutiveAchievements() {
       <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-8 mb-12">
         <div className="lg:w-1/2">
           <div className="pro-badge mb-4 bg-slate-900 text-white">IMPACT</div>
-          <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
+          <h2 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
             Achievements
           </h2>
         </div>
@@ -104,7 +104,7 @@ export default function ExecutiveAchievements() {
             </div>
 
             {/* Title & Description */}
-            <h3 className="text-2xl font-sans font-black text-[var(--color-text-h1)] tracking-tight mb-3">
+            <h3 className="text-2xl font-display font-black text-[var(--color-text-h1)] tracking-tight mb-3">
               {item.title}
             </h3>
             <p className="text-base font-sans text-[var(--color-text-muted)] leading-relaxed mb-6 flex-grow">

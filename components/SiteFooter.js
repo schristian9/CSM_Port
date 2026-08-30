@@ -5,7 +5,7 @@ export default function SiteFooter({ backToPortfolio = false }) {
     <footer className="w-full bg-[var(--color-bg)] border-t border-[var(--color-border)] text-[var(--color-text-muted)] py-12 px-4 md:px-8 mt-auto">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div>
-          <h2 className="text-3xl font-sans tracking-tight font-black uppercase leading-none text-[var(--color-text-h1)]">
+          <h2 className="text-3xl font-display tracking-tight font-black uppercase leading-none text-[var(--color-text-h1)]">
             SARLINSON CHRISTIAN
           </h2>
           <p className="text-xs font-sans tracking-widest text-[var(--color-accent)] mt-1.5 uppercase">

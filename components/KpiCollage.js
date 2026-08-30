@@ -57,7 +57,7 @@ export default function KpiCollage() {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
           <div className="pro-badge mb-3 bg-slate-900 text-white">EXECUTIVE DASHBOARD</div>
-          <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
+          <h2 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] uppercase leading-tight">
             Proven Business Impact
           </h2>
         </div>
@@ -91,7 +91,7 @@ export default function KpiCollage() {
                   {kpi.icon}
                 </div>
               </div>
-              <h4 className="font-sans text-lg font-black text-[var(--color-text-h1)] uppercase tracking-tight mb-3">
+              <h4 className="font-display text-lg font-black text-[var(--color-text-h1)] uppercase tracking-tight mb-3">
                 {kpi.label}
               </h4>
               <p className="text-sm text-[var(--color-text-muted)] leading-relaxed font-sans max-w-md">

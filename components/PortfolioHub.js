@@ -92,7 +92,7 @@ export default function PortfolioHub() {
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
           
           <div className="mb-12 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-sans tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-4">
+            <h2 className="text-3xl md:text-5xl font-display tracking-tight font-black text-[var(--color-text-h1)] leading-tight uppercase mb-4">
               Explore The <span className="text-[var(--color-accent)]">Frameworks</span>
             </h2>
             <p className="text-lg font-sans text-[var(--color-text-muted)] font-semibold">
@@ -110,7 +110,7 @@ export default function PortfolioHub() {
                   <polyline points="16 7 22 7 22 13"></polyline>
                 </svg>
               </div>
-              <h3 className="text-2xl font-sans font-black text-[var(--color-text-h1)] uppercase tracking-tight mb-3">Interactive Case Studies</h3>
+              <h3 className="text-2xl font-display font-black text-[var(--color-text-h1)] uppercase tracking-tight mb-3">Interactive Case Studies</h3>
               <p className="text-sm font-sans text-[var(--color-text-muted)] leading-relaxed flex-grow mb-8">
                 See how I drove 40% Daily Active AI Usage and expanded global ARR through targeted rollout strategies.
               </p>
@@ -128,7 +128,7 @@ export default function PortfolioHub() {
                   <line x1="12" y1="15" x2="12" y2="3"></line>
                 </svg>
               </div>
-              <h3 className="text-2xl font-sans font-black text-[var(--color-text-h1)] uppercase tracking-tight mb-3">The CSM Toolkit</h3>
+              <h3 className="text-2xl font-display font-black text-[var(--color-text-h1)] uppercase tracking-tight mb-3">The CSM Toolkit</h3>
               <p className="text-sm font-sans text-[var(--color-text-muted)] leading-relaxed flex-grow mb-8">
                 Download my actual day-to-day frameworks for recovering At-Risk Accounts and structuring Executive QBRs.
               </p>
@@ -145,7 +145,7 @@ export default function PortfolioHub() {
                   <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
                 </svg>
               </div>
-              <h3 className="text-2xl font-sans font-black text-[var(--color-text-h1)] uppercase tracking-tight mb-3">Operating Manual</h3>
+              <h3 className="text-2xl font-display font-black text-[var(--color-text-h1)] uppercase tracking-tight mb-3">Operating Manual</h3>
               <p className="text-sm font-sans text-[var(--color-text-muted)] leading-relaxed flex-grow mb-8">
                 Read my transparent guide outlining cross-functional expectations, escalation management, and core values.
               </p>
